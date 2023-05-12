@@ -1,0 +1,715 @@
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  overflow: hidden;
+  border-radius: 10px;
+}
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+hr {
+  width: 50%;
+}
+
+/*Akɛ baayoo bo*/
+.logo {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
+
+.logo img {
+  width: 35px;
+  height: 35px;
+}
+/*Akɛ baayoo bo naagbee*/
+
+/*Ni ŋmaa*/
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  margin-top: 0;
+}
+
+h4 {
+  margin: 0;
+  margin-top: 0;
+  color: #d0d0d0;
+  font-family: "Poppins Light", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+h3 {
+  margin: 0;
+  font-size: 35px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #ad0082;
+  opacity: 1;
+}
+
+#typing-text.fadeOut {
+  animation: fadeOut 0.3s forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*Ni ŋmaa naagbee*/
+
+/*Fɛɛ eko + Heni abaaya*/
+html {
+  box-sizing: border-box;
+}
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #00000080;
+  font-size: 2rem;
+  min-height: 100%;
+  height: 100vh;
+}
+.Quick-navigation {
+  position: fixed;
+  z-index: 1;
+  margin: 0;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.Quick-navigation-item {
+  color: #ad0082;
+  text-decoration: none;
+  font-size: 1.3em;
+  transition: color 0.3s;
+  padding: 0.5em;
+  display: block;
+  text-shadow: 1px 1px black;
+  font-weight: bold;
+}
+
+.Quick-navigation-item:hover,
+.Quick-navigation-item.active {
+  color: #ffffff;
+}
+
+/*Heni abaaya PT.2*/
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #1e1e1e;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+.menu a:hover {
+  color: #af00a9;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+}
+
+.menu li {
+  margin-left: 20px;
+}
+
+.menu li:first-child {
+  margin-left: 0;
+}
+
+.menu a {
+  color: #dfdfdf;
+  text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  list-style: none;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -80px;
+  margin-top: 5px;
+  z-index: 1;
+  background-color: #252525;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 12px 30px;
+  color: #ffffff;
+  font-size: 12px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.dropdown-menu a:hover {
+  color: #af00a9;
+}
+
+.dropdown-menu.show {
+  display: block !important;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+/*Heni abaaya PT.2 naagbee*/
+
+/*Fɛɛ eko + Heni abaaya naagbe*/
+
+/*Shia gbɛ*/
+#Welcome {
+  background-color: #191919;
+  background-image: url("src/1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  #Welcome {
+    background-image: url("src/1.png");
+    background-size: contain;
+  }
+}
+
+@media (max-width: 480px) {
+  #Welcome {
+    background-image: url("src/2.png");
+    background-size: cover;
+    background-position: top;
+  }
+}
+
+/*Ha mi nitsumɔ*/
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ad0082;
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 12px;
+  transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+/*Ha mi nitsumɔ naagbee*/
+/*Shia gbɛ naagbe*/
+
+/*Drawmɔ*/
+#Cartoon {
+  background-color: #191919;
+  height: 600px;
+  background-image: url("src/3.png");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Tab bii */
+@media (max-width: 768px) {
+  #Cartoon {
+    background-image: url("src/3.png");
+    background-size: contain;
+  }
+}
+/* Tab bii naagbee*/
+
+/* Phone bii*/
+@media (max-width: 480px) {
+  #Cartoon {
+    background-image: url("src/4.png");
+    background-size: cover;
+    background-position: top;
+  }
+}
+/* Phone bii naagbee*/
+
+/*Drawmɔ naagbee*/
+
+/*Akɛ baayoo bo*/
+#Logos {
+  background-color: #191919;
+  height: 600px;
+  background-image: url("src/5.png");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Tab bii */
+@media (max-width: 768px) {
+  #Logos {
+    background-image: url("src/5.png");
+    background-size: contain;
+  }
+}
+/* Tab bii naagbee*/
+
+/* Phone bii*/
+@media (max-width: 480px) {
+  #Logos {
+    background-image: url("src/6.png");
+    background-size: cover;
+    background-position: top;
+  }
+}
+/* Phone bii naagbee*/
+/*Akɛ baayoo bo naagbee*/
+
+/*Fɛŋfɛɔ*/
+#Branding {
+  background-color: #191919;
+  height: 600px;
+  background-image: url("src/7.png");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Tab bii */
+@media (max-width: 768px) {
+  #Branding {
+    background-image: url("src/7.png");
+    background-size: contain;
+  }
+}
+/* Tab bii naagbee*/
+
+/* Phone bii*/
+@media (max-width: 480px) {
+  #Branding {
+    background-image: url("src/8.png");
+    background-size: cover;
+    background-position: top;
+  }
+}
+/* Phone bii naagbee*/
+/*Fɛŋfɛɔ naagbee*/
+
+/*Feemɔ ni acodi*/
+#UIUX {
+  background-color: #191919;
+  height: 600px;
+  background-image: url("src/9.png");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Tab bii */
+@media (max-width: 768px) {
+  #UIUX {
+    background-image: url("src/9.png");
+    background-size: contain;
+  }
+}
+/* Tab bii naagbee*/
+
+/* Phone bii*/
+@media (max-width: 480px) {
+  #UIUX {
+    background-image: url("src/10.png");
+    background-size: cover;
+    background-position: top;
+  }
+}
+/* Phone bii naagbee*/
+/*Feemɔ ni acodi naagbee*/
+
+/*Heni apostiɔ*/
+#Social {
+  background-color: #191919;
+  height: 600px;
+  background-image: url("src/11.png");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Tab bii */
+@media (max-width: 768px) {
+  #Social {
+    background-image: url("src/11.png");
+    background-size: contain;
+  }
+}
+/* Tab bii naagbee*/
+
+/* Phone bii*/
+@media (max-width: 480px) {
+  #Social {
+    background-image: url("src/12.png");
+    background-size: cover;
+    background-position: top;
+  }
+}
+/* Phone bii naagbee*/
+/*Heni apostiɔ naagbee*/
+
+/*Nibii ehee*/
+#Products {
+  background-color: #191919;
+  height: 600px;
+  background-image: url("src/13.png");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Tab bii */
+@media (max-width: 768px) {
+  #Products {
+    background-image: url("src/13.png");
+    background-size: contain;
+  }
+}
+/* Tab bii naagbee*/
+
+/* Phone bii*/
+@media (max-width: 480px) {
+  #Products {
+    background-image: url("src/14.png");
+    background-size: cover;
+    background-position: top;
+  }
+}
+/* Phone bii naagbee*/
+/*Nibii ehee naagbee*/
+
+/*Foto*/
+#Photo {
+  background-color: #191919;
+  height: 600px;
+  background-image: url("src/15.png");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Tab bii */
+@media (max-width: 768px) {
+  #Photo {
+    background-image: url("src/15.png");
+    background-size: contain;
+  }
+}
+/* Tab bii naagbee*/
+
+/* Phone bii*/
+@media (max-width: 480px) {
+  #Photo {
+    background-image: url("src/16.png");
+    background-size: cover;
+    background-position: top;
+  }
+}
+/* Phone bii naagbee*/
+/*Foto naagbee*/
+
+/*Lala foto*/
+#Cover {
+  background-color: #191919;
+  height: 600px;
+  background-image: url("src/17.png");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Tab bii */
+@media (max-width: 768px) {
+  #Cover {
+    background-image: url("src/17.png");
+    background-size: contain;
+  }
+}
+/* Tab bii naagbee*/
+
+/* Phone bii*/
+@media (max-width: 480px) {
+  #Cover {
+    background-image: url("src/18.png");
+    background-size: cover;
+    background-position: top;
+  }
+}
+/* Phone bii naagbee*/
+/*Lala foto naagbee*/
+
+/*****************************************************************************/
+/*Drawmɔ fotos*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #fafafa;
+}
+
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 2rem 2rem;
+}
+
+.heading {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  padding: 3.5rem 0;
+  color: #1a1a1a;
+}
+
+.heading span {
+  display: block;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1rem -1rem;
+  padding: 30px;
+}
+
+.gallery-item {
+  flex: 1 0 24rem;
+  margin: 1rem;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+  transform: scale(1.15);
+}
+
+@supports (display: grid) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-gap: 2rem;
+  }
+
+  .gallery,
+  .gallery-item {
+    margin: 0;
+  }
+}
+/*Drawmɔ fotos naagbee*/
+
+/*****************************************************************************/
+
+/*Akɛ baayoo bo fotos*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #191919;
+}
+
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.heading {
+  font-size: 4rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px;
+  color: #ffffff;
+  margin: 0px;
+  margin-top: 50px;
+}
+
+.heading span {
+  display: block;
+}
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo-item {
+  flex: 1 0 calc(50% - 2rem);
+  max-width: 1000px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.logo-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 400ms ease-in-out;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+.logo-image:hover {
+  transform: scale(1.01);
+}
+
+@supports (display: grid) {
+  .logo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-gap: 2rem;
+  }
+
+  .logo,
+  .logo-item {
+    margin: 0;
+  }
+}
+/*Akɛ baayoo bo fotos naagbee*/
+
+/*Yaa wɛi*/
+#back-to-top-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+  padding: 10px 20px;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.3s;
+  outline: none;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+#back-to-top-btn {
+  opacity: 5;
+  transform: translateY(0);
+}
+#back-to-top-btn {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+#back-to-top-btn:hover {
+  color: #ad0082;
+}
+/*Yaa wɛi naagbee*/

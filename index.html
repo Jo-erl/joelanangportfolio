@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Joel Anang">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Joel Anang Portfolio</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+	<!--Heni abaaya-->
+	<nav class="Quick-navigation">
+		<a href="#Welcome" class="Quick-navigation-item active">Home</a>
+		<a href="#Cartoon" class="Quick-navigation-item">Cartoon </a>
+		<a href="#Logos" class="Quick-navigation-item">Logos</a>
+		<a href="#Branding" class="Quick-navigation-item">Branding</a>
+		<a href="#UIUX" class="Quick-navigation-item">UI/UX</a>
+		<a href="#Social" class="Quick-navigation-item">Social</a>
+		<a href="#Products" class="Quick-navigation-item">Products</a>
+		<a href="#Photo" class="Quick-navigation-item">Photo</a>
+		<a href="#Cover" class="Quick-navigation-item">Covers</a>
+	</nav>
+	<!--Heni abaaya naagbee-->
+	<!--Akɛ baayoo bo-->
+	<div class="logo">
+		<img src="src/logo.png" alt="Logo">
+	</div>
+	<!--Akɛ baayoo bo naagbee-->
+
+	<!--Shia gbɛ-->
+	<section id="Welcome" class="js-scroll-step">
+		<div class="header-content">
+			<h4>Hi!</h4>
+			<h3 id="typing-text"></h3>
+			<h4>Graphics & Web Designer</h4>
+			<a href="mailto:jo.erl444@gmail.com" class="button">Hire Me :)</a>
+		</div>
+	</section>
+	<!--Shia gbɛ naagbee-->
+
+	<!--Drawmɔ nibii-->
+	<section id="Cartoon" class="js-scroll-step">
+		<h1>Cartoon<br>Portraits</h1>
+		<a href="toons.html" class="button">View Gallery</a>
+	</section>
+	<!--Drawmɔ nibii naagbee-->
+	<!--Akɛ baayoo bo-->
+	<section id="Logos" class="js-scroll-step">
+		<h1>Logos</h1>
+		<a href="logos.html" class="button">View Gallery</a>
+	</section>
+	<!--Akɛ baayoo bo naagbee-->
+	<!--Fɛŋfɛɔ-->
+	<section id="Branding" class="js-scroll-step">
+		<h1>Branding</h1>
+		<a href="branding.html" class="button">View Gallery</a>
+	</section>
+	<!--Fɛŋfɛɔ naagbe-->
+	<!--Feemɔ ni acodi-->
+	<section id="UIUX" class="js-scroll-step">
+		<h1>UI/UX</h1>
+		<a href="uiux.html" class="button">View Gallery</a>
+	</section>
+	<!--Feemɔ ni acodi naagbe-->
+	<!--Heni apostiɔ-->
+	<section id="Social" class="js-scroll-step">
+		<h1>Social Media<br>Posts</h1>
+		<a href="social.html" class="button">View Gallery</a>
+	</section>
+	<!--Heni apostiɔ naagbee-->
+	<!--Nibii ehee-->
+	<section id="Products" class="js-scroll-step">
+		<h1>Product<br>Posters</h1>
+		<a href="products.html" class="button">View Gallery</a>
+	</section>
+	<!--Nibii ehee naagbee-->
+
+	<section id="Photo" class="js-scroll-step">
+		<h1>Photo<br>Manipulation</h1>
+		<a href="photo.html" class="button">View Gallery</a>
+	</section>
+
+	<section id="Cover" class="js-scroll-step">
+		<h1>Album Covers</h1>
+		<a href="cover.html" class="button">View Gallery</a>
+	</section>
+
+	<!--Yaa wɛi-->
+	<button id="back-to-top-btn">Back to top</button>
+	<!--Yaa wɛi naagbee-->
+
+	<script>
+
+		//Akɛ naa heni ayɔɔ
+		function setActiveLink() {
+			var scrollPosition = window.scrollY;
+
+			var links = document.querySelectorAll('.Quick-navigation-item');
+			links.forEach(function (link) {
+				var sectionId = link.getAttribute('href');
+				var section = document.querySelector(sectionId);
+				if (section.offsetTop <= scrollPosition && section.offsetTop + section.offsetHeight > scrollPosition) {
+					link.classList.add('active');
+				} else {
+					link.classList.remove('active');
+				}
+			});
+		}
+		window.addEventListener('scroll', setActiveLink);
+		//Akɛ naa heni ayɔɔ
+
+		//Ni ŋmaa
+		const typingText = document.getElementById("typing-text");
+
+		function typeEffect() {
+			const text = "I'm Joel Anang";
+			const speed = 80;
+			let i = 0;
+
+			function type() {
+				if (i < text.length) {
+					typingText.innerHTML += text.charAt(i);
+					i++;
+					setTimeout(type, speed);
+				} else {
+					setTimeout(() => {
+						typingText.classList.add("fadeOut");
+						setTimeout(() => {
+							typingText.innerHTML = "";
+							typingText.classList.remove("fadeOut");
+							i = 0;
+							type();
+						}, 2000);
+					}, 1000);
+				}
+			}
+
+			type();
+		}
+		typeEffect();
+		//Ni ŋmaa naagbee
+
+		//Eeyaa yɔɔ
+		const navLinks = document.querySelectorAll(".Quick-navigation-item");
+
+
+		navLinks.forEach((link) => {
+			link.addEventListener("click", (event) => {
+				event.preventDefault();
+				const sectionID = link.getAttribute("href");
+				const section = document.querySelector(sectionID);
+				section.scrollIntoView({ behavior: "smooth" });
+			});
+		});
+		//Eeyaa yɔɔ naagbee
+
+
+		//yaa wɛi
+		window.onscroll = function () { scrollFunction() };
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				document.getElementById("back-to-top-btn").style.display = "block";
+			} else {
+				document.getElementById("back-to-top-btn").style.display = "none";
+			}
+		}
+		document.getElementById("back-to-top-btn").addEventListener("click", function () {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		});
+		//yaa wɛi naagbee
+	</script>
+
+</body>
+
+</html>
