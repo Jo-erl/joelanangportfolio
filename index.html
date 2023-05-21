@@ -6,7 +6,9 @@
 <head>
   <title>Joel Anang</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no shrink-to-fit=no">
+
 
   <meta name="description" content="Joel Anang's Graphic Design Portfolio">
   <meta name="keywords" content="html, css, javascript, jquery">
@@ -27,6 +29,7 @@
     body {
       overflow-x: hidden;
       font-family: "Poppins", sans-serif;
+      touch-action: manipulation;
 
     }
   </style>
@@ -106,7 +109,11 @@
           </div>
         </div>
 
-
+        <style>
+          body {
+            overflow-x: hidden;
+          }
+        </style>
         <a href="#portfolio-section" class="mouse-wrap smoothscroll">
           <span class="mouse">
             <span class="scroll"></span>
@@ -119,6 +126,11 @@
 
       <!--Portfolio -->
       <div class="unslate_co--section" id="portfolio-section">
+        <style>
+          body {
+            overflow-x: hidden;
+          }
+        </style>
         <div class="container">
           <div class="relative">
             <div class="loader-portfolio-wrap">
@@ -588,6 +600,8 @@
         cursor: pointer;
         padding: 15px;
         border-radius: 15px;
+        overflow-x: hidden !important;
+
       }
 
       #myBtn:hover {
