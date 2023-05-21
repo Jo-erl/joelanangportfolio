@@ -1370,6 +1370,7 @@ a:hover {
     -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+      overflow-x: hidden;
   }
   .filter-wrap .filter.active {
     opacity: 1;
