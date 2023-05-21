@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
+
+
 /********************************************************************************************/
 body {
   font-family: "Poppins", sans-serif;
@@ -8,7 +10,7 @@ body {
   line-height: 30px;
   font-weight: 300;
   position: relative;
-  overflow-x: hidden !important;
+  overflow-x: hidden;
 }
 body:before {
   content: "";
@@ -24,10 +26,10 @@ body:before {
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
   z-index: 8;
-  overflow-x: hidden !important;
+  overflow-x: hidden;
 }
 body.offcanvas {
-  overflow-x: hidden !important;
+  overflow-x: hidden;
 }
 body.offcanvas:before {
   visibility: visible;
@@ -37,7 +39,7 @@ body.offcanvas:before {
 body,
 .unslate_co--site-inner {
   background: #000;
-  overflow-x: hidden !important;
+  overflow-x: hidden;
 }
 
 ::-moz-selection {
@@ -69,7 +71,7 @@ a:hover {
 @media (max-width: 991.98px) {
   .unslate_co--site-inner {
     margin-bottom: auto !important;
-    overflow-x: hidden !important;
+    overflow-x: hidden;
   }
 }
 
@@ -88,7 +90,6 @@ a:hover {
   .unslate_co--footer {
     height: auto !important;
     position: relative !important;
-    overflow-x: hidden !important;
   }
 }
 
@@ -843,7 +844,7 @@ a:hover {
   height: 100vh;
   background: #fff;
   width: 280px;
-  overflow-x: hidden !important;
+  overflow: auto;
   padding-top: 30px;
   padding-bottom: 70px;
   width: 280px;
@@ -1074,7 +1075,6 @@ a:hover {
 @media (max-width: 991.98px) {
   .cover-v1 .heading {
     font-size: 3rem;
-    overflow-x: hidden !important;
   }
 }
 .cover-v1 .blog-heading {
@@ -1085,7 +1085,6 @@ a:hover {
 @media (max-width: 991.98px) {
   .cover-v1 .blog-heading {
     font-size: 2rem;
-    overflow-x: hidden !important;
   }
 }
 .cover-v1 .post-meta {
@@ -1098,7 +1097,6 @@ a:hover {
 @media (max-width: 991.98px) {
   .cover-v1 .subheading {
     font-size: 24px;
-    overflow-x: hidden !important;
   }
 }
 
@@ -1241,7 +1239,7 @@ a:hover {
 }
 
 .portfolio-item {
-  overflow-x: hidden !important;
+  overflow: hidden;
 }
 .portfolio-item img {
   -webkit-transition: 0.3s all ease;
@@ -1261,7 +1259,7 @@ a:hover {
 .portfolio-item,
 .blog-item {
   display: block;
-  overflow-x: hidden !important;
+  overflow: hidden;
   position: relative;
 }
 .portfolio-item .overlay,
@@ -1372,7 +1370,6 @@ a:hover {
     -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    overflow-x: hidden !important;
   }
   .filter-wrap .filter.active {
     opacity: 1;
@@ -1420,13 +1417,11 @@ a:hover {
 @media (max-width: 991.98px) {
   .unslate_co--section {
     padding: 4rem 0;
-    overflow-x: hidden !important;
   }
 }
 @media (max-width: 767.98px) {
   .unslate_co--section {
     padding: 2rem 0;
-    overflow-x: hidden !important;
   }
 }
 .unslate_co--section a:hover {
@@ -1475,7 +1470,6 @@ figure.dotted-bg:before {
 @media (max-width: 991.98px) {
   figure.dotted-bg:before {
     right: 0px;
-    overflow-x: hidden !important;
   }
 }
 
@@ -1487,7 +1481,6 @@ figure.dotted-bg:before {
   .gutter-v1 {
     margin-left: -15px !important;
     margin-right: -15px !important;
-    overflow-x: hidden !important;
   }
 }
 .gutter-v1 > .col,
@@ -1511,7 +1504,6 @@ figure.dotted-bg:before {
   .gutter-v2 {
     margin-left: -15px !important;
     margin-right: -15px !important;
-    overflow-x: hidden !important;
   }
 }
 .gutter-v2 > .col,
@@ -1525,7 +1517,6 @@ figure.dotted-bg:before {
   .gutter-v2 > [class*="col-"] {
     padding-right: 15px !important;
     padding-left: 15px !important;
-    overflow-x: hidden !important;
   }
 }
 
@@ -1537,7 +1528,6 @@ figure.dotted-bg:before {
   .gutter-v3 {
     margin-left: -15px !important;
     margin-right: -15px !important;
-    overflow-x: hidden !important;
   }
 }
 .gutter-v3 > .col,
@@ -1550,7 +1540,6 @@ figure.dotted-bg:before {
   .gutter-v3 > [class*="col-"] {
     padding-right: 15px !important;
     padding-left: 15px !important;
-    overflow-x: hidden !important;
   }
 }
 
@@ -1573,7 +1562,6 @@ figure.dotted-bg:before {
   .gutter-isotope-item {
     margin-left: -15px !important;
     margin-right: -15px !important;
-    overflow-x: hidden !important;
   }
 }
 .gutter-isotope-item > .col,
@@ -1586,7 +1574,6 @@ figure.dotted-bg:before {
   .gutter-isotope-item > [class*="col-"] {
     padding-right: 15px !important;
     padding-left: 15px !important;
-    overflow-x: hidden !important;
   }
 }
 
@@ -1600,7 +1587,6 @@ figure.dotted-bg:before {
 @media (max-width: 767.98px) {
   .feature-v1 {
     text-align: center;
-    overflow-x: hidden !important;
   }
 }
 .feature-v1 h3 {
@@ -1652,7 +1638,6 @@ figure.dotted-bg:before {
     font-size: 16px;
     line-height: 32px;
     padding: 30px 30px 50px 30px;
-    overflow-x: hidden !important;
   }
 }
 .testimonial-v1 .testimonial-inner-bg .quote {
@@ -1681,14 +1666,13 @@ figure.dotted-bg:before {
 
 .testimonial-slider .owl-stage,
 .single-slider .owl-stage {
-  overflow-x: hidden !important;
+  overflow: hidden;
 }
 
 @media (max-width: 991.98px) {
   .testimonial-slider .owl-nav,
   .single-slider .owl-nav {
     display: none;
-    overflow-x: hidden !important;
   }
 }
 
@@ -1884,7 +1868,6 @@ figure.dotted-bg:before {
   .contact-info-v1 {
     text-align: center;
     overflow-x: hidden !important;
-    overflow-x: hidden !important;
   }
 }
 
@@ -1913,7 +1896,6 @@ figure.dotted-bg:before {
 @media (max-width: 991.98px) {
   .portfolio-single-inner .heading-portfolio-single-h2 {
     font-size: 30px;
-    overflow-x: hidden !important;
   }
 }
 
@@ -2049,7 +2031,6 @@ figure.dotted-bg:before {
 @media (max-width: 991.98px) {
   .unslate_co--footer .footer-site-social li {
     display: block;
-    overflow-x: hidden !important;
   }
 }
 .unslate_co--footer .footer-site-social li a {
@@ -2263,7 +2244,6 @@ span.error {
 @media (max-width: 767.98px) {
   .lines-wrap {
     display: none;
-    overflow-x: hidden !important;
   }
 }
 .lines-wrap .lines-inner {
