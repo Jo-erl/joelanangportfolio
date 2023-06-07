@@ -1,5 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-
+@import url("https://fntos.googleapis.com/css?family=Arimo:400|Raleway:300,400,700&display=swap");
+body {
+  font-family: "poppins", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+  position: relative;
+}
 
 
 /********************************************************************************************/
