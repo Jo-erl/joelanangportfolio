@@ -10,8 +10,7 @@ body {
 
 @font-face {
   font-family: "MTNBrighterSans-Regular";
-  src: url("ttf/MTNBrighterSans-Medium.ttf") format("truetype"),
-
+  src: url("ttf/MTNBrighterSans-Regular.ttf") format("truetype");
 }
 
 * {
