@@ -1,4 +1,4 @@
-@import url("https://fntos.googleapis.com/css?family=Arimo:400|Raleway:300,400,700&display=swap");
+/*@import url("https://fntos.googleapis.com/css?family=Arimo:400|Raleway:300,400,700&display=swap");
 body {
   font-family: "poppins", sans-serif;
   color: #fff;
@@ -6,6 +6,16 @@ body {
   line-height: 30px;
   font-weight: 300;
   position: relative;
+}*/
+
+@font-face {
+  font-family: "MTNBrighterSans-Regular";
+  src: url("ttf/MTNBrighterSans-Medium.ttf") format("truetype"),
+
+}
+
+* {
+  font-family: "MTNBrighterSans-Regular";
 }
 
 body:before {
