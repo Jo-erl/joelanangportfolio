@@ -1,0 +1,95 @@
+.divider {
+  width: 60%;
+  margin: 0 auto;
+  height: 1px;
+  background-color: rgb(46, 46, 46);
+  border: none;
+  margin-top: 30px;
+}
+
+.photo {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between; /* This will create space between the photos */
+}
+
+.photo-col {
+  flex-basis: 48%; /* Adjust this value to leave space between the photos */
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.photo-col img {
+  width: 100%;
+  display: block;
+}
+
+/**********************************/
+
+.uiux {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between; /* This will create space between the photos */
+}
+
+.uiux-col {
+  width: 500px;
+  height: 300px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  display: flex; /* Added display flex to center the image */
+  align-items: center; /* Center the image vertically */
+  justify-content: center; /* Center the image horizontally */
+}
+
+.uiux-col img,
+.uiux-col video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/**********************************/
+
+.webdev {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.webdev-col {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+
+.webdev-col img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  /* Change the layout to vertical on screens smaller than 768px */
+  .webdev-col {
+    flex-basis: 100%;
+  }
+}

@@ -17,7 +17,8 @@
   <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
   <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="assets/css/gallery.css">
+
   <link rel="icon" href="images/favicon.png" type="image/x-icon">
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
@@ -26,7 +27,6 @@
       overflow-x: hidden;
       font-family: "Poppins", sans-serif;
       touch-action: manipulation;
-
     }
   </style>
 </head>
@@ -47,11 +47,11 @@
 
   <div class="unslate_co--site-wrap">
     <div class="unslate_co--site-inner">
-      <div class="lines-wrap">
+      <!--<div class="lines-wrap">
         <div class="lines-inner">
           <div class="lines"></div>
         </div>
-      </div>
+      </div>-->
 
       <nav class="unslate_co--site-nav site-nav-target">
         <div class="container">
@@ -97,7 +97,6 @@
           </div>
         </div>
       </div>
-
       <a href="#portfolio-section" class="mouse-wrap smoothscroll">
         <span class="mouse">
           <span class="scroll"></span>
@@ -105,125 +104,114 @@
         <span class="mouse-label">Scroll</span>
       </a>
 
-      <div class="unslate_co--section" id="portfolio-section">
-        <div class="container">
-          <div class="relative">
-            <div class="loader-portfolio-wrap">
-              <div class="loader-portfolio"></div>
-            </div>
-          </div>
-          <div id="portfolio-single-holder"></div>
-          <div class="portfolio-wrapper">
-            <div class="d-flex align-items-center mb-4 gsap-reveal gsap-reveal-filter">
-            </div>
 
-            <div id="posts" class="row gutter-isotope-item">
-              <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <h3>MIRAGE</h3>
-                <a class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="1">
-                  <div class="overlay">
-                    <span class="wrap-icon   "></span>
-                    <div class="portfolio-item-content">
-                    </div>
-                  </div>
 
-                  <img src="photo/1.webp" class="lazyload  img-fluid" alt="Images" />
-                  <img src="photo/2.webp" class="lazyload  img-fluid" alt="Images" />
-                  <img src="images/space3.webp" class="lazyload  img-fluid" alt="Images" />
-                </a>
-              </div>
+     
+<section class="photo">    
+  <h1>Mirage</h1>
+  <div class="row">
+      <div class="photo-col">
+        <img src="assets/img/photo/1.webp" >                  
+      </div>
+      <div class="photo-col">
+        <img src="assets/img/photo/2.webp" >
+                 
+      </div>   
+  </div>
+</section>
+<hr class="divider">
+<!--------------------------------->
 
-              <div class="item branding packaging illustration col-sm-6 col-md-6 col-lg-4 isotope-mb-2 ">
-                <h3>QUADRUPLETS</h3>
-                <a class="portfolio-item ajax-load-page item-portrait isotope-item gsap-reveal-img" data-id="3">
-                  <div class="overlay">
-                    <span class="wrap-icon   "></span>
-                    <div class="portfolio-item-content">
-                    </div>
-                  </div>
-                  <img src="photo/3.webp" class="lazyload  img-fluid" alt="Images" />
-                  <img src="photo/4.webp" class="lazyload  img-fluid" alt="Images" />
-                  <img src="images/space3.webp" class="lazyload  img-fluid" alt="Images" />
-                </a>
-              </div>
+<section class="photo">    
+  <h1>Quadruplets</h1>
+  <div class="row">
+      <div class="photo-col">
+        <img src="assets/img/photo/3.webp" >                  
+      </div>
+      <div class="photo-col">
+        <img src="assets/img/photo/4.webp" >                 
+      </div>          
+  </div>
+</section>
+<hr class="divider">
+<!--------------------------------->
 
-              <div class="item branding packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <h3>FLAMING ASTRONAUTS</h3>
-                <a class="portfolio-item isotope-item gsap-reveal-img ajax-load-page" data-id="4">
-                  <div class="overlay">
-                    <span class="wrap-icon   "></span>
-                    <div class="portfolio-item-content">
+<section class="photo">   
+  <h1>Flaming Astrounats</h1>
+  <div class="row">
+      <div class="photo-col">
+        <img src="assets/img/photo/5.webp" >
+                  
+      </div>
+      <div class="photo-col">
+        <img src="assets/img/photo/6.webp" >
+                 
+      </div>          
+  </div>
+</section>
+<hr class="divider">
+<!--------------------------------->
 
-                    </div>
-                  </div>
+<section class="photo">  
+  <h1>Blemish Removal</h1>
+  <div class="row">
+      <div class="photo-col">
+        <img src="assets/img/photo/7.webp" >
+                  
+      </div>
+      <div class="photo-col">
+        <img src="assets/img/photo/8.webp" >
+                 
+      </div>         
+  </div>
+</section>
+<hr class="divider">
+<!--------------------------------->
 
-                  <img src="photo/5.webp" class="lazyload  img-fluid" alt="Images" />
-                  <img src="photo/6.webp" class="lazyload  img-fluid" alt="Images" />
-                  <img src="images/space3.webp" class="lazyload  img-fluid" alt="Images" />
-                </a>
-              </div>
-
-              <div class="item web packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <h3>BLEMISH REMOVAL + RETOUCHING</h3>
-                <a class="portfolio-item isotope-item gsap-reveal-img ajax-load-page" data-id="4">
-                  <div class="overlay">
-                    <span class="wrap-icon   "></span>
-                    <div class="portfolio-item-content">
-                    </div>
-                  </div>
-                  <img src="photo/7.webp" class="lazyload  img-fluid" alt="Images" />
-                  <img src="photo/8.webp" class="lazyload  img-fluid" alt="Images" />
-                  <img src="images/space3.webp" class="lazyload  img-fluid" alt="Images" />
-                </a>
-                </a>
-              </div>
-
-              <div class="item web packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <h3>NIGHT SKY</h3>
-                </p>
-                <a class="portfolio-item isotope-item gsap-reveal-img ajax-load-page" data-id="4">
-                  <div class="overlay">
-                    <span class="wrap-icon   "></span>
-                    <div class="portfolio-item-content">
-                    </div>
-                  </div>
-                  <img src="photo/9.webp" class="lazyload  img-fluid" alt="Images" />
-                  <img src="photo/10.webp" class="lazyload  img-fluid" alt="Images" />
-                  <img src="images/space3.webp" class="lazyload  img-fluid" alt="Images" />
-                </a>
-              </div>
-
-              <div class="item web packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <h3>THE CORRIDOR</h3>
-                </p>
-                <a class="portfolio-item isotope-item gsap-reveal-img ajax-load-page" data-id="4">
-                  <div class="overlay">
-                    <span class="wrap-icon   "></span>
-                    <div class="portfolio-item-content">
-
-                    </div>
-                  </div>
-                  <img src="photo/11.webp" class="lazyload  img-fluid" alt="Images" />
-                  <img src="photo/12.webp" class="lazyload  img-fluid" alt="Images" />
-                  <img src="images/space3.webp" class="lazyload  img-fluid" alt="Images" />
-                </a>
-              </div>
-
-              <div class="item web packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <h3>THE PRIEST</h3>
-                </p>
-                <a class="portfolio-item isotope-item gsap-reveal-img ajax-load-page" data-id="4">
-                  <div class="overlay">
-                    <span class="wrap-icon   "></span>
-                    <div class="portfolio-item-content">
-
-                    </div>
-                  </div>
-                  <img src="photo/13.webp" class="lazyload  img-fluid" alt="Images" />
-                  <img src="photo/14.webp" class="lazyload  img-fluid" alt="Images" />
-                  <img src="images/space3.webp" class="lazyload  img-fluid" alt="Images" />
-                </a>
-              </div>
+<section class="photo">    
+  <h1>Night Sky</h1>
+  <div class="row">
+      <div class="photo-col">
+        <img src="assets/img/photo/9.webp" >
+                  
+      </div>
+      <div class="photo-col">
+        <img src="assets/img/photo/10.webp" >
+                 
+      </div>     
+  </div>
+</section>
+<hr class="divider">
+<!--------------------------------->
+<section class="photo">
+  <h1>The Corrridor</h1>
+  <div class="row">
+      <div class="photo-col">
+        <img src="assets/img/photo/11.webp" >
+                  
+      </div>
+      <div class="photo-col">
+        <img src="assets/img/photo/12.webp" >
+                 
+      </div>
+          
+  </div>
+</section>
+<hr class="divider">
+<!--------------------------------->
+<section class="photo">    
+  <h1>The Priest</h1>
+  <div class="row">
+      <div class="photo-col">
+        <img src="assets/img/photo/13.webp" >
+                  
+      </div>
+      <div class="photo-col">
+        <img src="assets/img/photo/14.webp" >
+                 
+      </div>          
+  </div>
+</section>
 
               <style>
                 #myBtn {
