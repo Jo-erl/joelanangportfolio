@@ -4,6 +4,9 @@
     font-family: "Poppins", sans-serif;
   }
 
+  :root {
+    --num-thumbnails: 3; /* Set the default number of thumbnails */
+  }
 
 body {
     background-color: black;
@@ -11,9 +14,10 @@ body {
 
   /* Replace these styles with your desired appearance */
   .slider-container {
-    width: 500px;
+    width: 530px;
     margin: 0 auto;
     position: relative;
+
   }
 
   .slider {
@@ -51,7 +55,7 @@ body {
   .thumbnails-wrapper {
     flex: 1;
     overflow: hidden;
-    margin-left: 20px; /* Adjust this value based on the space you want between the left arrow and the thumbnail container */
+    margin-left: 15px; /* Adjust this value based on the space you want between the left arrow and the thumbnail container */
     margin-right: 0px
 }
 
@@ -119,19 +123,21 @@ body {
   
   @media (max-width: 700px) {
     .slider-container {
-        margin-top: 20%;
-        width: 350px;
+        margin-top: 0;
+        width: 353px;
+        margin-top: 50%;
+
       }
       
       .thumbnails-container 
       {
         width: calc(100% - 100px); /* Adjust the width to show only three thumbnails at a time with margins */
+      }
 
         .thumbnail {
             width: calc(100% / 3);
             height: 50px;
             cursor: pointer;
-            margin-right: 10px; /* Add some space between each thumbnail */
           }
     }
-  }
+  
