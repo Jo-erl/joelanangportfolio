@@ -124,8 +124,8 @@ body {
   @media (max-width: 700px) {
     .slider-container {
         margin-top: 0;
-        width: 353px;
-        margin-top: 50%;
+        width: 400px;
+        margin-top: 0;
 
       }
       
