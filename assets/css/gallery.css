@@ -124,8 +124,8 @@ body {
   @media (max-width: 700px) {
     .slider-container {
         margin-top: 0;
-        width: 400px;
-        margin-top: 0;
+        width: 353px;
+        margin-top: 50%;
 
       }
       
@@ -141,3 +141,160 @@ body {
           }
     }
   
+
+    /***************************************************************************************/
+        .gallery2 {
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      padding-top: 60px;
+    }
+    
+    .gallery2-col {
+      flex-basis: 30%;
+      border-radius: 10px;
+      margin-bottom: 5%;
+      text-align: left;
+      margin: 1%; /* Set margin to create equal spaces between images */
+    }
+    
+    .gallery2-col img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .divider {
+      width: 60%;
+      margin: 0 auto;
+      height: 1px;
+      background-color: rgb(44, 44, 44);
+      border: none;
+      margin-top: 30px;
+    }
+
+    /* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .gallery2-col {
+    flex-basis: 48%; /* Adjust the width of columns for medium-sized screens */
+    margin: 1%; /* Keep the margin between images */
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery2 {
+    width: 90%; /* Adjust the width of the container for smaller screens */
+  }
+
+  .gallery2-col {
+    flex-basis: 100%; /* Make the columns full width on smaller screens */
+    margin: 2%; /* Increase the margin for smaller spaces between images */
+  }
+}
+
+/***************************************************************************************/
+/* Common styles for all screen sizes */
+.webdev {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.webdev-col {
+  flex-basis: 30%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  margin: 1%; /* Set margin to create equal spaces between images */
+}
+
+.webdev-col img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.divider {
+  width: 60%;
+  margin: 0 auto;
+  height: 1px;
+  background-color: rgb(44, 44, 44);
+  border: none;
+  margin-top: 30px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .webdev-col {
+    flex-basis: 48%; /* Adjust the width of columns for medium-sized screens */
+    margin: 1%; /* Keep the margin between images */
+  }
+}
+
+@media (max-width: 480px) {
+  .webdev {
+    width: 90%; /* Adjust the width of the container for smaller screens */
+  }
+
+  .webdev-col {
+    flex-basis: 100%; /* Make the columns full width on smaller screens */
+    margin: 2%; /* Increase the margin for smaller spaces between images */
+  }
+}
+
+/******************************************************************/
+.uiux {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.row {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  flex-wrap: wrap; /* Ensure the items wrap properly on smaller screens */
+}
+
+.uiux-col {
+  flex-basis: 36%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  margin: 1%; /* Set margin to create equal spaces between images and videos */
+}
+
+.uiux-col img,
+.uiux-col video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.divider {
+  width: 60%;
+  margin: 0 auto;
+  height: 1px;
+  background-color: rgb(44, 44, 44);
+  border: none;
+  margin-top: 30px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .uiux-col {
+    flex-basis: 48%; /* Adjust the width of columns for medium-sized screens */
+    margin: 1%; /* Keep the margin between images and videos */
+  }
+}
+
+@media (max-width: 480px) {
+  .uiux {
+    width: 90%; /* Adjust the width of the container for smaller screens */
+  }
+
+  .uiux-col {
+    flex-basis: 100%; /* Make the columns full width on smaller screens */
+    margin: 2%; /* Increase the margin for smaller spaces between images and videos */
+  }
+}
+
