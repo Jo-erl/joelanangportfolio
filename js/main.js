@@ -1,12 +1,15 @@
+// AOS Initialization
 AOS.init({
-  duration: 800,
-  easing: "ease",
-  once: true,
-  offset: -100,
+  duration: 800, // Animation duration in milliseconds
+  easing: "ease", // Easing function for the animation
+  once: true, // Only animate elements once
+  offset: -100, // Offset in pixels to trigger the animation
 });
 
+// jQuery Function
 jQuery(function ($) {
-  "use strict";
+  // Ensure the following functions are called on page load
+  ("use strict");
   loader();
   siteMenuClone();
   mobileToggleClick();
@@ -22,7 +25,9 @@ jQuery(function ($) {
   animateReveal();
 });
 
+// Site Isotope Function
 var siteIstotope = function () {
+  // Initialize Isotope for filtering content
   var $container = $("#posts").isotope({
     itemSelector: ".item",
     isFitWidth: true,
@@ -36,6 +41,7 @@ var siteIstotope = function () {
 
   $container.isotope({ filter: "*" });
 
+  // Handle filter clicks
   $("#filters").on("click", "a", function (e) {
     e.preventDefault();
     var filterValue = $(this).attr("data-filter");
@@ -44,12 +50,14 @@ var siteIstotope = function () {
     $(this).addClass("active");
   });
 
+  // Handle imagesLoaded and ScrollMagic animation
   $container
     .imagesLoaded()
     .progress(function () {
       $container.isotope("layout");
     })
     .done(function () {
+      // Add reveal animation to images
       $(".gsap-reveal-img").each(function () {
         var html = $(this).html();
         $(this).html(
@@ -58,7 +66,7 @@ var siteIstotope = function () {
             "</div></div>"
         );
       });
-
+      // Create a ScrollMagic controller
       var controller = new ScrollMagic.Controller();
 
       var revealImg = $(".gsap-reveal-img");
@@ -705,3 +713,36 @@ var animateReveal = function () {
     });
   }
 };
+
+// Add a function to handle the "back to top" button
+var backToTopButton = document.getElementById("myBtn");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    backToTopButton.style.display = "block";
+  } else {
+    backToTopButton.style.display = "none";
+  }
+}
+
+// Handle "back to top" button click
+backToTopButton.addEventListener("click", function () {
+  // For modern browsers (including Chrome, Firefox, Safari, and Edge)
+  if ("scrollBehavior" in document.documentElement.style) {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  } else {
+    // For older browsers that do not support smooth scrolling
+    const currentPosition =
+      document.documentElement.scrollTop || document.body.scrollTop;
+    if (currentPosition > 0) {
+      window.requestAnimationFrame(topFunction);
+    }
+  }
+});
