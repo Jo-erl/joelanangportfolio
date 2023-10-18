@@ -4,190 +4,175 @@
   font-family: "poppins", sans-serif;
 }
 
-  :root {
-    --num-thumbnails: 3; /* Set the default number of thumbnails */
-  }
+:root {
+  --num-thumbnails: 3;
+}
 
-body {
-    background-color: black;
-  }
+.slider-container {
+  width: 550px;
+  margin: 0 auto;
+  position: relative;
+}
 
+.slider {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
 
+.slider img {
+  width: 100%;
+  height: auto;
+  display: none;
+  border-radius: 20px;
+}
+
+.thumbnails-container {
+  position: relative;
+  overflow: hidden;
+  width: 250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumbnail-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 350px;
+}
+
+.thumbnails-wrapper {
+  flex: 1;
+  overflow: hidden;
+  margin-left: 15px;
+  margin-right: 0px;
+}
+
+/* Update the styles for the arrow buttons */
+.nav-arrows {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.next-arrow {
+  margin-left: 10px; /* Increase the space between next arrow and thumbnails */
+}
+
+/* Center the thumbnails horizontally within the wrapper */
+.thumbnails {
+  display: flex;
+  margin-top: 10px;
+  transition: transform 0.3s ease;
+}
+
+.thumbnail {
+  width: calc(100% / var(--num-thumbnails));
+  height: 50px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Update the width of the thumbnail container */
+.thumbnails-wrapper {
+  flex: 1;
+  overflow: hidden;
+  width: 200px;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Add styles for the thumbnail number */
+.image-counter {
+  display: block;
+  text-align: center;
+  color: #1f1f1f;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.arrow img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
   .slider-container {
-    width: 530px;
-    margin: 0 auto;
-    position: relative;
-
-  }
-
-  .slider {
-    width: 100%;
-    display: flex;
-    overflow: hidden;
-  }
-
-  .slider img {
-    width: 100%;
-    height: auto;
-    display: none;
-    border-radius: 20px;
+    margin-top: 0;
+    width: 353px;
+    margin-top: 50%;
   }
 
   .thumbnails-container {
-    position: relative;
-    overflow: hidden;
-    width: 250px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-  }
-
-  /* Add a wrapper for the thumbnails and arrows */
-  .thumbnail-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    width: 350px;
-  }
-
-  .thumbnails-wrapper {
-    flex: 1;
-    overflow: hidden;
-    margin-left: 15px; /* Adjust this value based on the space you want between the left arrow and the thumbnail container */
-    margin-right: 0px
-}
-
-
-  /* Update the styles for the arrow buttons */
-  .nav-arrows {
-    display: flex;
-    align-items: center;
-    font-size: 24px;
-    cursor: pointer;
-  }
-
-  /* Add some space between the arrow buttons and the thumbnails */
-  .arrow {
-    padding: 0 8px; /* Add some padding around the icons */
-    color: rgb(255, 255, 255);
-  }
-
-  .next-arrow {
-    margin-left: 10px; /* Increase the space between next arrow and thumbnails */
-  }
-
-  /* Center the thumbnails horizontally within the wrapper */
-  .thumbnails {
-    display: flex;
-    margin-top: 10px;
-    transition: transform 0.3s ease;
+    width: calc(
+      100% - 100px
+    ); /* Adjust the width to show only three thumbnails at a time with margins */
   }
 
   .thumbnail {
-    width: calc(100% / var(--num-thumbnails)); /* Use CSS custom property here */
+    width: calc(100% / 3);
     height: 50px;
     cursor: pointer;
-    margin-right: 10px;
   }
+}
 
-  /* Update the width of the thumbnail container */
-  .thumbnails-wrapper {
-    flex: 1;
-    overflow: hidden; 
-    width: 200px;
-  }
+/***************************************************************************************/
+.gallery2 {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 60px;
+}
 
-  .thumbnail img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-  }
+.gallery2-col {
+  flex-basis: 30%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  margin: 1%; /* Set margin to create equal spaces between images */
+}
 
-  /* Add styles for the thumbnail number */
-.image-counter {
-    display: block;
-    text-align: center;
-    color: #ffffff;
-    font-size: 12px;
-    margin-top: 8px;
-  }
+.gallery2-col img {
+  width: 100%;
+  border-radius: 10px;
+}
 
-  .arrow img {
-    width: 25px; 
-    height: 25px;
-    cursor: pointer; 
-  }
-  
-  @media (max-width: 700px) {
-    .slider-container {
-        margin-top: 0;
-        width: 353px;
-        margin-top: 50%;
+.divider {
+  width: 60%;
+  margin: 0 auto;
+  height: 1px;
+  background-color: rgb(44, 44, 44);
+  border: none;
+  margin-top: 30px;
+}
 
-      }
-      
-      .thumbnails-container 
-      {
-        width: calc(100% - 100px); /* Adjust the width to show only three thumbnails at a time with margins */
-      }
-
-        .thumbnail {
-            width: calc(100% / 3);
-            height: 50px;
-            cursor: pointer;
-          }
-    }
-  
-
-    /***************************************************************************************/
-        .gallery2 {
-      width: 80%;
-      margin: auto;
-      text-align: center;
-      padding-top: 60px;
-    }
-    
-    .gallery2-col {
-      flex-basis: 30%;
-      border-radius: 10px;
-      margin-bottom: 5%;
-      text-align: left;
-      margin: 1%; /* Set margin to create equal spaces between images */
-    }
-    
-    .gallery2-col img {
-      width: 100%;
-      border-radius: 10px;
-    }
-
-    .divider {
-      width: 60%;
-      margin: 0 auto;
-      height: 1px;
-      background-color: rgb(44, 44, 44);
-      border: none;
-      margin-top: 30px;
-    }
-
-    /* Media Queries for responsiveness */
+/* Media Queries for responsiveness */
 @media (max-width: 768px) {
   .gallery2-col {
-    flex-basis: 48%; /* Adjust the width of columns for medium-sized screens */
-    margin: 1%; /* Keep the margin between images */
+    flex-basis: 48%;
+    margin: 1%;
   }
 }
 
 @media (max-width: 480px) {
   .gallery2 {
-    width: 90%; /* Adjust the width of the container for smaller screens */
+    width: 90%;
   }
 
   .gallery2-col {
-    flex-basis: 100%; /* Make the columns full width on smaller screens */
-    margin: 2%; /* Increase the margin for smaller spaces between images */
+    flex-basis: 100%;
+    margin: 2%;
   }
 }
 
@@ -205,7 +190,7 @@ body {
   border-radius: 10px;
   margin-bottom: 5%;
   text-align: left;
-  margin: 1%; /* Set margin to create equal spaces between images */
+  margin: 1%;
 }
 
 .webdev-col img {
@@ -271,10 +256,10 @@ body {
 }
 
 .divider {
-  width: 60%;
+  width: 45%;
   margin: 0 auto;
   height: 1px;
-  background-color: rgb(44, 44, 44);
+  background-color: #cccccc;
   border: none;
   margin-top: 30px;
 }
@@ -284,6 +269,25 @@ body {
   .uiux-col {
     flex-basis: 48%; /* Adjust the width of columns for medium-sized screens */
     margin: 1%; /* Keep the margin between images and videos */
+  }
+
+  .slider-container {
+    width: 350px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .slider {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .slider img {
+    width: 100%;
+    height: auto;
+    display: none;
+    border-radius: 20px;
   }
 }
 
@@ -297,4 +301,3 @@ body {
     margin: 2%; /* Increase the margin for smaller spaces between images and videos */
   }
 }
-
