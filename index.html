@@ -1,648 +1,699 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Joel Anang</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no shrink-to-fit=no"
+    />
+    <meta name="description" content="Joel Anang's Portfolio" />
+    <meta name="keywords" content="html, css, javascript, jquery" />
+    <meta name="author" content="Joel Anang" />
+    <link rel="stylesheet" href="css/vendor/icomoon/style.css" />
+    <link rel="stylesheet" href="css/vendor/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/vendor/animate.min.css" />
+    <link rel="stylesheet" href="css/vendor/aos.css" />
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&family=Noto+Serif:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<head>
-  <title>Joel Anang</title>
-  <meta charset="utf-8">
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no shrink-to-fit=no">
-  <meta name="description" content="Joel Anang's Graphic Design Portfolio">
-  <meta name="keywords" content="html, css, javascript, jquery">
-  <meta name="author" content="Joel Anang">
-
-  <link rel="stylesheet" href="css/vendor/icomoon/style.css">
-  <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/vendor/animate.min.css">
-  <link rel="stylesheet" href="css/vendor/aos.css">
-  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
-  <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="images/favicon.png" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
-    body{
-      overflow-x: hidden;
-    }
-  </style>
-</head>
-
-<body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
-  <nav class="unslate_co--site-mobile-menu">
-    <div class="close-wrap d-flex">
-      <a href="#" class="d-flex ml-auto js-menu-toggle">
-        <span class="close-label">Close</span>
-        <div class="close-times">
-          <span class="bar1"></span>
-          <span class="bar2"></span>
-        </div>
-      </a>
-    </div>
-    <div class="site-mobile-inner"></div>
-  </nav>
-
-  <div class="unslate_co--site-wrap">
-    <div class="unslate_co--site-inner">
-      <!--<div class="lines-wrap">
-        <div class="lines-inner">
-          <div class="lines"></div>
-        </div>
-      </div>-->
-      
-      <!--Nav-->
-      <nav class="unslate_co--site-nav site-nav-target">
-        <div class="container">
-          <div class="row align-items-center justify-content-between text-left">
-            <div class="col-md-5 text-right">
-              <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
-                <li><a href="#home-section" class="nav-link">Home</a></li>
-                <li><a href="#portfolio-section" class="nav-link">Portfolio</a></li>
-                <li><a href="#services-section" class="nav-link">Services</a></li>
-              </ul>
-            </div>
-            <div class="site-logo pos-absolute">
-              <a href="index.html" class="unslate_co--site-logo">
-                <img src="images/logo2.png" width="35" height="35">Joel
-                Anang<span>.</span>
-              </a>
-            </div>
-            <div class="col-md-5 text-right text-lg-left">
-              <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
-                <li><a href="#skills-section" class="nav-link">Skills</a></li>
-                <li><a href="#testimonial-section" class="nav-link">Testimonial</a></li>
-                <li><a href="#contact-section" class="nav-link">Contact</a></li>
-              </ul>
-              <ul class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none">
-                <li><a href="#" class="js-menu-toggle">Menu</a></li>
-              </ul>
-            </div>
+  <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
+    <!--Nav mobile-->
+    <nav class="unslate_co--site-mobile-menu">
+      <div class="close-wrap d-flex">
+        <a href="#" class="d-flex ml-auto js-menu-toggle">
+          <span class="close-label">Close</span>
+          <div class="close-times">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
           </div>
-        </div>
-      </nav>
-      <!--Nav end-->
-
-      <!--Header x Title-->
-      <div class="cover-v1 jarallax" style="background-image: url('images/cover_bg_2.webp');" id="home-section">
-        <div class="container">
-          <div class="row align-items-center">
-
-            <div class="col-md-7 mx-auto text-center">
-              <h1 class="heading gsap-reveal-hero">Joel Anang</h1>
-              <h4 class="subheading gsap-reveal-hero">Graphics & Web Designer
-              </h4>
-            </div>
-          </div>
-        </div>
-        <!--Header x Title end-->
-
-        <!--Portfolio section-->
-        <a href="#portfolio-section" class="mouse-wrap smoothscroll">
-          <span class="mouse">
-            <span class="scroll"></span>
-          </span>
-          <span class="mouse-label">Scroll Down</span>
         </a>
       </div>
+      <div class="site-mobile-inner"></div>
+    </nav>
+    <!--Nav mobile end-->
+    <div class="unslate_co--site-wrap">
+      <div class="unslate_co--site-inner">
+        <!--Nav main-->
+        <nav class="unslate_co--site-nav site-nav-target">
+          <div class="container">
+            <div
+              class="row align-items-center justify-content-between text-left"
+            >
+              <div class="col-md-5 text-right">
+                <ul
+                  class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block"
+                >
+                  <li>
+                    <a href="#portfolio-section" class="nav-link">Portfolio</a>                    
+                  </li>                  
+                  <li>
+                    <a href="#services-section" class="nav-link">Services</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="site-logo pos-absolute">
+                <a href="index.html" class="unslate_co--site-logo">
+                  <img src="images/logo2.png" width="35" height="35" />Joel
+                  Anang<span>.</span>
+                </a>
+              </div>
+              <div class="col-md-5 text-right text-lg-left">
+                <ul
+                  class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block"
+                >
+                  <li><a href="#skills-section" class="nav-link">Skills</a></li>
 
-      <div class="unslate_co--section" id="portfolio-section">
-        <div class="container">
-          <div class="relative">
-            <div class="loader-portfolio-wrap">
-              <div class="loader-portfolio"></div>
+                  <li>
+                    <a href="#contact-section" class="nav-link">Contact</a>
+                  </li>
+                </ul>
+                <ul
+                  class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none"
+                >
+                  <li><a href="#" class="js-menu-toggle">Menu</a></li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div id="portfolio-single-holder"></div>
-          <div class="portfolio-wrapper">
-            <div class="d-flex align-items-center mb-4 gsap-reveal gsap-reveal-filter">
-              <h2 class="mr-auto heading-h2"><span class="gsap-reveal">Portfolio</span></h2>
+        </nav>
+        <!--Nav end-->
+
+        <!--Header x Title-->
+        <div
+          class="cover-v1 jarallax"
+          style="background-image: url('images/bg.gif')"
+          id="home-section"
+        >
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-7 mx-auto text-center">
+                <h1 class="heading gsap-reveal-hero">Joel Anang</h1>
+                <h4 class="subheading gsap-reveal-hero">
+                  Graphics &#38; Web Designer
+                </h4>
+              </div>
             </div>
-            <!--Portfolio categories-->
-            <div id="posts" class="row gutter-isotope-item">
-              <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <h3><a href="cartoons.html">Cartoon Portraits</a>
-                  </a></h3>
-                <p>Vibrant Cartoon Portraits that Pop!</p>
-                <a class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="1" href="cartoons.html">
-                  <div class="overlay">
-                    <span class="wrap-icon icon-link2"></span>
-                    <div class="portfolio-item-content">
-                    </div>
-                  </div>
-                  <img src="images/work_1_md.webp" class="lazyload  img-fluid" alt="Images" />
-                </a>
-              </div>
-        <!---------------------------------------------------------->
-              <div class="item branding packaging illustration col-sm-6 col-md-6 col-lg-4 isotope-mb-2 ">
-                <h3><a href="logos.html">Logos</a>
-                  </a></h3>
-                <p>Crafting Memorable Symbols of Success</p>
-                <a class="portfolio-item ajax-load-page item-portrait isotope-item gsap-reveal-img" data-id="3"
-                  href="logos.html">
-                  <div class="overlay">
-                    <span class="wrap-icon icon-link2"></span>
-                    <div class="portfolio-item-content">
-                    </div>
-                  </div>
-                  <img src="images/work_2_md.webp" class="lazyload  img-fluid" alt="Images" />
-                </a>
-              </div>
-        <!---------------------------------------------------------->
+          </div>
+          <!--Header x Title end-->
 
-              <div class="item branding packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <h3><a href="branding.html">Branding</a></h3>
-                <p>Unleashing the Power of Your Brand Identity</p>
-                <a class="portfolio-item isotope-item gsap-reveal-img ajax-load-page" data-id="4" href="branding.html">
-                  <div class="overlay">
-                    <span class="wrap-icon icon-link2"></span>
-                    <div class="portfolio-item-content"></div>
-                  </div>
-                  <img src="images/work_3_md.webp" class="lazyload img-fluid" alt="Images" />
-                </a>
+          <!--Portfolio section-->
+          <a href="#portfolio-section" class="mouse-wrap smoothscroll">
+            <span class="mouse">
+              <span class="scroll"></span>
+            </span>
+            <span class="mouse-label">Scroll Down</span>
+          </a>
+        </div>
+
+        <div class="unslate_co--section" id="portfolio-section">
+          <div class="container">
+            <div class="relative">
+              <div class="loader-portfolio-wrap">
+                <div class="loader-portfolio"></div>
               </div>
-
-        <!---------------------------------------------------------->
-
-              <div class="item web packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <h3><a href="uiux.html">UI/UX</a>
-                  </a></h3>
-                <p>Elevating Experiences Through Intuitive Design</p>
-                <a class="portfolio-item isotope-item gsap-reveal-img ajax-load-page" data-id="4" href="uiux.html">
-                  <div class="overlay">
-                    <span class="wrap-icon icon-link2"></span>
-                    <div class="portfolio-item-content">
+            </div>
+            <div id="portfolio-single-holder"></div>
+            <div class="portfolio-wrapper">
+              <div
+                class="d-flex align-items-center mb-4 gsap-reveal gsap-reveal-filter"
+              >
+                <h2 class="mr-auto heading-h2">
+                  <span class="gsap-reveal">Portfolio</span>
+                  <p class="categories-text">Categories</p>
+                </h2>
+                
+              </div>
+              <!--Portfolio categories-->
+              <div id="posts" class="row gutter-isotope-item">
+                <div
+                  class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2"
+                >
+                  <h3><a href="cartoons.html">Cartoon Portraits</a></h3>
+                  <p>Vibrant Cartoon Portraits that Pop!</p>
+                  <a
+                    class="portfolio-item ajax-load-page isotope-item gsap-reveal-img"
+                    data-id="1"
+                    href="cartoons.html"
+                  >
+                    <div class="overlay">
+                      <div class="portfolio-item-content"></div>
                     </div>
-                  </div>
-                  <img src="images/work_4_full.webp" class="lazyload  img-fluid" alt="Images" />
-                </a>
-              </div>
-        <!---------------------------------------------------------->
-
-              <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <h3><a href="webdev.html">Web Development</a>
-                  </a></h3>
-                <p>Building the Web, One Line of Code at a Time</p>
-                <a class="portfolio-item ajax-load-page item-portrait isotope-item gsap-reveal-img" data-id="2"
-                  href="webdev.html">
-                  <div class="overlay">
-                    <span class="wrap-icon icon-link2"></span>
-                    <div class="portfolio-item-content">
+                    <img
+                      src="images/work_1_md.webp"
+                      class="lazyload img-fluid"
+                      alt="Images"
+                    />
+                  </a>
+                </div>
+                <!---------------------------------------------------------->
+                <div
+                  class="item branding packaging illustration col-sm-6 col-md-6 col-lg-4 isotope-mb-2"
+                >
+                  <h3><a href="logos.html">Logos</a></h3>
+                  <p>Crafting Memorable Symbols of Success</p>
+                  <a
+                    class="portfolio-item ajax-load-page item-portrait isotope-item gsap-reveal-img"
+                    data-id="3"
+                    href="logos.html"
+                  >
+                    <div class="overlay">
+                      <div class="portfolio-item-content"></div>
                     </div>
-                  </div>
-                  <img src="images/work_9_full.webp" class="lazyload  img-fluid" alt="Images" />
-                </a>
-              </div>
-        <!---------------------------------------------------------->
+                    <img
+                      src="images/work_2_md.webp"
+                      class="lazyload img-fluid"
+                      alt="Images"
+                    />
+                  </a>
+                </div>
+                <!---------------------------------------------------------->
 
-              <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <h3><a href="posters.html">Posters</a>
-                  </a></h3>
-                <p>Stunning Posters That Sell!</p>
-                <a class="portfolio-item ajax-load-page item-portrait isotope-item gsap-reveal-img" data-id="2"
-                  href="posters.html">
-                  <div class="overlay">
-                    <span class="wrap-icon icon-link2"></span>
-                    <div class="portfolio-item-content">
+                <div
+                  class="item branding packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2"
+                >
+                  <h3><a href="branding.html">Branding</a></h3>
+                  <p>Unleashing the Power of Your Brand Identity</p>
+                  <a
+                    class="portfolio-item isotope-item gsap-reveal-img ajax-load-page"
+                    data-id="4"
+                    href="branding.html"
+                  >
+                    <div class="overlay">
+                      <div class="portfolio-item-content"></div>
                     </div>
-                  </div>
-                  <img src="images/work_6_md.webp" class="lazyload  img-fluid" alt="Images" />
-                </a>
-              </div>
-        <!---------------------------------------------------------->
+                    <img
+                      src="images/work_3_md.webp"
+                      class="lazyload img-fluid"
+                      alt="Images"
+                    />
+                  </a>
+                </div>
 
-              <div class="item web packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <h3><a href="photo.html">Photo Manipulation</a></h3>
-                <p>Transforming Reality Through Photo Manipulation</p>
-                <a class="portfolio-item isotope-item gsap-reveal-img ajax-load-page" data-id="4" href="photo.html">
-                  <div class="overlay">
-                    <span class="wrap-icon icon-link2"></span>
-                    <div class="portfolio-item-content">
-                    </div>
-                  </div>
-                  <img src="images/work_7_a_md.webp" class="lazyload  img-fluid" alt="Images" />
-                </a>
-              </div>
-        <!---------------------------------------------------------->
+                <!---------------------------------------------------------->
 
-              <div class="item web packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <h3><a href="cover.html">Album Covers</a></h3>
-                <p>Cover Art That Harmonizes Your Music's Essence</p>
-                <a class="portfolio-item isotope-item gsap-reveal-img ajax-load-page" data-id="4" href="cover.html">
-                  <div class="overlay">
-                    <span class="wrap-icon icon-link2"></span>
-                    <div class="portfolio-item-content">
+                <div
+                  class="item web packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2"
+                >
+                  <h3><a href="uiux.html">UI/UX</a></h3>
+                  <p>Elevating Experiences Through Intuitive Design</p>
+                  <a
+                    class="portfolio-item isotope-item gsap-reveal-img ajax-load-page"
+                    data-id="4"
+                    href="uiux.html"
+                  >
+                    <div class="overlay">
+                      <div class="portfolio-item-content"></div>
                     </div>
-                  </div>
-                  <img src="images/work_8_md.webp" class="lazyload  img-fluid" alt="Images" />
-                </a>
-              </div>
-              <div class="item web illustration col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                    <img
+                      src="images/work_4_full.webp"
+                      class="lazyload img-fluid"
+                      alt="Images"
+                    />
+                  </a>
+                </div>
+                <!---------------------------------------------------------->
+
+                <div
+                  class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2"
+                >
+                  <h3><a href="webdev.html">Web Development</a></h3>
+                  <p>Building the Web, One Line of Code at a Time</p>
+                  <a
+                    class="portfolio-item ajax-load-page item-portrait isotope-item gsap-reveal-img"
+                    data-id="2"
+                    href="webdev.html"
+                  >
+                    <div class="overlay">
+                      <div class="portfolio-item-content"></div>
+                    </div>
+                    <img
+                      src="images/work_9_full.webp"
+                      class="lazyload img-fluid"
+                      alt="Images"
+                    />
+                  </a>
+                </div>
+                <!---------------------------------------------------------->
+
+                <div
+                  class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2"
+                >
+                  <h3><a href="posters.html">Posters</a></h3>
+                  <p>Stunning Posters That Sell!</p>
+                  <a
+                    class="portfolio-item ajax-load-page item-portrait isotope-item gsap-reveal-img"
+                    data-id="2"
+                    href="posters.html"
+                  >
+                    <div class="overlay">
+                      <div class="portfolio-item-content"></div>
+                    </div>
+                    <img
+                      src="images/work_6_md.webp"
+                      class="lazyload img-fluid"
+                      alt="Images"
+                    />
+                  </a>
+                </div>
+                <!---------------------------------------------------------->
+
+                <div
+                  class="item web packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2"
+                >
+                  <h3><a href="photo.html">Photo Manipulation</a></h3>
+                  <p>Transforming Reality Through Photo Manipulation</p>
+                  <a
+                    class="portfolio-item isotope-item gsap-reveal-img ajax-load-page"
+                    data-id="4"
+                    href="photo.html"
+                  >
+                    <div class="overlay">
+                      <div class="portfolio-item-content"></div>
+                    </div>
+                    <img
+                      src="images/work_7_a_md.webp"
+                      class="lazyload img-fluid"
+                      alt="Images"
+                    />
+                  </a>
+                </div>
+                <!---------------------------------------------------------->
+
+                <div
+                  class="item web packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2"
+                >
+                  <h3><a href="cover.html">Album Covers</a></h3>
+                  <p>Cover Art That Harmonizes Your Music's Essence</p>
+                  <a
+                    class="portfolio-item isotope-item gsap-reveal-img ajax-load-page"
+                    data-id="4"
+                    href="cover.html"
+                  >
+                    <div class="overlay">
+                      <div class="portfolio-item-content"></div>
+                    </div>
+                    <img
+                      src="images/work_8_md.webp"
+                      class="lazyload img-fluid"
+                      alt="Images"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="item web illustration col-sm-6 col-md-6 col-lg-4 isotope-mb-2"
+                ></div>
               </div>
             </div>
           </div>
         </div>
-      </div>
         <!---------------------------------------------------------->
 
         <!--Services section-->
-      <div class="unslate_co--section" id="services-section">
+        <div class="unslate_co--section" id="services-section">
+          <div class="container">
+            <div class="section-heading-wrap text-center mb-5">
+              <h2 class="heading-h2 text-center divider">
+                <span class="gsap-reveal">My Services</span>
+              </h2>
+              <span class="gsap-reveal"
+                ><img src="images/divider.png" alt="divider" width="76"
+              /></span>
+            </div>
+
+            <div class="row gutter-v3">
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="feature-v1" data-aos="fade-up" data-aos-delay="0">
+                  <div class="wrap-icon mb-3">
+                    <img
+                      src="images/svg/001-options.svg"
+                      alt="Image"
+                      width="45"
+                    />
+                  </div>
+                  <h3>
+                    Digital <br />
+                    Portraiture
+                  </h3>
+                  <p>
+                    Digital portraiture is a contemporary artistic practice that
+                    merges traditional portraiture with digital technology.
+                  </p>
+                </div>
+              </div>
+              <!---------------------------------------------------------->
+
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="feature-v1" data-aos="fade-up" data-aos-delay="100">
+                  <div class="wrap-icon mb-3">
+                    <img src="images/svg/002-chat.svg" alt="Icon" width="45" />
+                  </div>
+                  <h3>
+                    Web <br />
+                    Design
+                  </h3>
+                  <p>
+                    Web design is the art of crafting immersive digital
+                    experiences that captivate and engage users.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="feature-v1" data-aos="fade-up" data-aos-delay="200">
+                  <div class="wrap-icon mb-3">
+                    <img
+                      src="images/svg/003-contact-book.svg"
+                      alt="Image"
+                      class="img-fluid"
+                      width="45"
+                    />
+                  </div>
+                  <h3>
+                    User <br />
+                    Experience
+                  </h3>
+                  <p>
+                    User experience (UX) focuses on designing digital interfaces
+                    that prioritize user satisfaction and usability.
+                  </p>
+                </div>
+              </div>
+              <!---------------------------------------------------------->
+
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="feature-v1" data-aos="fade-up" data-aos-delay="0">
+                  <div class="wrap-icon mb-3">
+                    <img
+                      src="images/svg/004-percentage.svg"
+                      alt="Image"
+                      width="45"
+                    />
+                  </div>
+                  <h3>
+                    Web <br />
+                    Development
+                  </h3>
+                  <p>
+                    Web development is the backbone of the modern digital
+                    landscape, fueling the creation of dynamic and interactive
+                    websites and applications.
+                  </p>
+                </div>
+              </div>
+
+              <!---------------------------------------------------------->
+
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="feature-v1" data-aos="fade-up" data-aos-delay="100">
+                  <div class="wrap-icon mb-3">
+                    <img src="images/svg/006-goal.svg" alt="Image" width="45" />
+                  </div>
+                  <h3>
+                    Brand <br />
+                    Solutions
+                  </h3>
+                  <p>
+                    Brand solutions provide comprehensive strategies and
+                    creative approaches to elevate a company's brand identity
+                    and market positioning.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="feature-v1" data-aos="fade-up" data-aos-delay="200">
+                  <div class="wrap-icon mb-3">
+                    <img
+                      src="images/svg/005-line-chart.svg"
+                      alt="Image"
+                      width="45"
+                    />
+                  </div>
+                  <h3>
+                    Brand <br />
+                    Upscale
+                  </h3>
+                  <p>
+                    Brand upscale is a strategic process that elevates a brand's
+                    image, positioning it in a higher tier of the market.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Technical proficiency-->
+        <div class="unslate_co--section section-counter" id="skills-section">
+          <div class="container">
+            <div class="section-heading-wrap text-center mb-5">
+              <h2 class="heading-h2 text-center divider">
+                <span class="gsap-reveal">Technical Proficiency</span>
+              </h2>
+              <span class="gsap-reveal"
+                ><img src="images/divider.png" alt="divider" width="76"
+              /></span>
+            </div>
+            <!---------------------------------------------------------->
+
+            <div class="row pt-5">
+              <div
+                class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3"
+                data-aos="fade-up"
+                data-aos-delay="0"
+              >
+                <div class="counter-v1 text-center">
+                  <span class="number-wrap">
+                    <span class="counter-label">Adobe Photoshop</span><br />
+                    <br />
+                    <span class="number number-counter" data-number="98"
+                      >0</span
+                    >
+                    <span class="append-text">%</span>
+                  </span>
+                </div>
+              </div>
+              <!---------------------------------------------------------->
+
+              <div
+                class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="counter-v1 text-center">
+                  <span class="number-wrap">
+                    <span class="counter-label">Adobe Illustrator</span><br />
+                    <br />
+                    <span class="number number-counter" data-number="80"
+                      >0</span
+                    >
+                    <span class="append-text">%</span>
+                  </span>
+                </div>
+              </div>
+              <!---------------------------------------------------------->
+
+              <div
+                class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="counter-v1 text-center">
+                  <span class="number-wrap">
+                    <span class="counter-label">Adobe XD</span><br />
+                    <br />
+                    <span class="number number-counter" data-number="90"
+                      >0</span
+                    >
+                    <span class="append-text">%</span>
+                  </span>
+                </div>
+              </div>
+              <!---------------------------------------------------------->
+
+              <div
+                class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="counter-v1 text-center">
+                  <span class="number-wrap">
+                    <span class="counter-label">Adobe Premiere Pro</span><br />
+                    <br />
+                    <span class="number number-counter" data-number="70"
+                      >0</span
+                    >
+                    <span class="append-text">%</span>
+                  </span>
+                </div>
+              </div>
+              <!---------------------------------------------------------->
+
+              <div
+                class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="counter-v1 text-center">
+                  <span class="number-wrap">
+                    <span class="counter-label">Figma</span><br />
+                    <br />
+                    <span class="number number-counter" data-number="90"
+                      >0</span
+                    >
+                    <span class="append-text">%</span>
+                  </span>
+                </div>
+              </div>
+              <!---------------------------------------------------------->
+
+              <div
+                class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="counter-v1 text-center">
+                  <span class="number-wrap">
+                    <span class="counter-label">Visual Studio Code</span><br />
+                    <br />
+                    <span class="number number-counter" data-number="85"
+                      >0</span
+                    >
+                    <span class="append-text">%</span>
+                  </span>
+                </div>
+              </div>
+              <!---------------------------------------------------------->
+
+              <div
+                class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="counter-v1 text-center">
+                  <span class="number-wrap">
+                    <span class="counter-label">Adobe Indesign</span><br />
+                    <br />
+                    <span class="number number-counter" data-number="80"
+                      >0</span
+                    >
+                    <span class="append-text">%</span>
+                  </span>
+                </div>
+              </div>
+              <!---------------------------------------------------------->
+
+              <div
+                class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="counter-v1 text-center">
+                  <span class="number-wrap">
+                    <span class="counter-label">CorelDRAW Graphics</span><br />
+                    <br />
+                    <span class="number number-counter" data-number="98"
+                      >0</span
+                    >
+                    <span class="append-text">%</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Testimonial section-->
+        <div class="unslate_co--section" id="testimonial-section">
+          <!--End of Testimonial section-->
+
+          <!--Contact section-->
+          <div class="unslate_co--section" id="contact-section">
+            <div class="container">
+              <div class="section-heading-wrap text-center mb-5">
+                <h2 class="heading-h2 text-center divider">
+                  <span class="gsap-reveal">Get In Touch</span>
+                </h2>
+                <span class="gsap-reveal"
+                  ><img src="images/divider.png" alt="divider" width="76"
+                /></span>
+              </div>
+
+              <!--Contact info-->
+              <div class="col-md-4">
+                <div class="contact-info-v1">
+                  <div class="gsap-reveal d-block">
+                    <span class="d-block contact-info-label">Email</span>
+                    <a
+                      href="mailto:jo.erl444@email.com"
+                      class="contact-info-val"
+                      >Send Mail '&#7447;' &#10084;</a
+                    >
+                  </div>
+                  <div class="gsap-reveal d-block">
+                    <span class="d-block contact-info-label">Phone</span>
+                    <a href="tel:020-813-4080" class="contact-info-val"
+                      >Click to call '&#7447;' &#10084;</a
+                    >
+                  </div>
+
+                  <div class="gsap-reveal d-block">
+                    <span class="d-block contact-info-label">Instagram</span>
+                    <a
+                      href="https://instagram.com/jo.erl"
+                      target="_blank"
+                      class="contact-info-val"
+                      >Follow me '&#7447;' &#10084;</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Back to top btn-->
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <!--Back to top btn end-->
+
+      <!--Footer-->
+      <footer class="unslate_co--footer unslate_co--section">
         <div class="container">
-          <div class="section-heading-wrap text-center mb-5">
-            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">My Services</span></h2>
-            <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
-          </div>
-
-          <div class="row gutter-v3">
-            <div class="col-md-6 col-lg-4 mb-4">
-              <div class="feature-v1" data-aos="fade-up" data-aos-delay="0">
-                <div class="wrap-icon mb-3">
-                  <img src="images/svg/001-options.svg" alt="Image" width="45">
-                </div>
-                <h3>Digital <br> Portraiture</h3>
-                <p>Digital portraiture is a contemporary artistic practice that merges traditional portraiture with
-                  digital technology. </p>
+          <div class="row justify-content-center">
+            <div class="col-md-7">
+              <div class="footer-site-logo">
+                <a href="#">Joel Anang<span>.</span></a>
               </div>
-            </div>
-          <!---------------------------------------------------------->
-
-            <div class="col-md-6 col-lg-4 mb-4">
-              <div class="feature-v1" data-aos="fade-up" data-aos-delay="100">
-                <div class="wrap-icon mb-3">
-                  <img src="images/svg/002-chat.svg" alt="Icon" width="45">
-                </div>
-                <h3>Web <br> Design</h3>
-                <p>Web design is the art of crafting immersive digital experiences that captivate and engage users.</p>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mb-4">
-              <div class="feature-v1" data-aos="fade-up" data-aos-delay="200">
-                <div class="wrap-icon mb-3">
-                  <img src="images/svg/003-contact-book.svg" alt="Image" class="img-fluid" width="45">
-                </div>
-                <h3>User <br> Experience</h3>
-                <p>User experience (UX) focuses on designing digital interfaces that prioritize user satisfaction and
-                  usability. </p>
-              </div>
-            </div>
-        <!---------------------------------------------------------->
-
-            <div class="col-md-6 col-lg-4 mb-4">
-              <div class="feature-v1" data-aos="fade-up" data-aos-delay="0">
-                <div class="wrap-icon mb-3">
-                  <img src="images/svg/004-percentage.svg" alt="Image" width="45">
-                </div>
-                <h3>Web <br> Development</h3>
-                <p>Web development is the backbone of the modern digital landscape, fueling the creation of dynamic and
-                  interactive websites and applications. </p>
-              </div>
-            </div>
-
-        <!---------------------------------------------------------->
-
-            <div class="col-md-6 col-lg-4 mb-4">
-              <div class="feature-v1" data-aos="fade-up" data-aos-delay="100">
-                <div class="wrap-icon mb-3">
-                  <img src="images/svg/006-goal.svg" alt="Image" width="45">
-                </div>
-                <h3>Brand <br> Solutions</h3>
-                <p>Brand solutions provide comprehensive strategies and creative approaches to elevate a company's brand
-                  identity and market positioning. </p>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mb-4">
-              <div class="feature-v1" data-aos="fade-up" data-aos-delay="200">
-                <div class="wrap-icon mb-3">
-                  <img src="images/svg/005-line-chart.svg" alt="Image" width="45">
-                </div>
-                <h3>Brand <br> Upscale</h3>
-                <p>Brand upscale is a strategic process that elevates a brand's image, positioning it in a higher tier
-                  of the market.</p>
-              </div>
+              <p class="site-copyright">
+                Copyright &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                All rights reserved
+              </p>
             </div>
           </div>
         </div>
-      </div>
-
-      <!--Technical proficiency-->
-      <div class="unslate_co--section section-counter" id="skills-section">
-        <div class="container">
-          <div class="section-heading-wrap text-center mb-5">
-            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Technical Proficiency</span></h2>
-            <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
-          </div>
-        <!---------------------------------------------------------->
-
-          <div class="row pt-5">
-            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
-              <div class="counter-v1 text-center">
-                <span class="number-wrap">
-                  <span class="counter-label">Adobe Photoshop</span><br>
-                  <br> <span class="number number-counter" data-number="98">0</span>
-                  <span class="append-text">%</span>
-                </span>
-
-              </div>
-            </div>
-        <!---------------------------------------------------------->
-
-            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-              <div class="counter-v1 text-center">
-                <span class="number-wrap">
-                  <span class="counter-label">Adobe Illustrator</span><br>
-                  <br> <span class="number number-counter" data-number="80">0</span>
-                  <span class="append-text">%</span>
-                </span>
-              </div>
-            </div>
-        <!---------------------------------------------------------->
-
-            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-              <div class="counter-v1 text-center">
-                <span class="number-wrap">
-                  <span class="counter-label">Adobe XD</span><br>
-                  <br> <span class="number number-counter" data-number="90">0</span>
-                  <span class="append-text">%</span>
-                </span>
-              </div>
-            </div>
-        <!---------------------------------------------------------->
-
-            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-              <div class="counter-v1 text-center">
-                <span class="number-wrap">
-                  <span class="counter-label">Adobe Premiere Pro</span><br>
-                  <br> <span class="number number-counter" data-number="70">0</span>
-                  <span class="append-text">%</span>
-                </span>
-              </div>
-            </div>
-        <!---------------------------------------------------------->
-
-            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-              <div class="counter-v1 text-center">
-                <span class="number-wrap">
-                  <span class="counter-label">Figma</span><br>
-                  <br> <span class="number number-counter" data-number="90">0</span>
-                  <span class="append-text">%</span>
-                </span>
-              </div>
-            </div>
-        <!---------------------------------------------------------->
-
-        <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-              <div class="counter-v1 text-center">
-                <span class="number-wrap">
-                  <span class="counter-label">Visual Studio Code</span><br>
-                  <br> <span class="number number-counter" data-number="85">0</span>
-                  <span class="append-text">%</span>
-                </span>
-              </div>
-            </div>
-        <!---------------------------------------------------------->
-
-            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-              <div class="counter-v1 text-center">
-                <span class="number-wrap">
-                  <span class="counter-label">Visual Studio</span><br>
-                  <br> <span class="number number-counter" data-number="90">0</span>
-                  <span class="append-text">%</span>
-                </span>
-              </div>
-            </div>
-        <!---------------------------------------------------------->
-
-            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-              <div class="counter-v1 text-center">
-                <span class="number-wrap">
-                  <span class="counter-label">CorelDRAW Graphics</span><br>
-                  <br> <span class="number number-counter" data-number="98">0</span>
-                  <span class="append-text">%</span>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--Testimonial section-->
-      <div class="unslate_co--section" id="testimonial-section">
-        <div class="container">
-          <div class="section-heading-wrap text-center mb-5">
-            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">My Happy Clients</span></h2>
-            <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
-          </div>
-        </div>
-        <div class="owl-carousel testimonial-slider" data-aos="fade-up">
-          <div>
-            <div class="testimonial-v1">
-              <div class="testimonial-inner-bg">
-                <span class="quote">&ldquo;</span>
-                <blockquote>
-                  I needed some flyers designed for my upcoming event, and I must say, the final products were amazing.
-                  The flyers
-                  were exactly what I was looking for, and they were delivered on time and within my budget. I would
-                  definitely recommend such services to anyone in need of one.
-              </div>
-        <!---------------------------------------------------------->
-
-              <div class="testimonial-author-info">
-                <img src="images/2.webp" alt="Image">
-                <h3>Kyei Baffour</h3>
-                <span class="d-block position">Bank Teller</span>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="testimonial-v1">
-              <div class="testimonial-inner-bg">
-                <span class="quote">&ldquo;</span>
-                <blockquote>
-                  I was looking for a graphic designer to help me with my new website, and I'm so glad I found Joel. My
-                  ideas were turned into a beautiful and professional website that
-                  I'm really proud of. I would definitely recommend his services to anyone who is looking for a graphic
-                  designer.
-                </blockquote>
-              </div>
-        <!---------------------------------------------------------->
-
-              <div class="testimonial-author-info">
-                <img src="images/1.webp" alt="Image">
-                <h3>Mark-Anthony Anim</h3>
-                <span class="d-block position">Financial Consultant</span>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="testimonial-v1">
-              <div class="testimonial-inner-bg">
-                <span class="quote">&ldquo;</span>
-                <blockquote>
-                  I needed a logo for my new business, and I was really impressed with the final product.
-                  He was able to create a logo that was both professional and unique, and I love it! I would
-                  definitely recommend Joel to anyone who needs a logo.
-                </blockquote>
-              </div>
-        <!---------------------------------------------------------->
-
-              <div class="testimonial-author-info">
-                <img src="images/3.webp" alt="Image">
-                <h3>Erica Adjei</h3>
-                <span class="d-block position">Entrepreneur</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--Contact section-->
-      <div class="unslate_co--section" id="contact-section">
-        <div class="container">
-          <div class="section-heading-wrap text-center mb-5">
-            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Get In Touch</span></h2>
-            <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
-          </div>
-
-  <!-- 
-    CONTACT FORM
-  <div class="row justify-content-between">
-    <div class="col-md-6">
-      <form class="form-outline-style-v1" id="contactForm">
-        <div class="form-group row mb-0">
-          <div class="col-lg-6 form-group gsap-reveal">
-            <label for="name">Name</label>
-            <input name="name" type="text" class="form-control" id="name">
-          </div>
-          <div class="col-lg-6 form-group gsap-reveal">
-            <label for="email">Email</label>
-            <input name="email" type="email" class="form-control" id="email">
-          </div>
-          <div class="col-lg-12 form-group gsap-reveal">
-            <label for="message">Your message...</label>
-            <textarea name="message" id="message" cols="30" rows="7" class="form-control"></textarea>
-          </div>
-        </div>
-        <div class="form-group row gsap-reveal">
-          <div class="col-md-12 d-flex align-items-center">
-            <input type="" class="btn btn-outline-pill btn-custom-light mr-3" value="Send Message">
-            <span class="submitting"></span>
-          </div>
-        </div>
-      </form>
-      <div id="form-message-warning" class="mt-4"></div>
-      <div id="form-message-success">
-        Your message was sent, thank you!
-      </div>
-  </div>
--->
-      <!--Contact info-->
-            <div class="col-md-4">
-              <div class="contact-info-v1">
-                <div class="gsap-reveal d-block">
-                  <span class="d-block contact-info-label">Email</span>
-                  <a href="mailto:jo.erl444@email.com" class="contact-info-val">Get Email Address 'ᴗ'</a>
-                </div>
-                <div class="gsap-reveal d-block">
-                  <span class="d-block contact-info-label">Phone</span>
-                  <a href="tel:020-813-4080" class="contact-info-val">Click to call 'ᴗ'</a>
-                </div>
-
-                <div class="gsap-reveal d-block">
-                  <span class="d-block contact-info-label">Instagram</span>
-                  <a href="https://instagram.com/jo.erl" target="_blank"
-                    class="contact-info-val">Follow me 'ᴗ'</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </footer>
+      <!--Footer end-->
     </div>
 
-    <style>
-      #myBtn {
-        display: none;
-        position: fixed;
-        bottom: 20px;
-        right: 30px;
-        z-index: 99;
-        font-size: 18px;
-        border: none;
-        outline: none;
-        background-color: #b72334;
-        color: white;
-        cursor: pointer;
-        padding: 15px;
-        border-radius: 15px;
-        overflow-x: hidden !important;
-      }
-    
-      #myBtn:hover {
-        background-color: #555;
-      }
-    </style>
-    
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    
-    <script>
-      // Get the button
-      let mybutton = document.getElementById("myBtn");
-    
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function() {
-        scrollFunction();
-      };
-    
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
-    
-      // When the user clicks on the button, scroll to the top of the document smoothly
-      function topFunction() {
-        // For modern browsers (including Chrome, Firefox, Safari, and Edge)
-        if ("scrollBehavior" in document.documentElement.style) {
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-          });
-        } else {
-          // For older browsers that do not support smooth scrolling
-          const currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
-          if (currentPosition > 0) {
-            window.requestAnimationFrame(topFunction);
-            window.scrollTo(0, currentPosition - currentPosition / 8);
-          }
-        }
-      }
-    </script>
-    
-
-    <footer class="unslate_co--footer unslate_co--section">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-7">
-            <div class="footer-site-logo"><a href="#">Joel Anang<span>.</span></a></div>
-            <p class="site-copyright">
-              Copyright &copy;
-              <script>
-                document.write(new Date().getFullYear());
-              </script> All rights reserved
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </div>
-
-  <div id="unslate_co--overlayer"></div>
-  <div class="site-loader-wrap">
-    <div class="site-loader"></div>
-  </div>
-  <script src="js/scripts-dist.js"></script>
-  <script src="js/main.js"></script>
-</body>
+    <div id="unslate_co--overlayer"></div>
+    <div class="site-loader-wrap">
+      <div class="site-loader"></div>
+    </div>
+    <script src="js/scripts-dist.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
