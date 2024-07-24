@@ -1,2 +1,2 @@
-# https://jo-erl.github.io/joelanangportfolio/index.html
-Website Portfolio
+# Website Portfolio
+[Link](https://jo-erl.github.io/joelanangportfolio/)
