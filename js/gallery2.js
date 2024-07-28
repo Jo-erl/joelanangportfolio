@@ -90,9 +90,6 @@ function initializeShowcase() {
   
   // Load initial images
   filterImages("all");
-  
-  // Scroll to show "All" at the start
-  scrollToActiveFilter(true);
 }
 
 loadMoreBtn.addEventListener("click", loadImages);
@@ -137,11 +134,10 @@ filterButtons.forEach((button) => {
     filterButtons.forEach((btn) => btn.classList.remove("active"));
     button.classList.add("active");
     filterImages(button.dataset.category);
-    scrollToActiveFilter(false);
   });
 });
 
+
 // Call initializeShowcase when the page loads
 window.addEventListener('load', initializeShowcase);
-
 //==================================================================================//

@@ -1322,7 +1322,7 @@ a.servies:hover .portfolio-image {
   padding: 10px 0;
   margin-bottom: 20px;
   margin: 0 -10px;
-  padding-left: 10px;
+  padding-left: 40px;
 }
 
 .showcase-filter {
@@ -1336,6 +1336,7 @@ a.servies:hover .portfolio-image {
   cursor: pointer;
   transition: background-color 0.3s ease;
   border-radius: 20px;
+  min-width: 100px;
 }
 
 .showcase-filter.active {
@@ -1477,10 +1478,11 @@ a.servies:hover .portfolio-image {
 }
 
 .showcase-filters-wrapper {
+  position: relative;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
 }
 
 .showcase-filters-wrapper::-webkit-scrollbar {
