@@ -14,7 +14,7 @@ const images = Array.from(document.querySelectorAll(".exhibit-item img")).map(
 );
 
 let currentIndex = 0;
-const imagesPerLoad = 9;
+const imagesPerLoad = 8;
 
 function loadImages() {
   const items = document.querySelectorAll(".exhibit-item");
