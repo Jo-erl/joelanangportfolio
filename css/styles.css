@@ -1365,7 +1365,7 @@ a.servies:hover .portfolio-image {
 
 .showcase-filters {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start; /* Changed from center to flex-start */
   margin-bottom: 20px;
   overflow-x: hidden;
   /***=================**/
@@ -1525,6 +1525,8 @@ a.servies:hover .portfolio-image {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   margin-bottom: 20px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
 }
 
 .showcase-filter:first-child {
@@ -1542,15 +1544,19 @@ a.servies:hover .portfolio-image {
     margin-right: -20px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 10px;
   }
 
   .showcase-filters {
+    flex-wrap: wrap;
+    justify-content: center;
     padding-bottom: 5px;
   }
 
   .showcase-filter {
     padding: 8px 16px;
     font-size: 14px;
+    margin: 5px;
   }
 }
 
