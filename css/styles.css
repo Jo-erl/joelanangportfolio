@@ -936,7 +936,12 @@ a.servies:hover .portfolio-image {
   #get-in-touch-h2 {
     font-size: 25px !important;
   }
+
+  .get-in-touch-divider {
+    width: 40px !important;
+  }
 }
+
 /***************************************************************************************************************************************/
 /*LOAD MORE BTN*/
 #loadMore {
@@ -1317,42 +1322,33 @@ a.servies:hover .portfolio-image {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  overflow: hidden;
 }
 
 .showcase-filters {
   display: flex;
   justify-content: center;
-  flex-wrap: nowrap;
-  padding: 10px 0;
-  margin: 0 -10px;
-  padding-left: 40px;
-  gap: 10px;
-  overflow-x: auto;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  overflow-x: hidden;
+  /***=================**/
+  min-width: max-content;
 }
 
 .showcase-filter {
   background-color: #f0f0f0;
   border: none;
-  padding: 8px 16px;
-  margin: 0 10px;
-  flex: 0 0 auto;
-  margin-right: 10px;
-  white-space: nowrap;
+  padding: 10px 20px;
+  margin: 0 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   border-radius: 20px;
-  transition: background-color 0.3s, color 0.3s;
+  /***=================**/
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .showcase-filter.active {
   background-color: #333;
   color: white;
-}
-
-.showcase-filter:first-child {
-  margin-left: 0;
 }
 
 .showcase {
@@ -1484,41 +1480,37 @@ a.servies:hover .portfolio-image {
   color: #ffffff;
 }
 
+/***************************************************************************************************************************************/
 .showcase-filters-wrapper {
   position: relative;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  margin-bottom: 20px;
 }
 
-.showcase-filters-wrapper::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 40px;
-  background: linear-gradient(
-    to right,
-    rgba(239, 239, 239, 0),
-    rgba(239, 239, 239, 1)
-  );
-  pointer-events: none;
+.showcase-filter:first-child {
+  margin-left: 0;
 }
 
-.showcase-filters-wrapper::-webkit-scrollbar {
-  display: none; /* WebKit */
+.showcase-filter:last-child {
+  margin-right: 0;
 }
 
-@media (max-width: 768px) {
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
   .showcase-filters-wrapper {
-    width: 100%;
-    padding: 0 10px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .showcase-filters {
+    padding-bottom: 5px;
   }
 
   .showcase-filter {
-    padding: 8px 12px;
+    padding: 8px 16px;
     font-size: 14px;
   }
 }

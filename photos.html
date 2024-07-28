@@ -28,77 +28,79 @@
   </head>
   <body>
     <div class="wrapps">
-    <!------------------------------------------------------>
-    <!------------------------------------------------------>
-    <!--NAV-->
-    <nav>
-      <div class="nav-content">
-        <ul class="nav-links left-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="cartoons.html">Portraits</a></li>
-          <li><a href="logos.html">Logos</a></li>
-          <li><a href="uiux.html">UI/UX</a></li>
-        </ul>
-        <!------------------------------------------------------>
-        <div class="logo">
-          <a href="index.html" class="logo-link">
-            <img src="images/logo.png" alt="Logo" />
-            <span class="logo-text">Joel Anang<span class="dot">.</span></span>
-          </a>
+      <!------------------------------------------------------>
+      <!------------------------------------------------------>
+      <!--NAV-->
+      <nav>
+        <div class="nav-content">
+          <ul class="nav-links left-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cartoons.html">Portraits</a></li>
+            <li><a href="logos.html">Logos</a></li>
+            <li><a href="uiux.html">UI/UX</a></li>
+          </ul>
+          <!------------------------------------------------------>
+          <div class="logo">
+            <a href="index.html" class="logo-link">
+              <img src="images/logo.png" alt="Logo" />
+              <span class="logo-text"
+                >Joel Anang<span class="dot">.</span></span
+              >
+            </a>
+          </div>
+          <!------------------------------------------------------>
+          <ul class="nav-links right-links">
+            <li><a href="posters.html">Posters</a></li>
+            <li><a href="branding.html">Branding</a></li>
+            <li><a href="webdev.html">Web Development</a></li>
+            <li><a href="covers.html">Covers</a></li>
+          </ul>
         </div>
         <!------------------------------------------------------>
-        <ul class="nav-links right-links">
+        <div class="mobile-nav">
+          <div class="mobile-logo">
+            <a href="index.html" class="logo-link">
+              <img src="images/logo.png" alt="Logo" />
+              <span class="logo-text"
+                >Joel Anang<span class="dot">.</span></span
+              >
+            </a>
+          </div>
+        </div>
+        <div class="mobile-menu-toggle">Menu</div>
+      </nav>
+      <!------------------------------------------------------>
+      <div class="mobile-menu">
+        <div class="close-btn"><span>Close</span> &times;</div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
           <li><a href="posters.html">Posters</a></li>
-          <li><a href="branding.html">Branding</a></li>
+          <li><a href="logos.html">Logos</a></li>
+          <li><a href="uiux.html">UI/UX</a></li>
           <li><a href="webdev.html">Web Development</a></li>
+          <li><a href="branding.html">Branding</a></li>
+          <li><a href="photos.html">Photo</a></li>
           <li><a href="covers.html">Covers</a></li>
         </ul>
       </div>
       <!------------------------------------------------------>
-      <div class="mobile-nav">
-        <div class="mobile-logo">
-          <a href="index.html" class="logo-link">
-            <img src="images/logo.png" alt="Logo" />
-            <span class="logo-text">Joel Anang<span class="dot">.</span></span>
-          </a>
-        </div>
+      <!------------------------------------------------------>
+      <!--HEADER-->
+      <div class="header-squiggly">
+        <h2>Photo Manipulation</h2>
+        <p>Background change, skin retouch, and more</p>
+        <img src="images/divider.png" class="squiggly" alt="Squiggly Line" />
       </div>
-      <div class="mobile-menu-toggle">Menu</div>
-    </nav>
-    <!------------------------------------------------------>
-    <div class="mobile-menu">
-      <div class="close-btn"><span>Close</span> &times;</div>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="posters.html">Posters</a></li>
-        <li><a href="logos.html">Logos</a></li>
-        <li><a href="uiux.html">UI/UX</a></li>
-        <li><a href="webdev.html">Web Development</a></li>
-        <li><a href="branding.html">Branding</a></li>
-        <li><a href="photos.html">Photo</a></li>
-        <li><a href="covers.html">Covers</a></li>
-      </ul>
-    </div>
-    <!------------------------------------------------------>
-    <!------------------------------------------------------>
-    <!--HEADER-->
-    <div class="header-squiggly">
-      <h2>Photo Manipulation</h2>
-      <p>Background change, skin retouch, and more</p>
-      <img src="images/divider.png" class="squiggly" alt="Squiggly Line" />
-    </div>
-    <!------------------------------------------------------>
-    <!--MAIN-->
-    <main id="main">
-      <div class="showcase-container">
-        <div class="showcase-filters-wrapper">
+      <!------------------------------------------------------>
+      <!--MAIN-->
+      <main id="main">
+        <div class="showcase-container">
+          <div class="showcase-filters-wrapper">
           <div class="showcase-filters">
             <button class="showcase-filter active" data-category="all">
               All
             </button>
-            <button class="showcase-filter" data-category="mirage">
-              MIRAGE
-            </button>
+            <button class="showcase-filter" data-category="mirage">MIRAGE</button>
             <button class="showcase-filter" data-category="quad">
               QUADRUPLETS
             </button>
@@ -115,138 +117,141 @@
               THE CORRIDOR
             </button>
             <button class="showcase-filter" data-category="priest">
-              THE PRIEST
+              THE PREIEST
             </button>
           </div>
         </div>
-        <div id="showcase" class="showcase">
-          <div class="showcase-item" data-category="mirage">
-            <img src="images/photo/1.webp" alt="Showcase 1" />
+          <div id="showcase" class="showcase">
+            <div class="showcase-item" data-category="mirage">
+              <img src="images/photo/1.webp" alt="Showcase 1" />
+            </div>
+            <div class="showcase-item" data-category="mirage">
+              <img src="images/photo/2.webp" alt="Showcase 2" />
+            </div>
+            <div class="showcase-item" data-category="quad">
+              <img src="images/photo/3.webp" alt="Showcase 3" />
+            </div>
+            <div class="showcase-item" data-category="quad">
+              <img src="images/photo/4.webp" alt="Showcase 4" />
+            </div>
+            <div class="showcase-item" data-category="astro">
+              <img src="images/photo/5.webp" alt="Showcase 5" />
+            </div>
+            <div class="showcase-item" data-category="astro">
+              <img src="images/photo/6.webp" alt="Showcase 6" />
+            </div>
+            <div class="showcase-item" data-category="blemish">
+              <img src="images/photo/7.webp" alt="Showcase 7" />
+            </div>
+            <div class="showcase-item" data-category="blemish">
+              <img src="images/photo/8.webp" alt="Showcase 8" />
+            </div>
+            <div class="showcase-item" data-category="night">
+              <img src="images/photo/9.webp" alt="Showcase 9" />
+            </div>
+            <div class="showcase-item" data-category="night">
+              <img src="images/photo/10.webp" alt="Showcase 10" />
+            </div>
+            <div class="showcase-item" data-category="corridor">
+              <img src="images/photo/11.webp" alt="Showcase 11" />
+            </div>
+            <div class="showcase-item" data-category="corridor">
+              <img src="images/photo/12.webp" alt="Showcase 12" />
+            </div>
+            <div class="showcase-item" data-category="priest">
+              <img src="images/photo/13.webp" alt="Showcase 13" />
+            </div>
+            <div class="showcase-item" data-category="priest">
+              <img src="images/photo/14.webp" alt="Showcase 14" />
+            </div>
           </div>
-          <div class="showcase-item" data-category="mirage">
-            <img src="images/photo/2.webp" alt="Showcase 2" />
-          </div>
-          <div class="showcase-item" data-category="quad">
-            <img src="images/photo/3.webp" alt="Showcase 3" />
-          </div>
-          <div class="showcase-item" data-category="quad">
-            <img src="images/photo/4.webp" alt="Showcase 4" />
-          </div>
-          <div class="showcase-item" data-category="astro">
-            <img src="images/photo/5.webp" alt="Showcase 5" />
-          </div>
-          <div class="showcase-item" data-category="astro">
-            <img src="images/photo/6.webp" alt="Showcase 6" />
-          </div>
-          <div class="showcase-item" data-category="blemish">
-            <img src="images/photo/7.webp" alt="Showcase 7" />
-          </div>
-          <div class="showcase-item" data-category="blemish">
-            <img src="images/photo/8.webp" alt="Showcase 8" />
-          </div>
-          <div class="showcase-item" data-category="night">
-            <img src="images/photo/9.webp" alt="Showcase 9" />
-          </div>
-          <div class="showcase-item" data-category="night">
-            <img src="images/photo/10.webp" alt="Showcase 10" />
-          </div>
-          <div class="showcase-item" data-category="corridor">
-            <img src="images/photo/11.webp" alt="Showcase 11" />
-          </div>
-          <div class="showcase-item" data-category="corridor">
-            <img src="images/photo/12.webp" alt="Showcase 12" />
-          </div>
-          <div class="showcase-item" data-category="priest">
-            <img src="images/photo/13.webp" alt="Showcase 13" />
-          </div>
-          <div class="showcase-item" data-category="priest">
-            <img src="images/photo/14.webp" alt="Showcase 14" />
-          </div>
-        </div>
-        <button id="load-more-showcase" class="load-more-showcase">
-          Load More
-        </button>
-      </div>
-
-      <div id="showcase-modal" class="showcase-modal">
-        <div class="showcase-modal-content">
-          <img id="showcase-modal-image" src=" " alt="Showcase Modal Image" />
-          <button
-            id="showcase-prev-btn"
-            class="showcase-nav-btn showcase-prev-btn"
-          >
-            &lt;
-          </button>
-          <button
-            id="showcase-next-btn"
-            class="showcase-nav-btn showcase-next-btn"
-          >
-            &gt;
-          </button>
-          <button id="showcase-close-btn" class="showcase-close-btn">
-            &times;
+          <button id="load-more-showcase" class="load-more-showcase">
+            Load More
           </button>
         </div>
-      </div>
-    </main>
-
-    <!------------------------------------------------------------------------------------------------------------------------------------->
-
-    <!--Back to top btn-->
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    <!--Back to top btn end-->
-
-    <!--Footer-->
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="logo">
-          <a href="#">Joel Anang<span>.</span></a>
+  
+   <div id="showcase-modal" class="showcase-modal">
+          <div class="showcase-modal-content">
+            <img id="showcase-modal-image" src=" " alt="Showcase Modal Image" />
+            <button
+              id="showcase-prev-btn"
+              class="showcase-nav-btn showcase-prev-btn"
+            >
+              &lt;
+            </button>
+            <button
+              id="showcase-next-btn"
+              class="showcase-nav-btn showcase-next-btn"
+            >
+              &gt;
+            </button>
+            <button id="showcase-close-btn" class="showcase-close-btn">
+              &times;
+            </button>
+          </div>
         </div>
-        <p class="copyright">
-          Copyright &copy;
-          <span id="currentYear"></span>
-          All rights reserved
-        </p>
-      </div>
-    </footer>
-    <!--Footer end-->
+      </main>
+  
 
-    <script>
-      //==================================================================================//
-      // Back to top button functionality
-      var backToTopButton = document.getElementById("myBtn");
+      <!------------------------------------------------------------------------------------------------------------------------------------->
 
-      window.onscroll = function () {
-        scrollFunction();
-      };
+      <!--Back to top btn-->
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <!--Back to top btn end-->
 
-      function scrollFunction() {
-        if (
-          document.body.scrollTop > 20 ||
-          document.documentElement.scrollTop > 20
-        ) {
-          backToTopButton.style.display = "block";
-        } else {
-          backToTopButton.style.display = "none";
-        }
-      }
+      <!--Footer-->
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="logo">
+            <a href="#">Joel Anang<span>.</span></a>
+          </div>
+          <p class="copyright">
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            All rights reserved
+          </p>
+        </div>
+      </footer>
+      <!--Footer end-->
 
-      backToTopButton.addEventListener("click", function () {
-        if ("scrollBehavior" in document.documentElement.style) {
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-          });
-        } else {
-          // Fallback for browsers that don't support smooth scrolling
-          const currentPosition =
-            document.documentElement.scrollTop || document.body.scrollTop;
-          if (currentPosition > 0) {
-            window.requestAnimationFrame(topFunction);
+      <script>
+        //==================================================================================//
+        // Back to top button functionality
+        var backToTopButton = document.getElementById("myBtn");
+
+        window.onscroll = function () {
+          scrollFunction();
+        };
+
+        function scrollFunction() {
+          if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+          ) {
+            backToTopButton.style.display = "block";
+          } else {
+            backToTopButton.style.display = "none";
           }
         }
-      });
-    </script>
+
+        backToTopButton.addEventListener("click", function () {
+          if ("scrollBehavior" in document.documentElement.style) {
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
+          } else {
+            // Fallback for browsers that don't support smooth scrolling
+            const currentPosition =
+              document.documentElement.scrollTop || document.body.scrollTop;
+            if (currentPosition > 0) {
+              window.requestAnimationFrame(topFunction);
+            }
+          }
+        });
+      </script>
     </div>
   </body>
 </html>
