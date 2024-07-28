@@ -2,347 +2,369 @@
 <html lang="en">
   <head>
     <title>Web Development by Joel Anang</title>
-    <meta charset="utf-8">
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no shrink-to-fit=no">
-  <meta name="description" content="Joel Anang's Graphic Design Portfolio">
-  <meta name="keywords" content="html, css, javascript, jquery">
-  <meta name="author" content="Joel Anang">
-
-  <link rel="stylesheet" href="css/vendor/icomoon/style.css">
-  <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/vendor/animate.min.css">
-  <link rel="stylesheet" href="css/vendor/aos.css">
-  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
-  <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="assets/css/gallery.css">
-
-  <link rel="icon" href="images/favicon.png" type="image/x-icon">
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-
-    body {
-      overflow-x: hidden;
-      font-family: "Poppins", sans-serif;
-      touch-action: manipulation;
-    }
-  </style>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no shrink-to-fit=no"
+    />
+    <meta name="description" content="Joel Anang's Portfolio" />
+    <meta name="keywords" content="html, css, javascript, jquery" />
+    <meta name="author" content="Joel Anang" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&family=Noto+Serif:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/scripts.js" defer></script>
+    <script src="js/gallery.js" defer></script>
   </head>
-
-  <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
-    <nav class="unslate_co--site-mobile-menu">
-      <div class="close-wrap d-flex">
-        <a href="" class="d-flex ml-auto js-menu-toggle">
-          <span class="close-label">Close</span>
-          <div class="close-times">
-            <span class="bar1"></span>
-            <span class="bar2"></span>
-          </div>
-        </a>
+  <body id="index-page">
+    <!------------------------------------------------------>
+    <!------------------------------------------------------>
+    <!--NAV-->
+    <nav>
+      <div class="nav-content">
+        <ul class="nav-links left-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cartoons.html">Portraits</a></li>
+          <li><a href="logos.html">Logos</a></li>
+          <li><a href="uiux.html">UI/UX</a></li>
+        </ul>
+        <!------------------------------------------------------>
+        <div class="logo">
+          <a href="index.html" class="logo-link">
+            <img src="images/logo.png" alt="Logo" />
+            <span class="logo-text">Joel Anang<span class="dot">.</span></span>
+          </a>
+        </div>
+        <!------------------------------------------------------>
+        <ul class="nav-links right-links">
+          <li><a href="posters.html">Poster</a></li>
+          <li><a href="branding.html">Branding</a></li>
+          <li><a href="photos.html">Photo</a></li>
+          <li><a href="covers.html">Covers</a></li>
+        </ul>
       </div>
-      <div class="site-mobile-inner"></div>
+      <!------------------------------------------------------>
+      <div class="mobile-nav">
+        <div class="mobile-logo">
+          <a href="index.html" class="logo-link">
+            <img src="images/logo.png" alt="Logo" />
+            <span class="logo-text">Joel Anang<span class="dot">.</span></span>
+          </a>
+        </div>
+      </div>
+      <div class="mobile-menu-toggle">Menu</div>
     </nav>
-
-    <div class="unslate_co--site-wrap">
-      <div class="unslate_co--site-inner">
-        <!--<div class="lines-wrap">
-        <div class="lines-inner">
-          <div class="lines"></div>
-        </div>
-      </div>-->
-
-        <nav class="unslate_co--site-nav site-nav-target">
-          <div class="container">
-            <div
-              class="row align-items-center justify-content-between text-left"
-            >
-              <div class="col-md-5 text-right">
-                <ul
-                  class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block"
-                >
-                  <li><a href="index.html" class="nav-link">Home</a></li>
-                  <li>
-                    <a href="cartoons.html" class="nav-link">Portraits</a>
-                  </li>
-                  <li><a href="logos.html" class="nav-link">Logos</a></li>
-                  <li><a href="uiux.html" class="nav-link">UI/UX</a></li>
-                </ul>
-              </div>
-              <div class="site-logo pos-absolute">
-                <a href="index.html" class="unslate_co--site-logo">
-                  <img src="images/logo2.png" width="35" height="35" />Joel
-                  Anang<span>.</span>
-                </a>
-              </div>
-              <div class="col-md-5 text-right text-lg-left">
-                <ul
-                  class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block"
-                >
-                  <li><a href="posters.html" class="nav-link">Posters</a></li>
-                  <li><a href="branding.html" class="nav-link">Branding</a></li>
-                  <li>
-                    <a href="photo.html" class="nav-link">Photo Manipulation</a>
-                  </li>
-                  <li><a href="cover.html" class="nav-link">Covers</a></li>
-                </ul>
-                <ul
-                  class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none"
-                >
-                  <li><a class="js-menu-toggle">Menu</a></li>
-                </ul>
-              </div>
-            </div>
+    <!------------------------------------------------------>
+    <div class="mobile-menu">
+      <div class="close-btn"><span>Close</span> &times;</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cartoons.html">Portraits</a></li>
+        <li><a href="logos.html">Logos</a></li>
+        <li><a href="uiux.html">UI/UX</a></li>
+        <li><a href="posters.html">Poster</a></li>
+        <li><a href="branding.html">Branding</a></li>
+        <li><a href="photos.html">Photo</a></li>
+        <li><a href="covers.html">Covers</a></li>
+      </ul>
+    </div>
+    <!------------------------------------------------------>
+    <!--HEADER-->
+    <div class="header-squiggly">
+      <h2>Web Development</h2>
+      <p>WebApps, code snippets, and more</p>
+      <img src="images/divider.png" class="squiggly" alt="Squiggly Line" />
+    </div>
+    <!------------------------------------------------------>
+    <!--MAIN-->
+    <main id="main">
+      <div class="exhibition-container">
+        <div id="exhibition" class="exhibition">
+          <div class="exhibit-item">
+            <p>
+              <a
+                href="https://jo-erl.github.io/SteinfordUniversity/"
+                target="_blank"
+                >Click here for demo</a
+              >
+            </p>
+            <img src="images/webdev/1.webp" alt="Exhibit 1" />
           </div>
-        </nav>
-
-        <div
-          class="cover-v1 jarallax"
-          style="background-image: url('images/cover_bg_11.webp')"
-          id="home-section"
-        >
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-md-7 mx-auto text-center">
-                <h1 class="heading gsap-reveal-hero">Web Development</h1>
-                <h4 class="subheading gsap-reveal-hero">
-                  WebApps, code snipets, and more.
-                </h4>
-              </div>
-            </div>
+          <div class="exhibit-item">
+            <p>
+              <a
+                href="https://jo-erl.github.io/Jobville/index.html"
+                target="_blank"
+                >Click here for demo</a
+              >
+            </p>
+            <img src="images/webdev/2.webp" alt="Exhibit 2" />
           </div>
-        </div>
-
-        <a href="#webdev" class="mouse-wrap smoothscroll">
-          <span class="mouse">
-            <span class="scroll"></span>
-          </span>
-          <span class="mouse-label">Scroll Down</span>
-        </a>
-      
-  
-        <!--------------------------------->
-        <section class="webdev" id="webdev">
-          <div class="row">
-            <div class="webdev-col">
-              <a href="https://jo-erl.github.io/NameTheFlag/" target="_blank"><img src="assets/img/webdev/21.webp"></a>
-                <h3>NAME THE FLAG</h3>
-                <p>Click image for demo</p>
-            </div>
-         
-            <div class="webdev-col">
-              <a href="https://jo-erl.github.io/GeneralKnowledge/" target="_blank"><img src="assets/img/webdev/20.webp"></a>
-                <h3>GENERAL KNOWLEDGE</h3>
-                <p>Click image for demo</p>
-            </div>
-         
-            <div class="webdev-col">
-              <a href="https://jo-erl.github.io/SurveyForm/" target="_blank"><img src="assets/img/webdev/24.webp"></a>
-                <h3>SURVEY FORM</h3>
-                <p>Click image for demo</p>
-            </div>
-          
-            <div class="webdev-col">
-              <a href="https://jo-erl.github.io/RockPaperScissors/" target="_blank"><img src="assets/img/webdev/22.webp"></a>
-                <h3>ROCK PAPER SCISSORS</h3>
-                <p>Click image for demo</p>
-            </div>
-          
-            <div class="webdev-col">
-              <a href="https://jo-erl.github.io/WordUnscrambler/" target="_blank"><img src="assets/img/webdev/23.webp"></a>
-                <h3>WORD UNSCRUMBLER</h3>
-                <p>Click image for demo</p>
-            </div>
-          
-            <!--<div class="webdev-col">
-              <a href="https://jo-erl.github.io/MazeGame/" target="_blank"><img src="assets/img/webdev/19.webp"></a>
-                <h3>MAZE GAME</h3>
-                <p>Click image for demo</p>
-            </div>-->          
-          
-              <div class="webdev-col">
-                <a href="https://jo-erl.github.io/SteinfordUniversity/" target="_blank"><img src="assets/img/webdev/1.webp"></a>
-                  <h3>STEINFORD UNIVERSITY</h3>
-                  <p>Click image for demo</p>
-              </div>
-              <div class="webdev-col">
-                <a href="https://jo-erl.github.io/Jobville/" target="_blank"><img src="assets/img/webdev/2.webp"></a>
-                  <h3>JOBVILLE</h3>
-                  <p>Click image for demo</p>
-              </div>
-              <div class="webdev-col">
-                <a href="https://jo-erl.github.io/BMIcalculator/" target="_blank"><img src="assets/img/webdev/3.webp"></a>
-                  <h3>BMI CALCULATOR</h3>
-                  <p>Click image for demo</p>
-              </div>
-              <div class="webdev-col">
-                <a href="https://jo-erl.github.io/Typingtext/" target="_blank"><img src="assets/img/webdev/4.webp"></a>
-                  <h3>TYPING TEXT</h3>
-                  <p>Click image for demo</p>
-              </div>
-              <div class="webdev-col">
-                <a href="https://jo-erl.github.io/AnalogClock/" target="_blank"><img src="assets/img/webdev/5.webp"></a>
-                  <h3>ANALOG CLOCK</h3>
-                  <p>Click image for demo</p>
-              </div>
-              <div class="webdev-col">
-                <a href="https://jo-erl.github.io/palettegenerator/" target="_blank"><img src="assets/img/webdev/6.webp"></a>
-                  <h3>COLOR PALETTE</h3>
-                  <p>Click image for demo</p>
-              </div>
-              <div class="webdev-col">
-                <a href="https://jo-erl.github.io/3dcarousel/" target="_blank"><img src="assets/img/webdev/7.webp"></a>
-                  <h3>3D CAROUSEL</h3>
-                  <p>Click image for demo</p>
-              </div>
-              <!--<div class="webdev-col">
-                <a href="https://jo-erl.github.io/ComingSoon/" target="_blank"><img src="assets/img/webdev/8.webp"></a>
-                  <h3>COMING SOON PAGE</h3>
-                  <p>Click image for demo</p>
-              </div>-->
-              <div class="webdev-col">
-                <a href="https://jo-erl.github.io/GallerySlider/" target="_blank"><img src="assets/img/webdev/9.webp"></a>
-                  <h3>GALLERY SLIDER</h3>
-                  <p>Click image for demo</p>
-              </div>
-              
-              <div class="webdev-col">
-                <a href="https://jo-erl.github.io/GallerySliderv2/" target="_blank"><img src="assets/img/webdev/10.webp"></a>
-                  <h3>GALLERY SLIDER V2</h3>
-                  <p>Click image for demo</p>
-              </div>
-              <div class="webdev-col">
-                <a href="https://jo-erl.github.io/Gallery/" target="_blank"><img src="assets/img/webdev/11.webp"></a>
-                  <h3>GALLERY</h3>
-                  <p>Click image for demo</p>
-              </div>
-              <div class="webdev-col">
-                <a href="https://jo-erl.github.io/ButtonHover/" target="_blank"><img src="assets/img/webdev/12.webp"></a>
-                  <h3>BUTTON HOVER</h3>
-                  <p>Click image for demo</p>
-              </div>
-              <div class="webdev-col">
-                <a href="https://jo-erl.github.io/DigitalClock/" target="_blank"><img src="assets/img/webdev/13.webp"></a>
-                  <h3>DIGITAL CLOCK</h3>
-                  <p>Click image for demo</p>
-              </div>
-              <div class="webdev-col">
-                <a href="https://jo-erl.github.io/TextAnimation/" target="_blank"><img src="assets/img/webdev/14.webp"></a>
-                  <h3>TEXT ANIMATION</h3>
-                  <p>Click image for demo</p>
-              </div>
-              <div class="webdev-col">
-                <a href="https://jo-erl.github.io/TTS/" target="_blank"><img src="assets/img/webdev/15.webp"></a>
-                  <h3>TTS CONVERTER</h3>
-                  <p>Click image for demo</p>
-              </div>
-              <div class="webdev-col">
-                <a href="https://jo-erl.github.io/PasswordGenerator/" target="_blank"><img src="assets/img/webdev/16.webp"></a>
-                  <h3>PWD GENERATOR</h3>
-                  <p>Click image for demo</p>
-              </div>
-              <div class="webdev-col">
-                <a href="https://jo-erl.github.io/Calculator/" target="_blank"><img src="assets/img/webdev/17.webp"></a>
-                  <h3>SIMPLE CALCULATOR</h3>
-                  <p>Click image for demo</p>
-              </div>
-      </section>
-      
-        
-        <!--------------------------------->
-
-
-                        <style>
-                          #myBtn {
-                            display: none;
-                            position: fixed;
-                            bottom: 20px;
-                            right: 30px;
-                            z-index: 99;
-                            font-size: 18px;
-                            border: none;
-                            outline: none;
-                            background-color: #b72334;
-                            color: white;
-                            cursor: pointer;
-                            padding: 15px;
-                            border-radius: 15px;
-                          }
-
-                          #myBtn:hover {
-                            background-color: #555;
-                          }
-                        </style>
-                        <button
-                          onclick="topFunction()"
-                          id="myBtn"
-                          title="Go to top"
-                        >
-                          Top
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="exhibit-item">
+            <p>
+              <a href="https://jo-erl.github.io/BMIcalculator/" target="_blank"
+                >Click here for demo</a
+              >
+            </p>
+            <img src="images/webdev/3.webp" alt="Exhibit 3" />
+          </div>
+          <div class="exhibit-item">
+            <p>
+              <a href="https://jo-erl.github.io/Typingtext/" target="_blank"
+                >Click here for demo</a
+              >
+            </p>
+            <img src="images/webdev/4.webp" alt="Exhibit 4" />
+          </div>
+          <div class="exhibit-item">
+            <p>
+              <a href="https://jo-erl.github.io/AnalogClock/" target="_blank"
+                >Click here for demo</a
+              >
+            </p>
+            <img src="images/webdev/5.webp" alt="Exhibit 5" />
+          </div>
+          <div class="exhibit-item">
+            <p>
+              <a
+                href="https://jo-erl.github.io/palettegenerator/"
+                target="_blank"
+                >Click here for demo</a
+              >
+            </p>
+            <img src="images/webdev/6.webp" alt="Exhibit 6" />
+          </div>
+          <div class="exhibit-item">
+            <p>
+              <a href="https://jo-erl.github.io/3dcarousel/" target="_blank"
+                >Click here for demo</a
+              >
+            </p>
+            <img src="images/webdev/7.webp" alt="Exhibit 7" />
+          </div>
+          <div class="exhibit-item">
+            <p>
+              <a href="https://jo-erl.github.io/GallerySlider/" target="_blank"
+                >Click here for demo</a
+              >
+            </p>
+            <img src="images/webdev/9.webp" alt="Exhibit 9" />
+          </div>
+          <div class="exhibit-item">
+            <p>
+              <a
+                href="https://jo-erl.github.io/GallerySliderv2/"
+                target="_blank"
+                >Click here for demo</a
+              >
+            </p>
+            <img src="images/webdev/10.webp" alt="Exhibit 10" />
+          </div>
+          <div class="exhibit-item">
+            <p>
+              <a href="https://jo-erl.github.io/Gallery/" target="_blank"
+                >Click here for demo</a
+              >
+            </p>
+            <img src="images/webdev/11.webp" alt="Exhibit 11" />
+          </div>
+          <div class="exhibit-item">
+            <p>
+              <a href="https://jo-erl.github.io/ButtonHover/" target="_blank"
+                >Click here for demo</a
+              >
+            </p>
+            <img src="images/webdev/12.webp" alt="Exhibit 12" />
+          </div>
+          <div class="exhibit-item">
+            <p>
+              <a href="https://jo-erl.github.io/DigitalClock/" target="_blank"
+                >Click here for demo</a
+              >
+            </p>
+            <img src="images/webdev/13.webp" alt="Exhibit 13" />
+          </div>
+          <div class="exhibit-item">
+            <p>
+              <a href="https://jo-erl.github.io/TextAnimation/" target="_blank"
+                >Click here for demo</a
+              >
+            </p>
+            <img src="images/webdev/14.webp" alt="Exhibit 14" />
+          </div>
+          <div class="exhibit-item">
+            <p>
+              <a href="https://jo-erl.github.io/TTS/" target="_blank"
+                >Click here for demo</a
+              >
+            </p>
+            <img src="images/webdev/15.webp" alt="Exhibit 15" />
+          </div>
+          <div class="exhibit-item">
+            <p>
+              <a
+                href="https://jo-erl.github.io/PasswordGenerator/"
+                target="_blank"
+                >Click here for demo</a
+              >
+            </p>
+            <img src="images/webdev/16.webp" alt="Exhibit 16" />
+          </div>
+          <div class="exhibit-item">
+            <p>
+              <a href="https://jo-erl.github.io/Calculator/" target="_blank"
+                >Click here for demo</a
+              >
+            </p>
+            <img src="images/webdev/17.webp" alt="Exhibit 17" />
+          </div>
+          <div class="exhibit-item">
+            <p>
+              <a href="https://jo-erl.github.io/StickyNavbar/" target="_blank"
+                >Click here for demo</a
+              >
+            </p>
+            <img src="images/webdev/18.webp" alt="Exhibit 18" />
+          </div>
+          <div class="exhibit-item">
+            <p>
+              <a
+                href="https://jo-erl.github.io/GeneralKnowledge/"
+                target="_blank"
+                >Click here for demo</a
+              >
+            </p>
+            <img src="images/webdev/20.webp" alt="Exhibit 20" />
+          </div>
+          <div class="exhibit-item">
+            <p>
+              <a href="https://jo-erl.github.io/NameTheFlag/" target="_blank"
+                >Click here for demo</a
+              >
+            </p>
+            <img src="images/webdev/21.webp" alt="Exhibit 21" />
+          </div>
+          <div class="exhibit-item">
+            <p>
+              <a
+                href="https://jo-erl.github.io/RockPaperScissors/"
+                target="_blank"
+                >Click here for demo</a
+              >
+            </p>
+            <img src="images/webdev/22.webp" alt="Exhibit 22" />
+          </div>
+          <div class="exhibit-item">
+            <p>
+              <a
+                href="https://jo-erl.github.io/WordUnscrambler/"
+                target="_blank"
+                >Click here for demo</a
+              >
+            </p>
+            <img src="images/webdev/23.webp" alt="Exhibit 23" />
+          </div>
+          <div class="exhibit-item">
+            <p>
+              <a href="https://jo-erl.github.io/SurveyForm/" target="_blank"
+                >Click here for demo</a
+              >
+            </p>
+            <img src="images/webdev/24.webp" alt="Exhibit 24" />
           </div>
         </div>
+        <button id="load-more-exhibit" class="load-more-exhibit">
+          Load More
+        </button>
       </div>
 
-      <script>
-        // Get the button
-        let mybutton = document.getElementById("myBtn");
+      <div id="exhibit-popup" class="exhibit-popup">
+        <div class="exhibit-popup-content">
+          <img id="exhibit-popup-image" src=" " alt="Exhibit Popup Image" />
+          <button
+            id="exhibit-prev-btn"
+            class="exhibit-nav-btn exhibit-prev-btn"
+          >
+            &lt;
+          </button>
+          <button
+            id="exhibit-next-btn"
+            class="exhibit-nav-btn exhibit-next-btn"
+          >
+            &gt;
+          </button>
+          <button id="exhibit-exit-btn" class="exhibit-exit-btn">
+            &times;
+          </button>
+        </div>
+      </div>
+    </main>
 
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () {
-          scrollFunction();
-        };
+    <!------------------------------------------------------------------------------------------------------------------------------------->
 
-        function scrollFunction() {
-          if (
-            document.body.scrollTop > 20 ||
-            document.documentElement.scrollTop > 20
-          ) {
-            mybutton.style.display = "block";
-          } else {
-            mybutton.style.display = "none";
+    <!--Back to top btn-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!--Back to top btn end-->
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="logo">
+          <a href="#">Joel Anang<span>.</span></a>
+        </div>
+        <p class="copyright">
+          Copyright &copy;
+          <span id="currentYear"></span>
+          All rights reserved
+        </p>
+      </div>
+    </footer>
+    <!--Footer end-->
+
+    <script>
+      //==================================================================================//
+      // Back to top button functionality
+      var backToTopButton = document.getElementById("myBtn");
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          backToTopButton.style.display = "block";
+        } else {
+          backToTopButton.style.display = "none";
+        }
+      }
+
+      backToTopButton.addEventListener("click", function () {
+        if ("scrollBehavior" in document.documentElement.style) {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        } else {
+          // Fallback for browsers that don't support smooth scrolling
+          const currentPosition =
+            document.documentElement.scrollTop || document.body.scrollTop;
+          if (currentPosition > 0) {
+            window.requestAnimationFrame(topFunction);
           }
         }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-        }
-      </script>
-
-      <footer class="unslate_co--footer unslate_co--section">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-7">
-              <div class="footer-site-logo">
-                <a href="#">Joel Anang<span>.</span></a>
-              </div>
-              <p class="site-copyright">
-                Copyright &copy;
-                <script>
-                  document.write(new Date().getFullYear());
-                </script>
-                All rights reserved
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
-
-    <div id="unslate_co--overlayer"></div>
-    <div class="site-loader-wrap">
-      <div class="site-loader"></div>
-    </div>
-
-    <script src="js/scripts-dist.js"></script>
-    <script src="js/main.js"></script>
+      });
+    </script>
   </body>
 </html>

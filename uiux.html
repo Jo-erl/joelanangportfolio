@@ -1,372 +1,322 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <title>UI/UX by Joel Anang</title>
-  <meta charset="utf-8">
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no shrink-to-fit=no">
-  <meta name="description" content="Joel Anang's Graphic Design Portfolio">
-  <meta name="keywords" content="html, css, javascript, jquery">
-  <meta name="author" content="Joel Anang">
-
-  <link rel="stylesheet" href="css/vendor/icomoon/style.css">
-  <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/vendor/animate.min.css">
-  <link rel="stylesheet" href="css/vendor/aos.css">
-  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
-  <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="assets/css/gallery.css">
-
-  <link rel="icon" href="images/favicon.png" type="image/x-icon">
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-
-    body {
-      overflow-x: hidden;
-      font-family: "Poppins", sans-serif;
-      touch-action: manipulation;
-    }
-  </style>
-</head>
-
-<body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
-  <nav class="unslate_co--site-mobile-menu">
-    <div class="close-wrap d-flex">
-      <a href="" class="d-flex ml-auto js-menu-toggle">
-        <span class="close-label">Close</span>
-        <div class="close-times">
-          <span class="bar1"></span>
-          <span class="bar2"></span>
+  <head>
+    <title>UI/UX by Joel Anang</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no shrink-to-fit=no"
+    />
+    <meta name="description" content="Joel Anang's Portfolio" />
+    <meta name="keywords" content="html, css, javascript, jquery" />
+    <meta name="author" content="Joel Anang" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&family=Noto+Serif:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/scripts.js" defer></script>
+    <script src="js/gallery.js" defer></script>
+  </head>
+  <body id="index-page">
+    <!------------------------------------------------------>
+    <!------------------------------------------------------>
+    <!--NAV-->
+    <nav>
+      <div class="nav-content">
+        <ul class="nav-links left-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cartoons.html">Portraits</a></li>
+          <li><a href="logos.html">Logos</a></li>
+          <li><a href="branding.html">Branding</a></li>
+        </ul>
+        <!------------------------------------------------------>
+        <div class="logo">
+          <a href="index.html" class="logo-link">
+            <img src="images/logo.png" alt="Logo" />
+            <span class="logo-text">Joel Anang<span class="dot">.</span></span>
+          </a>
         </div>
-      </a>
+        <!------------------------------------------------------>
+        <ul class="nav-links right-links">
+          <li><a href="posters.html">Posters</a></li>
+          <li><a href="branding.html">Web Development</a></li>
+          <li><a href="photos.html">Photo</a></li>
+          <li><a href="covers.html">Covers</a></li>
+        </ul>
+      </div>
+      <!------------------------------------------------------>
+      <div class="mobile-nav">
+        <div class="mobile-logo">
+          <a href="index.html" class="logo-link">
+            <img src="images/logo.png" alt="Logo" />
+            <span class="logo-text">Joel Anang<span class="dot">.</span></span>
+          </a>
+        </div>
+      </div>
+      <div class="mobile-menu-toggle">Menu</div>
+    </nav>
+    <!------------------------------------------------------>
+    <div class="mobile-menu">
+      <div class="close-btn"><span>Close</span> &times;</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cartoons.html">Portraits</a></li>
+        <li><a href="logos.html">Logos</a></li>
+        <li><a href="branding.html">Branding</a></li>
+        <li><a href="posters.html">Posters</a></li>
+        <li><a href="branding.html">Web Development</a></li>
+        <li><a href="photos.html">Photo</a></li>
+        <li><a href="covers.html">Covers</a></li>
+      </ul>
     </div>
-    <div class="site-mobile-inner"></div>
-  </nav>
-
-  <div class="unslate_co--site-wrap">
-    <div class="unslate_co--site-inner">
-      <!--<div class="lines-wrap">
-        <div class="lines-inner">
-          <div class="lines"></div>
-        </div>
-      </div>-->
-
-      <nav class="unslate_co--site-nav site-nav-target">
-        <div class="container">
-          <div class="row align-items-center justify-content-between text-left">
-            <div class="col-md-5 text-right">
-              <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
-
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="cartoons.html" class="nav-link">Portraits</a></li>
-                <li><a href="logos.html" class="nav-link">Logos</a></li>
-                <li><a href="branding.html" class="nav-link">Branding</a></li>
-              </ul>
-            </div>
-            <div class="site-logo pos-absolute">
-              <a href="index.html" class="unslate_co--site-logo">
-                <img src="images/logo2.png" width="35" height="35">Joel
-                Anang<span>.</span>
-              </a>
-            </div>
-            <div class="col-md-5 text-right text-lg-left">
-              <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
-                <li><a href="posters.html" class="nav-link">Posters</a></li>
-                <li><a href="webdev.html" class="nav-link">Web Development</a></li>
-                <li><a href="photo.html" class="nav-link">Photo</a></li>
-                <li><a href="cover.html" class="nav-link">Covers</a></li>
-              </ul>
-              <ul class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none">
-                <li><a class="js-menu-toggle">Menu</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-
-      <div class="cover-v1 jarallax" style="background-image: url('images/cover_bg_6.webp');" id="home-section">
-        <div class="container">
-          <div class="row align-items-center">
-
-            <div class="col-md-7 mx-auto text-center">
-              <h1 class="heading gsap-reveal-hero">UI/UX</h1>
-              <h4 class="subheading gsap-reveal-hero">App design, website design, and more.</h4>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <a href="#uiux" class="mouse-wrap smoothscroll">
-        <span class="mouse">
-          <span class="scroll"></span>
-        </span>
-        <span class="mouse-label">Scroll Down</span>
-      </a>
-    <!----------------------------------------------------------------->
-
-    
-    
-    <section class="uiux" id="uiux">    
-      <h1>JUICY DELIGHT</h1>
-      <p>UI for a beverage</p>
-      <div class="row">
-          <div class="uiux-col">
-            <video autoplay muted loop>
-              <source src="assets/img/uiux/9.mp4" class="lazyload  img-fluid" type="video/mp4">
-            </video>                  
-          </div>
-          <div class="uiux-col">
-            <img src="assets/img/uiux/9.webp" >                 
-          </div>          
-      </div>
-    </section>
-    <hr class="divider">
-    <!--------------------------------->
-    <section class="uiux">    
-      <h1>FLASQUE</h1>
-      <p>UI website for a flask product</p>
-      <div class="row">
-          <div class="uiux-col">
-            <video autoplay muted loop>
-              <source src="assets/img/uiux/11.mp4" class="lazyload  img-fluid" type="video/mp4">
-            </video>                  
-          </div>
-          <div class="uiux-col">
-            <img src="assets/img/uiux/11.webp" >
-          </div>   
-      </div>
-    </section>
-    <hr class="divider">
-    <!--------------------------------->
-    <section class="uiux">    
-      <h1>LOGIN x SIGN UP</h1>
-      <p>A seamless login and sign up page</p>
-      <div class="row">
-          <div class="uiux-col">
-            <video  autoplay muted loop>
-              <source src="assets/img/uiux/10.mp4" class="lazyload  img-fluid" type="video/mp4">
-            </video>                  
-          </div>
-          <div class="uiux-col">
-            <img src="assets/img/uiux/10.webp" >
-          </div>   
-      </div>
-    </section>
-    <hr class="divider">
-    <!--------------------------------->
-    <section class="uiux">    
-      <h1>DIGITAL CLOCK</h1>
-      <p>A digital clock</p>
-      <div class="row">
-          <div class="uiux-col">
-            <video class="video" autoplay muted loop>
-              <source src="assets/img/uiux/8.mp4" class="lazyload  img-fluid" type="video/mp4">
-            </video>                  
-          </div>
-          <div class="uiux-col">
-            <img src="assets/img/uiux/8.webp" >
-          </div>   
-      </div>
-    </section>
-    <hr class="divider">
-    <!--------------------------------->
-    <section class="uiux">    
-      <h1>FINGERPRINT REGISTRATION</h1>
-      <p>UI for registering fingerprints.</p>
-      <div class="row">
-          <div class="uiux-col">
-            <video class="video" autoplay muted loop>
-              <source src="assets/img/uiux/1.mp4" class="lazyload  img-fluid" type="video/mp4">
-            </video>                  
-          </div>
-          <div class="uiux-col">
-            <img src="assets/img/uiux/1.webp" >
-          </div>   
-      </div>
-    </section>
-    <hr class="divider">
-    <!--------------------------------->
-    <section class="uiux">    
-      <h1>CARTOONICA</h1>
-      <p>An NFT platform. </p>
-      <div class="row">
-          <div class="uiux-col">
-            <video class="video" autoplay muted loop>
-              <source src="assets/img/uiux/7.mp4" class="lazyload  img-fluid" type="video/mp4">
-            </video>                  
-          </div>
-          <div class="uiux-col">
-            <img src="assets/img/uiux/7.webp" >
-          </div>   
-      </div>
-    </section>
-    <hr class="divider">
-    <!--------------------------------->
-    <section class="uiux">    
-      <h1>BRICKS & GLASS</h1>
-      <p>UI for a music band.</p>
-      <div class="row">
-          <div class="uiux-col">
-            <video class="video" autoplay muted loop>
-              <source src="assets/img/uiux/6.mp4" class="lazyload  img-fluid" type="video/mp4">
-            </video>                  
-          </div>
-          <div class="uiux-col">
-            <img src="assets/img/uiux/6.webp" >
-          </div>   
-      </div>
-    </section>
-    <hr class="divider">
-    <!--------------------------------->
-    <section class="uiux">    
-      <h1>AFRIMART APP</h1>
-      <p>A mobile app for an e-commerce company.</p>
-      <div class="row">
-          <div class="uiux-col">
-            <video class="video" autoplay muted loop>
-              <source src="assets/img/uiux/2.mp4" class="lazyload  img-fluid" type="video/mp4">
-            </video>                  
-          </div>
-          <div class="uiux-col">
-            <img src="assets/img/uiux/2.webp" >
-          </div>   
-      </div>
-    </section>
-    <hr class="divider">
-    <!--------------------------------->
-    <section class="uiux">    
-      <h1>SMOOTH HANDS BARBERSHOP APP</h1>
-      <p>A mobile app for a barbershop</p>
-      <div class="row">
-          <div class="uiux-col">
-            <video class="video" autoplay muted loop>
-              <source src="assets/img/uiux/3.mp4" class="lazyload  img-fluid" type="video/mp4">
-            </video>                  
-          </div>
-          <div class="uiux-col">
-            <img src="assets/img/uiux/3.webp" >
-          </div>   
-      </div>
-    </section>
-    <hr class="divider">
-    <!--------------------------------->
-    <section class="uiux">    
-      <h1>SNEAKAPP</h1>
-      <p>A mobile app for purchasing sneakers from major industry brands. </p>
-      <div class="row">
-          <div class="uiux-col">
-            <video class="video" autoplay muted loop>
-              <source src="assets/img/uiux/4.mp4" class="lazyload  img-fluid" type="video/mp4">
-            </video>                  
-          </div>
-          <div class="uiux-col">
-            <img src="assets/img/uiux/4.webp" >
-          </div>   
-      </div>
-    </section>
-    <hr class="divider">
-    <!--------------------------------->
-    <section class="uiux">    
-      <h1>CANDID LENS WEBSITE</h1>
-      <p>A responsive website for a photography agency.</p>
-      <div class="row">
-          <div class="uiux-col">
-            <video class="video" autoplay muted loop>
-              <source src="assets/img/uiux/5.mp4" class="lazyload  img-fluid" type="video/mp4">
-            </video>                  
-          </div>
-          <div class="uiux-col">
-            <img src="assets/img/uiux/5.webp" >
-          </div>   
-      </div>
-    </section>
-    <hr class="divider">
-    <!--------------------------------->
-
-
-              <style>
-                #myBtn {
-                  display: none;
-                  position: fixed;
-                  bottom: 20px;
-                  right: 30px;
-                  z-index: 99;
-                  font-size: 18px;
-                  border: none;
-                  outline: none;
-                  background-color: #b72334;
-                  color: white;
-                  cursor: pointer;
-                  padding: 15px;
-                  border-radius: 15px;
-                }
-
-                #myBtn:hover {
-                  background-color: #555;
-                }
-              </style>
-              <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
-            </div>
-          </div>
-        </div>
-      </div>
+    <!------------------------------------------------------>
+    <!------------------------------------------------------>
+    <!--HEADER-->
+    <div class="header-squiggly">
+      <h2>UI/UX</h2>
+      <p>App design, website design, and more</p>
+      <img src="images/divider.png" class="squiggly" alt="Squiggly Line" />
     </div>
-  </div>
-  </div>
-  </div>
-  </div>
+    <!------------------------------------------------------>
+    <!--MAIN-->
+    <main id="main">
+      <div class="exhibition-container">
+        <div id="exhibition" class="exhibition">
+          <div class="exhibit-item">
+            <img src="images/uiux/1.webp" alt="Exhibit 1" />
+          </div>
+          <div class="exhibit-item">
+            <video
+              src="images/uiux/1.mp4"
+              alt="Exhibit 2"
+              controls
+              autoplay
+              loop
+              muted
+            ></video>
+          </div>
+          <div class="exhibit-item">
+            <img src="images/uiux/2.webp" alt="Exhibit 3" />
+          </div>
+          <div class="exhibit-item">
+            <video
+              src="images/uiux/2.mp4"
+              alt="Exhibit 4"
+              controls
+              autoplay
+              loop
+              muted
+            ></video>
+          </div>
+          <div class="exhibit-item">
+            <img src="images/uiux/3.webp" alt="Exhibit 5" />
+          </div>
+          <div class="exhibit-item">
+            <video
+              src="images/uiux/3.mp4"
+              alt="Exhibit 6"
+              controls
+              autoplay
+              loop
+              muted
+            ></video>
+          </div>
+          <div class="exhibit-item">
+            <img src="images/uiux/4.webp" alt="Exhibit 7" />
+          </div>
+          <div class="exhibit-item">
+            <video
+              src="images/uiux/4.mp4"
+              alt="Exhibit 8"
+              controls
+              autoplay
+              loop
+              muted
+            ></video>
+          </div>
+          <div class="exhibit-item">
+            <img src="images/uiux/5.webp" alt="Exhibit 9" />
+          </div>
+          <div class="exhibit-item">
+            <video
+              src="images/uiux/5.mp4"
+              alt="Exhibit 10"
+              controls
+              autoplay
+              loop
+              muted
+            ></video>
+          </div>
+          <div class="exhibit-item">
+            <img src="images/uiux/6.webp" alt="Exhibit 11" />
+          </div>
+          <div class="exhibit-item">
+            <video
+              src="images/uiux/6.mp4"
+              alt="Exhibit 12"
+              controls
+              autoplay
+              loop
+              muted
+            ></video>
+          </div>
+          <div class="exhibit-item">
+            <img src="images/uiux/7.webp" alt="Exhibit 13" />
+          </div>
+          <div class="exhibit-item">
+            <video
+              src="images/uiux/7.mp4"
+              alt="Exhibit 14"
+              controls
+              autoplay
+              loop
+              muted
+            ></video>
+          </div>
+          <div class="exhibit-item">
+            <img src="images/uiux/8.webp" alt="Exhibit 15" />
+          </div>
+          <div class="exhibit-item">
+            <video
+              src="images/uiux/8.mp4"
+              alt="Exhibit 16"
+              controls
+              autoplay
+              loop
+              muted
+            ></video>
+          </div>
+          <div class="exhibit-item">
+            <img src="images/uiux/9.webp" alt="Exhibit 17" />
+          </div>
+          <div class="exhibit-item">
+            <video
+              src="images/uiux/9.mp4"
+              alt="Exhibit 18"
+              controls
+              autoplay
+              loop
+              muted
+            ></video>
+          </div>
+          <div class="exhibit-item">
+            <img src="images/uiux/10.webp" alt="Exhibit 19" />
+          </div>
+          <div class="exhibit-item">
+            <video
+              src="images/uiux/10.mp4"
+              alt="Exhibit 20"
+              controls
+              autoplay
+              loop
+              muted
+            ></video>
+          </div>
+          <div class="exhibit-item">
+            <img src="images/uiux/11.webp" alt="Exhibit 21" />
+          </div>
+          <div class="exhibit-item">
+            <video
+              src="images/uiux/11.mp4"
+              alt="Exhibit 22"
+              controls
+              autoplay
+              loop
+              muted
+            ></video>
+          </div>
+        </div>
+        <button id="load-more-exhibit" class="load-more-exhibit">
+          Load More
+        </button>
+      </div>
 
-  <script>
-    // Get the button
-    let mybutton = document.getElementById("myBtn");
+      <div id="exhibit-popup" class="exhibit-popup">
+        <div class="exhibit-popup-content">
+          <img id="exhibit-popup-image" src=" " alt="Exhibit Popup Image" />
+          <button
+            id="exhibit-prev-btn"
+            class="exhibit-nav-btn exhibit-prev-btn"
+          >
+            &lt;
+          </button>
+          <button
+            id="exhibit-next-btn"
+            class="exhibit-nav-btn exhibit-next-btn"
+          >
+            &gt;
+          </button>
+          <button id="exhibit-exit-btn" class="exhibit-exit-btn">
+            &times;
+          </button>
+        </div>
+      </div>
+    </main>
 
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function () { scrollFunction() };
+    <!------------------------------------------------------------------------------------------------------------------------------------->
 
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
+    <!--Back to top btn-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!--Back to top btn end-->
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="logo">
+          <a href="#">Joel Anang<span>.</span></a>
+        </div>
+        <p class="copyright">
+          Copyright &copy;
+          <span id="currentYear"></span>
+          All rights reserved
+        </p>
+      </div>
+    </footer>
+    <!--Footer end-->
+
+    <script>
+      //==================================================================================//
+      // Back to top button functionality
+      var backToTopButton = document.getElementById("myBtn");
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          backToTopButton.style.display = "block";
+        } else {
+          backToTopButton.style.display = "none";
+        }
       }
-    }
 
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-  </script>
-
-  <footer class="unslate_co--footer unslate_co--section">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-7">
-          <div class="footer-site-logo"><a href="#">Joel Anang<span>.</span></a></div>
-          <p class="site-copyright">
-            Copyright &copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script> All rights reserved
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer>
-  </div>
-
-  <div id="unslate_co--overlayer"></div>
-  <div class="site-loader-wrap">
-    <div class="site-loader"></div>
-  </div>
-
-  <script src="js/scripts-dist.js"></script>
-  <script src="js/main.js"></script>
-
-</body>
-
+      backToTopButton.addEventListener("click", function () {
+        if ("scrollBehavior" in document.documentElement.style) {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        } else {
+          // Fallback for browsers that don't support smooth scrolling
+          const currentPosition =
+            document.documentElement.scrollTop || document.body.scrollTop;
+          if (currentPosition > 0) {
+            window.requestAnimationFrame(topFunction);
+          }
+        }
+      });
+    </script>
+  </body>
 </html>
