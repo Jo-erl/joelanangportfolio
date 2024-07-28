@@ -5,8 +5,9 @@
     <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no shrink-to-fit=no"
+      content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"
     />
+
     <meta name="description" content="Joel Anang's Portfolio" />
     <meta name="keywords" content="html, css, javascript, jquery" />
     <meta name="author" content="Joel Anang" />
@@ -25,7 +26,8 @@
     <script src="js/scripts.js" defer></script>
     <script src="js/gallery2.js" defer></script>
   </head>
-  <body id="index-page">
+  <body>
+    <div class="wrapps">
     <!------------------------------------------------------>
     <!------------------------------------------------------>
     <!--NAV-->
@@ -90,31 +92,33 @@
     <main id="main">
       <div class="showcase-container">
         <div class="showcase-filters-wrapper">
-        <div class="showcase-filters">
-          <button class="showcase-filter active" data-category="all">
-            ALL
-          </button>
-          <button class="showcase-filter" data-category="mirage">MIRAGE</button>
-          <button class="showcase-filter" data-category="quad">
-            QUADRUPLETS
-          </button>
-          <button class="showcase-filter" data-category="astro">
-            FLAMING ASTRONAUTS
-          </button>
-          <button class="showcase-filter" data-category="blemish">
-            BLEMISH REMOVAL
-          </button>
-          <button class="showcase-filter" data-category="night">
-            NIGHT SKY
-          </button>
-          <button class="showcase-filter" data-category="corridor">
-            THE CORRIDOR
-          </button>
-          <button class="showcase-filter" data-category="priest">
-            THE PREIEST
-          </button>
+          <div class="showcase-filters">
+            <button class="showcase-filter active" data-category="all">
+              All
+            </button>
+            <button class="showcase-filter" data-category="mirage">
+              MIRAGE
+            </button>
+            <button class="showcase-filter" data-category="quad">
+              QUADRUPLETS
+            </button>
+            <button class="showcase-filter" data-category="astro">
+              FLAMING ASTRONAUTS
+            </button>
+            <button class="showcase-filter" data-category="blemish">
+              BLEMISH REMOVAL
+            </button>
+            <button class="showcase-filter" data-category="night">
+              NIGHT SKY
+            </button>
+            <button class="showcase-filter" data-category="corridor">
+              THE CORRIDOR
+            </button>
+            <button class="showcase-filter" data-category="priest">
+              THE PRIEST
+            </button>
+          </div>
         </div>
-    </div>
         <div id="showcase" class="showcase">
           <div class="showcase-item" data-category="mirage">
             <img src="images/photo/1.webp" alt="Showcase 1" />
@@ -243,5 +247,6 @@
         }
       });
     </script>
+    </div>
   </body>
 </html>

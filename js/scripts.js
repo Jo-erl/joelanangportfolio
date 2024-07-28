@@ -73,10 +73,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function handleScroll() {
     // Footer reveal animation
-    const footerTop = footer.getBoundingClientRect().top;
+    const footerRect = footer.getBoundingClientRect();
     const windowHeight = window.innerHeight;
 
-    if (footerTop < windowHeight * 0.8) {
+    if (footerRect.bottom <= windowHeight + 100) {
       footer.classList.add("reveal");
     } else {
       footer.classList.remove("reveal");
