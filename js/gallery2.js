@@ -46,7 +46,7 @@ function filterImages(category) {
   currentCategory = category;
   currentIndex = 0;
   const items = document.querySelectorAll(".showcase-item");
-  
+
   items.forEach((item) => {
     if (category === "all" || item.dataset.category === category) {
       item.style.display = "block";
@@ -55,14 +55,14 @@ function filterImages(category) {
     }
     item.classList.remove("show");
   });
-  
+
   loadImages();
 }
 
 function scrollToActiveFilter(isInitial = false) {
-  const filtersWrapper = document.querySelector('.showcase-filters-wrapper');
-  const activeFilter = document.querySelector('.showcase-filter.active');
-  
+  const filtersWrapper = document.querySelector(".showcase-filters-wrapper");
+  const activeFilter = document.querySelector(".showcase-filter.active");
+
   if (activeFilter) {
     if (isInitial) {
       // For initial load, set scroll to 0 to show "All" at the start
@@ -70,12 +70,16 @@ function scrollToActiveFilter(isInitial = false) {
     } else {
       const filterRect = activeFilter.getBoundingClientRect();
       const wrapperRect = filtersWrapper.getBoundingClientRect();
-      
-      const scrollLeft = filterRect.left - wrapperRect.left - (wrapperRect.width / 2) + (filterRect.width / 2);
-      
+
+      const scrollLeft =
+        filterRect.left -
+        wrapperRect.left -
+        wrapperRect.width / 2 +
+        filterRect.width / 2;
+
       filtersWrapper.scrollTo({
         left: scrollLeft,
-        behavior: 'smooth'
+        behavior: "smooth",
       });
     }
   }
@@ -83,11 +87,13 @@ function scrollToActiveFilter(isInitial = false) {
 
 function initializeShowcase() {
   // Set "All" as the active category
-  const allButton = document.querySelector('.showcase-filter[data-category="all"]');
+  const allButton = document.querySelector(
+    '.showcase-filter[data-category="all"]'
+  );
   if (allButton) {
-    allButton.classList.add('active');
+    allButton.classList.add("active");
   }
-  
+
   // Load initial images
   filterImages("all");
 }
@@ -137,7 +143,11 @@ filterButtons.forEach((button) => {
   });
 });
 
+// Initialize with "All" selected
+document
+  .querySelector('.showcase-filter[data-category="all"]')
+  .classList.add("active");
 
 // Call initializeShowcase when the page loads
-window.addEventListener('load', initializeShowcase);
+window.addEventListener("load", initializeShowcase);
 //==================================================================================//

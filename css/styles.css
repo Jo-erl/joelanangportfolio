@@ -1313,6 +1313,7 @@ a.servies:hover .portfolio-image {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  overflow: hidden;
 }
 
 .showcase-filters {
@@ -1323,12 +1324,13 @@ a.servies:hover .portfolio-image {
   margin-bottom: 20px;
   margin: 0 -10px;
   padding-left: 40px;
+  gap: 10px;
 }
 
 .showcase-filter {
   background-color: #f0f0f0;
   border: none;
-  padding: 10px 20px;
+  padding: 8px 16px;
   margin: 0 10px;
   flex: 0 0 auto;
   margin-right: 10px;
@@ -1336,7 +1338,7 @@ a.servies:hover .portfolio-image {
   cursor: pointer;
   transition: background-color 0.3s ease;
   border-radius: 20px;
-  min-width: 100px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .showcase-filter.active {
@@ -1483,6 +1485,17 @@ a.servies:hover .portfolio-image {
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.showcase-filters-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 40px;
+  background: linear-gradient(to right, rgba(239,239,239,0), rgba(239,239,239,1));
+  pointer-events: none;
 }
 
 .showcase-filters-wrapper::-webkit-scrollbar {
