@@ -25,6 +25,10 @@
     <script src="js/scripts.js" defer></script>
   </head>
   <body>
+    <!-- Loader -->
+    <div id="loader">
+      <div class="spinner"></div>
+    </div>
     <!------------------------------------------------------>
     <!--NAV-->
     <nav>
@@ -457,6 +461,49 @@
     </footer>
     <!--Footer end-->
     <script>
+      //==================================================================================//
+      // Back to top button functionality
+      var backToTopButton = document.getElementById("myBtn");
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          backToTopButton.style.display = "block";
+        } else {
+          backToTopButton.style.display = "none";
+        }
+      }
+
+      backToTopButton.addEventListener("click", function () {
+        if ("scrollBehavior" in document.documentElement.style) {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        } else {
+          // Fallback for browsers that don't support smooth scrolling
+          const currentPosition =
+            document.documentElement.scrollTop || document.body.scrollTop;
+          if (currentPosition > 0) {
+            window.requestAnimationFrame(topFunction);
+          }
+        }
+      });
+      //==================================================================================//
+
+      // Hide loader after page load
+      window.addEventListener("load", function () {
+        var loader = document.getElementById("loader");
+        loader.style.display = "none";
+      });
+      //==================================================================================//
+      // Scroll down event listener
       document
         .getElementById("scrollDownTo")
         .addEventListener("click", function () {

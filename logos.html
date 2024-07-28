@@ -26,6 +26,10 @@
     <script src="js/gallery.js" defer></script>
   </head>
   <body>
+    <!-- Loader -->
+    <div id="loader">
+      <div class="spinner"></div>
+    </div>
     <!------------------------------------------------------>
     <!------------------------------------------------------>
     <!--NAV-->
@@ -337,6 +341,22 @@
           }
         }
       });
+      //==================================================================================//
+
+      // Hide loader after page load
+      window.addEventListener("load", function () {
+        var loader = document.getElementById("loader");
+        loader.style.display = "none";
+      });
+      //==================================================================================//
+      // Scroll down event listener
+      document
+        .getElementById("scrollDownTo")
+        .addEventListener("click", function () {
+          document
+            .getElementById("scrollDownHere")
+            .scrollIntoView({ behavior: "smooth" });
+        });
     </script>
   </body>
 </html>
