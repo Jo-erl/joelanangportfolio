@@ -45,10 +45,54 @@ function loadImages() {
 function filterImages(category) {
   currentCategory = category;
   currentIndex = 0;
-  document
-    .querySelectorAll(".showcase-item")
-    .forEach((item) => item.classList.remove("show"));
+  const items = document.querySelectorAll(".showcase-item");
+  
+  items.forEach((item) => {
+    if (category === "all" || item.dataset.category === category) {
+      item.style.display = "block";
+    } else {
+      item.style.display = "none";
+    }
+    item.classList.remove("show");
+  });
+  
   loadImages();
+}
+
+function scrollToActiveFilter(isInitial = false) {
+  const filtersWrapper = document.querySelector('.showcase-filters-wrapper');
+  const activeFilter = document.querySelector('.showcase-filter.active');
+  
+  if (activeFilter) {
+    if (isInitial) {
+      // For initial load, set scroll to 0 to show "All" at the start
+      filtersWrapper.scrollLeft = 0;
+    } else {
+      const filterRect = activeFilter.getBoundingClientRect();
+      const wrapperRect = filtersWrapper.getBoundingClientRect();
+      
+      const scrollLeft = filterRect.left - wrapperRect.left - (wrapperRect.width / 2) + (filterRect.width / 2);
+      
+      filtersWrapper.scrollTo({
+        left: scrollLeft,
+        behavior: 'smooth'
+      });
+    }
+  }
+}
+
+function initializeShowcase() {
+  // Set "All" as the active category
+  const allButton = document.querySelector('.showcase-filter[data-category="all"]');
+  if (allButton) {
+    allButton.classList.add('active');
+  }
+  
+  // Load initial images
+  filterImages("all");
+  
+  // Scroll to show "All" at the start
+  scrollToActiveFilter(true);
 }
 
 loadMoreBtn.addEventListener("click", loadImages);
@@ -93,27 +137,11 @@ filterButtons.forEach((button) => {
     filterButtons.forEach((btn) => btn.classList.remove("active"));
     button.classList.add("active");
     filterImages(button.dataset.category);
-    crollToActiveFilter(); 
+    scrollToActiveFilter(false);
   });
 });
 
-window.addEventListener('load', scrollToActiveFilter);
+// Call initializeShowcase when the page loads
+window.addEventListener('load', initializeShowcase);
 
-function scrollToActiveFilter() {
-  const activeFilter = document.querySelector('.showcase-filter.active');
-  if (activeFilter) {
-    const filtersWrapper = document.querySelector('.showcase-filters-wrapper');
-    const filterRect = activeFilter.getBoundingClientRect();
-    const wrapperRect = filtersWrapper.getBoundingClientRect();
-    
-    const scrollLeft = filterRect.left - wrapperRect.left - (wrapperRect.width / 2) + (filterRect.width / 2);
-    
-    filtersWrapper.scrollTo({
-      left: scrollLeft,
-      behavior: 'smooth'
-    });
-  }
-}
-
-loadImages();
 //==================================================================================//
