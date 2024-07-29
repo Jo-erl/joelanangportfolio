@@ -17,7 +17,7 @@ const images = Array.from(document.querySelectorAll(".showcase-item img")).map(
 );
 
 let currentIndex = 0;
-const imagesPerLoad = 8;
+const imagesPerLoad = 6;
 let currentCategory = "all";
 
 function loadImages() {

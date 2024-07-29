@@ -26,11 +26,7 @@
     <script src="js/gallery.js" defer></script>
   </head>
   <body>
-    <!-- Loader -->
-    <div class="loader-wrapper">
-      <div class="loader"></div>
-    </div>
-    <!------------------------------------------------------>
+    <!--=======================================================-->
     <!--NAV-->
     <nav>
       <div class="nav-content">
@@ -40,14 +36,14 @@
           <li><a href="logos.html">Logos</a></li>
           <li><a href="uiux.html">UI/UX</a></li>
         </ul>
-        <!------------------------------------------------------>
+        <!--=======================================================-->
         <div class="logo">
           <a href="index.html" class="logo-link">
             <img src="images/logo.png" alt="Logo" />
             <span class="logo-text">Joel Anang<span class="dot">.</span></span>
           </a>
         </div>
-        <!------------------------------------------------------>
+        <!--=======================================================-->
         <ul class="nav-links right-links">
           <li><a href="posters.html">Poster</a></li>
           <li><a href="branding.html">Branding</a></li>
@@ -55,7 +51,7 @@
           <li><a href="covers.html">Covers</a></li>
         </ul>
       </div>
-      <!------------------------------------------------------>
+      <!--=======================================================-->
       <div class="mobile-nav">
         <div class="mobile-logo">
           <a href="index.html" class="logo-link">
@@ -66,7 +62,7 @@
       </div>
       <div class="mobile-menu-toggle">Menu</div>
     </nav>
-    <!------------------------------------------------------>
+    <!--=======================================================-->
     <div class="mobile-menu">
       <div class="close-btn"><span>Close</span> &times;</div>
       <ul>
@@ -80,14 +76,14 @@
         <li><a href="covers.html">Covers</a></li>
       </ul>
     </div>
-    <!------------------------------------------------------>
+    <!--=======================================================-->
     <!--HEADER-->
     <div class="header-squiggly">
       <h2>Web Development</h2>
       <p>WebApps, code snippets, and more</p>
       <img src="images/divider.png" class="squiggly" alt="Squiggly Line" />
     </div>
-    <!------------------------------------------------------>
+    <!--=======================================================-->
     <!--MAIN-->
     <main id="main">
       <div class="exhibition-container">
@@ -285,10 +281,12 @@
             <img src="images/webdev/24.webp" alt="Exhibit 24" />
           </div>
         </div>
+        <!--=======================================================-->
         <button id="load-more-exhibit" class="load-more-exhibit">
           Load More
         </button>
       </div>
+      <!--=======================================================-->
 
       <div id="exhibit-popup" class="exhibit-popup">
         <div class="exhibit-popup-content">
@@ -299,24 +297,26 @@
           >
             &lt;
           </button>
+          <!--=======================================================-->
           <button
             id="exhibit-next-btn"
             class="exhibit-nav-btn exhibit-next-btn"
           >
             &gt;
           </button>
+          <!--=======================================================-->
           <button id="exhibit-exit-btn" class="exhibit-exit-btn">
             &times;
           </button>
         </div>
       </div>
     </main>
-
-    <!------------------------------------------------------------------------------------------------------------------------------------->
+    <!--=======================================================-->
 
     <!--Back to top btn-->
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <!--Back to top btn end-->
+    <!--=======================================================-->
 
     <!--Footer-->
     <footer class="footer">
@@ -336,7 +336,6 @@
     <!--Footer end-->
 
     <script>
-      //==================================================================================//
       // Back to top button functionality
       var backToTopButton = document.getElementById("myBtn");
 
@@ -370,48 +369,7 @@
           }
         }
       });
-      //==================================================================================//
-
-      // Set the minimum loading time (in milliseconds)
-      const minimumLoadTime = 1200;
-
-      // Record the start time when the script runs
-      const startTime = new Date().getTime();
-
-      window.addEventListener("load", function () {
-        const loaderWrapper = document.querySelector(".loader-wrapper");
-
-        // Calculate how long it's been since the page started loading
-        const currentTime = new Date().getTime();
-        const elapsedTime = currentTime - startTime;
-
-        // If less than minimumLoadTime has passed, wait for the remaining time
-        if (elapsedTime < minimumLoadTime) {
-          const remainingTime = minimumLoadTime - elapsedTime;
-          setTimeout(() => {
-            hideLoader(loaderWrapper);
-          }, remainingTime);
-        } else {
-          // If more than minimumLoadTime has passed, hide the loader immediately
-          hideLoader(loaderWrapper);
-        }
-      });
-
-      function hideLoader(loaderWrapper) {
-        loaderWrapper.classList.add("fade-out");
-        setTimeout(() => {
-          loaderWrapper.style.display = "none";
-        }, 500);
-      }
-      //==================================================================================//
-      // Scroll down event listener
-      document
-        .getElementById("scrollDownTo")
-        .addEventListener("click", function () {
-          document
-            .getElementById("scrollDownHere")
-            .scrollIntoView({ behavior: "smooth" });
-        });
+      //===========================================================//
     </script>
   </body>
 </html>
