@@ -1246,6 +1246,16 @@ header {
   display: block;
 }
 
+.demo-link {
+  display: block;
+  width: 100%;
+  background-color: var(--darkgray1);
+  color: var(--red);
+  padding: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+
 .exhibit-item:hover {
   transform: scale(1.05);
 }
