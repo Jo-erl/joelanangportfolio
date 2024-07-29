@@ -1368,7 +1368,7 @@ header {
   text-align: center;
   background-color: var(--lightgray3);
   border-radius: 0 0 40px 40px;
-  padding: 40px;
+  padding: 40px 0px;
 }
 
 .header-squiggly h2 {
@@ -1413,7 +1413,8 @@ header {
 .showcase-filters {
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   overflow-x: hidden;
   min-width: max-content;
 }
@@ -1594,13 +1595,11 @@ header {
     margin-right: -20px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 10px;
   }
 
   .showcase-filters {
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 5px;
   }
 
   .showcase-filter {
