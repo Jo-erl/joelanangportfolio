@@ -1266,7 +1266,7 @@ header {
   display: block;
   width: 100%;
   background-color: var(--darkgray1);
-  color: var(--red);
+  color: var(--white);
   padding: 5px;
   text-decoration: none;
   text-align: center;
