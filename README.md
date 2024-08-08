@@ -1,2 +1,2 @@
 # Website Portfolio
-[Link](https://joer.pages.dev)
+[Link](https://joerl.pages.dev)
