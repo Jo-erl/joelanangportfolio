@@ -49,6 +49,8 @@
   margin: 0;
   padding: 0;
   -webkit-tap-highlight-color: transparent;
+  font-family: "MTNBrighterSans", sans-serif;
+
 }
 
 *:focus {
@@ -62,7 +64,6 @@ html {
 }
 /*=======================================================*/
 body {
-  font-family: "MTNBrighterSans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   background-color: var(--bg);
@@ -1129,6 +1130,127 @@ header {
   }
 }
 
+/*=======================================================*/
+.contact-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.contact-left-title h2 {
+  font-weight: 600;
+  color: #a363aa;
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.contact-left-title hr {
+  border: none;
+  width: 120px;
+  height: 5px;
+  background-color: #a363aa;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-inputs {
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: #666;
+  border-radius: 50px;
+}
+
+.contact-left textarea {
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+
+.contact-inputs:focus {
+  border: 2px solid #b72334;
+}
+
+.contact-inputs::placeholder {
+  color: #a9a9a9;
+}
+
+.contact-left button {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #fff;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(270deg, #b72334, #4b0911);
+  cursor: pointer;
+}
+
+.contact-left button:hover {
+  background: linear-gradient(90deg, #b72334, #4b0911);
+}
+
+.contact-left button img {
+  height: 15px;
+}
+
+.contact-right img {
+  animation: float 2.5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@media (max-width: 800px) {
+  .contact-container {
+    height: auto; 
+    flex-direction: column;  
+    align-items: center;  
+    justify-content: center;  
+    padding: 20px;  
+  }
+
+  .contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    width: 100%;  
+  }
+
+  .contact-inputs {
+    width: 80vw; 
+    text-align: left;
+  }
+
+  .button-wrapper {
+    width: 80vw;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .contact-right {
+    display: none;  
+  }
+}
 /*=======================================================*/
 /*GALLERY LOAD MORE BTN*/
 #loadMore {
