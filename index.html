@@ -401,96 +401,72 @@
       <!--=======================================================-->
 
       <section id="get-in-touch">
-        <div class="container">
-          <h2 id="get-in-touch-h2">Get In Touch</h2>
-          <img
-            src="images/divider.png"
-            alt="Divider"
-            class="get-in-touch-divider"
-          />
-          <!--=======================================================-->
-          <div class="contact-container">
-            <form
-              action="https://api.web3forms.com/submit"
-              method="POST"
-              class="contact-left"
-            >
-              <div class="contact-left-title"></div>
-              <input
-                type="hidden"
-                name="access_key"
-                value="b3271609-238d-4da8-a089-2001f5a47104"
-              />
-              <input
-                type="text"
-                name="name"
-                placeholder="Your Name"
-                class="contact-inputs"
-                required
-              />
-
-              <input
-                type="email"
-                name="email"
-                placeholder="Your Email"
-                class="contact-inputs"
-                required
-              />
-
-              <textarea
-                name="message"
-                placeholder="Your Message"
-                class="contact-inputs"
-                required
-              ></textarea>
-
-              <div class="button-wrapper">
-                <button type="submit">
-                  Submit <img src="assets/arrow_icon.png" alt="" />
-                </button>
-              </div>
-            </form>
-            <div class="contact-right">
-              <img src="assets/right_img.png" alt="" />
-            </div>
+        <h2 id="get-in-touch-h2">Get In Touch</h2>
+        <img
+          src="images/divider.png"
+          alt="Divider"
+          class="get-in-touch-divider"
+        />
+        <!--=======================================================-->
+        <div class="contact-container">
+          <div class="contact-right-mobile">
+            <img src="assets/right_img.png" alt="" />
           </div>
+          <form
+            action="contact-form-handler.php"
+            method="POST"
+            class="contact-left"
+          >
+            <div class="contact-left-title"></div>
+            <input
+              type="hidden"
+              name="access_key"
+              value="b3271609-238d-4da8-a089-2001f5a47104"
+            />
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              class="contact-inputs"
+              required
+            />
 
-          <!--=======================================================-->
-          <!--
-          <div class="contact-items">
-            <div class="contact-item">
-              <h3>E-mail</h3>
-              <a
-                href="mailto:jo.erl444@email.com"
-                target="_blank"
-                class="contact-text"
-                >Send Mail '&#7447;'<span> &#10084;</span></a
-              >
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              class="contact-inputs"
+              required
+            />
+
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              class="contact-inputs"
+              required
+            ></textarea>
+
+            <div class="button-wrapper">
+              <button type="submit">
+                Submit <img src="assets/arrow_icon.png" alt="" />
+              </button>
             </div>
-            =======================================================
-            <div class="contact-item">
-              <h3>Phone</h3>
-              <a href="tel:020-813-4080" target="_blank" class="contact-text"
-                >Click to call '&#7447;'<span> &#10084;</span></a
-              >
-            </div>
-            =======================================================
-
-            
-            <div class="contact-item">
-              <h3>Instagram</h3>
-               <a
-                href="https://instagram.com/jo.erl"
-                target="_blank"
-                class="contact-text"
-                >Follow me '&#7447;'<span> &#10084;</span></a
-              >
-               </div>
-              -->
-
-            <!--=======================================================-->
+          </form>
+          <div class="contact-right">
+            <img src="assets/right_img.png" alt="" />
           </div>
+        </div>
       </section>
+
+      <!--<div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127066.72272953182!2d-0.2621327771020163!3d5.591373810816494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9084b2b7a773%3A0xbed14ed8650e2dd3!2sAccra!5e0!3m2!1sen!2sgh!4v1724175727184!5m2!1sen!2sgh"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>-->
     </main>
 
     <!--=======================================================-->
@@ -503,7 +479,7 @@
     <footer class="footer">
       <div class="footer-content">
         <div class="logo">
-          <a href="#">Joel Anang<span>.</span></a>
+          <a>Joel Anang<span>.</span></a>
         </div>
         <p class="copyright">
           Copyright &copy;
