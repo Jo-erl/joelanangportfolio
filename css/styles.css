@@ -1057,7 +1057,7 @@ header {
 /*=======================================================*/
 /*GET IN TOUCH*/
 #get-in-touch {
-  padding: 40px 0;
+  padding: 20px 0;
   text-align: center;
 }
 
@@ -1072,7 +1072,7 @@ header {
 }
 
 .get-in-touch-divider {
-  margin: 0 auto 30px;
+  margin: 0 auto 20px;
   opacity: 0;
   width: 60px;
   transition: opacity 0.6s ease-out, width 0.6s ease-out;
@@ -1092,7 +1092,7 @@ header {
 /*=======================================================*/
 /*CONTACT*/
 .contact-container {
-  height: 100vh;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -1105,13 +1105,6 @@ header {
   gap: 20px;
 }
 
-.contact-left-title h2 {
-  font-weight: 600;
-  color: #a363aa;
-  font-size: 40px;
-  margin-bottom: 5px;
-}
-
 .contact-left-title hr {
   border: none;
   width: 120px;
@@ -1119,6 +1112,14 @@ header {
   background-color: #a363aa;
   border-radius: 10px;
   margin-bottom: 20px;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  background-color: white !important;
+  transition: background-color 0s;
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+  -webkit-text-fill-color: #666 !important;
 }
 
 .contact-inputs {
@@ -1129,6 +1130,7 @@ header {
   padding-left: 25px;
   font-weight: 500;
   color: #666;
+  background-color: white !important;
   border-radius: 50px;
 }
 
@@ -1140,10 +1142,14 @@ header {
 
 .contact-inputs:focus {
   border: 2px solid #b72334;
+  background-color: white !important;
+  color: #5e5e5e !important;
+  -webkit-text-fill-color: #666 !important;
+  box-shadow: 0 0 0px 1000px white inset !important;
 }
 
 .contact-inputs::placeholder {
-  color: #a9a9a9;
+  color: #a7a7a7 !important;
 }
 
 .contact-left button {
@@ -1171,6 +1177,7 @@ header {
   animation: float 1s ease-in-out infinite;
 }
 .contact-right-mobile img {
+  margin-top: 10px;
   animation: float 1s ease-in-out infinite;
 }
 
@@ -1232,6 +1239,7 @@ header {
     display: inline-block;
   }
 }
+
 /*=======================================================*/
 
 /* MAP */
@@ -1349,7 +1357,8 @@ iframe {
   font-size: var(--maintext);
   border: none;
   outline: none;
-  background-color: var(--red);
+  background: linear-gradient(270deg, #b72334, #4b0911);
+  cursor: pointer;
   color: var(--white);
   cursor: pointer;
   padding: 10px;
@@ -1357,8 +1366,9 @@ iframe {
 }
 
 #myBtn:hover {
-  background-color: var(--darkgray2);
+  background: linear-gradient(90deg, #b72334, #4b0911);
 }
+
 /*=======================================================*/
 /*EXHIBITION*/
 .exhibition-container {
