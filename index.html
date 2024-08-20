@@ -413,7 +413,7 @@
             <img src="assets/right_img.png" alt="" />
           </div>
           <form
-            action="contact-form-handler.php"
+            action="https://api.web3forms.com/submit"
             method="POST"
             class="contact-left"
           >
@@ -423,6 +423,28 @@
               name="access_key"
               value="b3271609-238d-4da8-a089-2001f5a47104"
             />
+            <!--<input
+              type="hidden"
+              name="subject"
+              value="New Submission from Joel's Website"
+            />-->
+
+            <input
+              type="hidden"
+              name="redirect"
+              value="https://joerl.pages.dev/"
+            />
+
+            <input type="hidden" name="from_name" value="AJ Form submission" />
+
+            <input
+              type="text"
+              name="subject"
+              placeholder="Subject"
+              class="contact-inputs"
+              required
+            />
+
             <input
               type="text"
               name="name"
@@ -578,6 +600,10 @@
           }
         }
       });
+
+      window.onload = function () {
+        document.querySelector("form").reset();
+      };
     </script>
   </body>
 </html>
