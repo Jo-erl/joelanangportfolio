@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"
+      content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height"
     />
     <meta name="description" content="Joel Anang's Portfolio" />
     <meta name="keywords" content="html, css, javascript, jquery" />
@@ -20,10 +20,6 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="js/scripts.js" defer></script>
-    <script src="js/gallery.js" defer></script>
   </head>
   <body>
     <!--=======================================================-->
@@ -47,8 +43,8 @@
         <ul class="nav-links right-links">
           <li><a href="posters.html">Posters</a></li>
           <li><a href="branding.html">Web Development</a></li>
-          <li><a href="photos.html">Photo</a></li>
-          <li><a href="covers.html">Covers</a></li>
+          <li><a href="motion.html">Motion Graphics</a></li>
+          <li><a href="photos.html">Photo Editing</a></li>
         </ul>
       </div>
       <!--=======================================================-->
@@ -67,13 +63,13 @@
       <div class="close-btn"><span>Close</span> &times;</div>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="cartoons.html">Portraits</a></li>
+        <li><a href="cartoons.html">Cartoon Portraits</a></li>
         <li><a href="logos.html">Logos</a></li>
         <li><a href="branding.html">Branding</a></li>
         <li><a href="posters.html">Posters</a></li>
+        <li><a href="motion.html">Motion Graphics</a></li>
         <li><a href="branding.html">Web Development</a></li>
-        <li><a href="photos.html">Photo</a></li>
-        <li><a href="covers.html">Covers</a></li>
+        <li><a href="photos.html">Photo Editing</a></li>
       </ul>
     </div>
     <!--=======================================================-->
@@ -88,170 +84,85 @@
     <main id="main">
       <div class="exhibition-container">
         <div id="exhibition" class="exhibition">
+          <!--1ST SIX ITEMS-->
           <div class="exhibit-item">
-            <img src="images/uiux/9.webp" alt="Exhibit 17" />
+            <img src="images/uiux/9.webp" alt="Exhibit item" loading="lazy" />
           </div>
           <div class="exhibit-item">
-            <video
-              src="images/uiux/9.mp4"
-              alt="Exhibit 18"
-              controls
-              autoplay
-              loop
-              muted
-              preload="auto"
-            ></video>
+            <img src="images/uiux/9.gif" alt="Exhibit item" loading="lazy" />
           </div>
           <!--=======================================================-->
           <div class="exhibit-item">
-            <img src="images/uiux/7.webp" alt="Exhibit 13" />
+            <img src="images/uiux/7.webp" alt="Exhibit item" loading="lazy" />
           </div>
           <div class="exhibit-item">
-            <video
-              src="images/uiux/7.mp4"
-              alt="Exhibit 14"
-              controls
-              autoplay
-              loop
-              muted
-              preload="auto"
-            ></video>
+            <img src="images/uiux/7.gif" alt="Exhibit item" loading="lazy" />
           </div>
           <!--=======================================================-->
           <div class="exhibit-item">
-            <img src="images/uiux/2.webp" alt="Exhibit 3" />
+            <img src="images/uiux/2.webp" alt="Exhibit item" loading="lazy" />
           </div>
           <div class="exhibit-item">
-            <video
-              src="images/uiux/2.mp4"
-              alt="Exhibit 4"
-              controls
-              autoplay
-              loop
-              muted
-              preload="auto"
-            ></video>
+            <img src="images/uiux/2.gif" alt="Exhibit item" loading="lazy" />
+          </div>
+        </div>
+
+        <!--LOAD THE REST-->
+        <div id="hidden-exhibits" style="display: none">
+          <!--=======================================================-->
+          <div class="exhibit-item">
+            <img src="images/uiux/6.webp" alt="Exhibit item" loading="lazy" />
+          </div>
+          <div class="exhibit-item">
+            <img src="images/uiux/6.gif" alt="Exhibit item" loading="lazy" />
           </div>
           <!--=======================================================-->
           <div class="exhibit-item">
-            <img src="images/uiux/6.webp" alt="Exhibit 11" />
+            <img src="images/uiux/1.webp" alt="Exhibit item" loading="lazy" />
           </div>
           <div class="exhibit-item">
-            <video
-              src="images/uiux/6.mp4"
-              alt="Exhibit 12"
-              controls
-              autoplay
-              loop
-              muted
-              preload="auto"
-            ></video>
+            <img src="images/uiux/1.gif" alt="Exhibit item" loading="lazy" />
           </div>
           <!--=======================================================-->
           <div class="exhibit-item">
-            <img src="images/uiux/1.webp" alt="Exhibit 1" />
+            <img src="images/uiux/3.webp" alt="Exhibit item" loading="lazy" />
           </div>
           <div class="exhibit-item">
-            <video
-              src="images/uiux/1.mp4"
-              alt="Exhibit 2"
-              controls
-              autoplay
-              loop
-              muted
-              preload="auto"
-            ></video>
+            <img src="images/uiux/3.gif" alt="Exhibit item" loading="lazy" />
           </div>
+
           <!--=======================================================-->
           <div class="exhibit-item">
-            <img src="images/uiux/3.jpg" alt="Exhibit 5" />
+            <img src="images/uiux/5.webp" alt="Exhibit item" loading="lazy" />
           </div>
           <div class="exhibit-item">
-            <video
-              src="images/uiux/3.mp4"
-              alt="Exhibit 6"
-              controls
-              autoplay
-              loop
-              muted
-              preload="auto"
-            ></video>
+            <img src="images/uiux/5.gif" alt="Exhibit item" loading="lazy" />
           </div>
+
           <!--=======================================================-->
           <div class="exhibit-item">
-            <img src="images/uiux/5.webp" alt="Exhibit 9" />
+            <img src="images/uiux/8.webp" alt="Exhibit item" loading="lazy" />
           </div>
           <div class="exhibit-item">
-            <video
-              src="images/uiux/5.mp4"
-              alt="Exhibit 10"
-              controls
-              autoplay
-              loop
-              muted
-              preload="auto"
-            ></video>
+            <img src="images/uiux/8.gif" alt="Exhibit item" loading="lazy" />
           </div>
-          <!------------------------------------------------------>
-          <div class="exhibit-item">
-            <img src="images/uiux/8.webp" alt="Exhibit 15" />
-          </div>
-          <div class="exhibit-item">
-            <video
-              src="images/uiux/8.mp4"
-              alt="Exhibit 16"
-              controls
-              autoplay
-              loop
-              muted
-              preload="auto"
-            ></video>
-          </div>
+
           <!--=======================================================-->
           <div class="exhibit-item">
-            <img src="images/uiux/10.webp" alt="Exhibit 19" />
+            <img src="images/uiux/10.webp" alt="Exhibit item" loading="lazy" />
           </div>
           <div class="exhibit-item">
-            <video
-              src="images/uiux/10.mp4"
-              alt="Exhibit 20"
-              controls
-              autoplay
-              loop
-              muted
-              preload="auto"
-            ></video>
+            <img src="images/uiux/10.gif" alt="Exhibit item" loading="lazy" />
           </div>
+
           <!--=======================================================-->
           <div class="exhibit-item">
-            <img src="images/uiux/11.webp" alt="Exhibit 21" />
+            <img src="images/uiux/4.webp" alt="Exhibit item" loading="lazy" />
           </div>
           <div class="exhibit-item">
-            <video
-              src="images/uiux/11.mp4"
-              alt="Exhibit 22"
-              controls
-              autoplay
-              loop
-              muted
-              preload="auto"
-            ></video>
+            <img src="images/uiux/4.gif" alt="Exhibit item" loading="lazy" />
           </div>
-          <!--=======================================================-->
-          <div class="exhibit-item">
-            <img src="images/uiux/4.webp" alt="Exhibit 7" />
-          </div>
-          <div class="exhibit-item">
-            <video
-              src="images/uiux/4.mp4"
-              alt="Exhibit 8"
-              controls
-              autoplay
-              loop
-              muted
-              preload="auto"
-            ></video>
-          </div>
+
           <!--=======================================================-->
         </div>
         <button id="load-more-exhibit" class="load-more-exhibit">
@@ -263,31 +174,27 @@
       <div id="exhibit-popup" class="exhibit-popup">
         <div class="exhibit-popup-content">
           <img id="exhibit-popup-image" src=" " alt="Exhibit Popup Image" />
+
           <button
             id="exhibit-prev-btn"
             class="exhibit-nav-btn exhibit-prev-btn"
           >
-            &lt;
+            <img src="assets/prev.png" alt="Previous" />
           </button>
-          <!--=======================================================-->
+
           <button
             id="exhibit-next-btn"
             class="exhibit-nav-btn exhibit-next-btn"
           >
-            &gt;
+            <img src="assets/next.png" alt="Next" />
           </button>
-          <!--=======================================================-->
+
           <button id="exhibit-exit-btn" class="exhibit-exit-btn">
-            &times;
+            <img src="assets/close.png" alt="Exit" />
           </button>
         </div>
       </div>
     </main>
-    <!--=======================================================-->
-
-    <!--Back to top btn-->
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    <!--Back to top btn end-->
     <!--=======================================================-->
 
     <!--Footer-->
@@ -308,41 +215,54 @@
     <!--Footer end-->
     <!--=======================================================-->
 
+    <!--BACK TO TOP BUTTON-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <img
+        src="assets/arrow_up.png"
+        alt="Go to top"
+        style="width: 20px; height: 20px"
+      />
+    </button>
+    <!--=======================================================-->
+
     <script>
-      // Back to top button functionality
-      var backToTopButton = document.getElementById("myBtn");
+      // BACK TO TOP BUTTON FUNCTIONALITY
+      (function backToTopButton() {
+        const backToTopButton = document.getElementById("myBtn");
 
-      window.onscroll = function () {
-        scrollFunction();
-      };
-
-      function scrollFunction() {
-        if (
-          document.body.scrollTop > 20 ||
-          document.documentElement.scrollTop > 20
-        ) {
-          backToTopButton.style.display = "block";
-        } else {
-          backToTopButton.style.display = "none";
+        // CHECK IF THE BUTTON EXISTS
+        if (!backToTopButton) {
+          console.warn("Back to top button not found.");
+          return;
         }
-      }
 
-      backToTopButton.addEventListener("click", function () {
-        if ("scrollBehavior" in document.documentElement.style) {
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-          });
-        } else {
-          // Fallback for browsers that don't support smooth scrolling
-          const currentPosition =
-            document.documentElement.scrollTop || document.body.scrollTop;
-          if (currentPosition > 0) {
-            window.requestAnimationFrame(topFunction);
+        // HIDE THE BUTTON INITIALLY
+        backToTopButton.style.display = "none";
+
+        window.addEventListener("scroll", function () {
+          if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+          ) {
+            backToTopButton.style.display = "block";
+          } else {
+            backToTopButton.style.display = "none";
           }
-        }
-      });
-      //===========================================================//
+        });
+
+        backToTopButton.addEventListener("click", function () {
+          if ("scrollBehavior" in document.documentElement.style) {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          } else {
+            // FALLBACK FOR BROWSERS THAT DON'T SUPPORT SMOOTH SCROLLING
+            document.body.scrollTop = 0; // FOR SAFARI
+            document.documentElement.scrollTop = 0; // FOR CHROME, FIREFOX, IE AND OPERA
+          }
+        });
+      })();
     </script>
+
+    <script src="js/scripts.js" defer></script>
+    <script src="js/exhibition.js" defer></script>
   </body>
 </html>

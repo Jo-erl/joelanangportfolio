@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"
+      content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height"
     />
     <meta name="description" content="Joel Anang's Portfolio" />
     <meta name="keywords" content="html, css, javascript, jquery" />
@@ -20,10 +20,6 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="js/scripts.js" defer></script>
-    <script src="js/gallery2.js" defer></script>
   </head>
   <body>
     <!--=======================================================-->
@@ -32,7 +28,7 @@
       <div class="nav-content">
         <ul class="nav-links left-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="cartoons.html">Portraits</a></li>
+          <li><a href="cartoons.html">Cartoon Portraits</a></li>
           <li><a href="logos.html">Logos</a></li>
           <li><a href="uiux.html">UI/UX</a></li>
         </ul>
@@ -47,8 +43,8 @@
         <ul class="nav-links right-links">
           <li><a href="posters.html">Posters</a></li>
           <li><a href="webdev.html">Web Development</a></li>
-          <li><a href="photos.html">Photo</a></li>
-          <li><a href="covers.html">Covers</a></li>
+          <li><a href="photos.html">Photo Editing</a></li>
+          <li><a href="motion.html">Motion Graphics</a></li>
         </ul>
       </div>
       <!--=======================================================-->
@@ -71,9 +67,9 @@
         <li><a href="logos.html">Logos</a></li>
         <li><a href="uiux.html">UI/UX</a></li>
         <li><a href="webdev.html">Web Development</a></li>
+        <li><a href="motion.html">Motion Graphics</a></li>
         <li><a href="branding.html">Branding</a></li>
-        <li><a href="photos.html">Photo</a></li>
-        <li><a href="covers.html">Covers</a></li>
+        <li><a href="photos.html">Photo Editing</a></li>
       </ul>
     </div>
     <!--=======================================================-->
@@ -92,166 +88,363 @@
             <button class="showcase-filter active" data-category="all">
               All
             </button>
+            <!--=======================================================-->
             <button class="showcase-filter" data-category="nbdy">
               NBDY KERS
             </button>
+            <!--=======================================================-->
             <button class="showcase-filter" data-category="cuollo">
               CUOLLO
             </button>
+            <!--=======================================================-->
             <button class="showcase-filter" data-category="joeys">
               JOEY'S STEAKHOUSE
             </button>
+            <!--=======================================================-->
           </div>
         </div>
         <!--=======================================================-->
         <div id="showcase" class="showcase">
+          <!--1ST SIX ITEMS-->
           <div class="showcase-item" data-category="nbdy">
-            <img src="images/branding/1.webp" alt="Showcase 1" />
+            <img
+              src="images/branding/1.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
+          <!--=======================================================-->
           <div class="showcase-item" data-category="nbdy">
-            <img src="images/branding/2.webp" alt="Showcase 2" />
+            <img
+              src="images/branding/2.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
+          <!--=======================================================-->
           <div class="showcase-item" data-category="nbdy">
-            <img src="images/branding/3.webp" alt="Showcase 3" />
+            <img
+              src="images/branding/3.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
+          <!--=======================================================-->
           <div class="showcase-item" data-category="nbdy">
-            <img src="images/branding/4.webp" alt="Showcase 4" />
+            <img
+              src="images/branding/4.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
+          <!--=======================================================-->
           <div class="showcase-item" data-category="nbdy">
-            <img src="images/branding/5.webp" alt="Showcase 5" />
+            <img
+              src="images/branding/5.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
+          <!--=======================================================-->
           <div class="showcase-item" data-category="nbdy">
-            <img src="images/branding/6.webp" alt="Showcase 6" />
+            <img
+              src="images/branding/6.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
-          <div class="showcase-item" data-category="nbdy">
-            <img src="images/branding/7.webp" alt="Showcase 7" />
+          <!--=======================================================-->
+
+          <!--LOAD THE REST-->
+          <div class="showcase-item hidden" data-category="nbdy">
+            <img
+              src="images/branding/7.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
-          <div class="showcase-item" data-category="nbdy">
-            <img src="images/branding/8.webp" alt="Showcase 8" />
+          <!--=======================================================-->
+          <div class="showcase-item hidden" data-category="nbdy">
+            <img
+              src="images/branding/8.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
-          <div class="showcase-item" data-category="nbdy">
-            <img src="images/branding/9.webp" alt="Showcase 9" />
+          <!--=======================================================-->
+          <div class="showcase-item hidden" data-category="nbdy">
+            <img
+              src="images/branding/9.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
-          <div class="showcase-item" data-category="nbdy">
-            <img src="images/branding/10.webp" alt="Showcase 10" />
+          <!--=======================================================-->
+          <div class="showcase-item hidden" data-category="nbdy">
+            <img
+              src="images/branding/10.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
-          <div class="showcase-item" data-category="cuollo">
-            <img src="images/branding/11.webp" alt="Showcase 11" />
+          <!--=======================================================-->
+          <div class="showcase-item hidden" data-category="cuollo">
+            <img
+              src="images/branding/11.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
-          <div class="showcase-item" data-category="cuollo">
-            <img src="images/branding/12.webp" alt="Showcase 12" />
+          <!--=======================================================-->
+          <div class="showcase-item hidden" data-category="cuollo">
+            <img
+              src="images/branding/12.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
-          <div class="showcase-item" data-category="cuollo">
-            <img src="images/branding/13.webp" alt="Showcase 13" />
+          <!--=======================================================-->
+          <div class="showcase-item hidden" data-category="cuollo">
+            <img
+              src="images/branding/13.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
-          <div class="showcase-item" data-category="cuollo">
-            <img src="images/branding/14.webp" alt="Showcase 14" />
+          <!--=======================================================-->
+          <div class="showcase-item hidden" data-category="cuollo">
+            <img
+              src="images/branding/14.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
-          <div class="showcase-item" data-category="cuollo">
-            <img src="images/branding/15.webp" alt="Showcase 15" />
+          <!--=======================================================-->
+          <div class="showcase-item hidden" data-category="cuollo">
+            <img
+              src="images/branding/15.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
-          <div class="showcase-item" data-category="cuollo">
-            <img src="images/branding/16.webp" alt="Showcase 16" />
+          <!--=======================================================-->
+          <div class="showcase-item hidden" data-category="cuollo">
+            <img
+              src="images/branding/16.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
-          <div class="showcase-item" data-category="cuollo">
-            <img src="images/branding/17.webp" alt="Showcase 17" />
+          <!--=======================================================-->
+          <div class="showcase-item hidden" data-category="cuollo">
+            <img
+              src="images/branding/17.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
-          <div class="showcase-item" data-category="cuollo">
-            <img src="images/branding/18.webp" alt="Showcase 18" />
+          <!--=======================================================-->
+          <div class="showcase-item hidden" data-category="cuollo">
+            <img
+              src="images/branding/18.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
-          <div class="showcase-item" data-category="cuollo">
-            <img src="images/branding/20.webp" alt="Showcase 20" />
+          <!--=======================================================-->
+          <div class="showcase-item hidden" data-category="cuollo">
+            <img
+              src="images/branding/20.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
-          <div class="showcase-item" data-category="cuollo">
-            <img src="images/branding/21.webp" alt="Showcase 21" />
+          <!--=======================================================-->
+          <div class="showcase-item hidden" data-category="cuollo">
+            <img
+              src="images/branding/21.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
-          <div class="showcase-item" data-category="cuollo">
-            <img src="images/branding/22.webp" alt="Showcase 22" />
+          <!--=======================================================-->
+          <div class="showcase-item hidden" data-category="cuollo">
+            <img
+              src="images/branding/22.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
-          <div class="showcase-item" data-category="cuollo">
-            <img src="images/branding/23.webp" alt="Showcase 23" />
+          <!--=======================================================-->
+          <div class="showcase-item hidden" data-category="cuollo">
+            <img
+              src="images/branding/23.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
-          <div class="showcase-item" data-category="cuollo">
-            <img src="images/branding/24.webp" alt="Showcase 24" />
+          <!--=======================================================-->
+          <div class="showcase-item hidden" data-category="cuollo">
+            <img
+              src="images/branding/24.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
-          <div class="showcase-item" data-category="cuollo">
-            <img src="images/branding/25.webp" alt="Showcase 25" />
+          <!--=======================================================-->
+          <div class="showcase-item hidden" data-category="cuollo">
+            <img
+              src="images/branding/25.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
-          <div class="showcase-item" data-category="cuollo">
-            <img src="images/branding/26.webp" alt="Showcase 26" />
+          <!--=======================================================-->
+          <div class="showcase-item hidden" data-category="cuollo">
+            <img
+              src="images/branding/26.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
-          <div class="showcase-item" data-category="cuollo">
-            <img src="images/branding/27.webp" alt="Showcase 27" />
+          <!--=======================================================-->
+          <div class="showcase-item hidden" data-category="cuollo">
+            <img
+              src="images/branding/27.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
-          <div class="showcase-item" data-category="cuollo">
-            <img src="images/branding/28.webp" alt="Showcase 28" />
+          <!--=======================================================-->
+          <div class="showcase-item hidden" data-category="cuollo">
+            <img
+              src="images/branding/28.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
-          <div class="showcase-item" data-category="cuollo">
-            <img src="images/branding/29.webp" alt="Showcase 28.1" />
+          <!--=======================================================-->
+          <div class="showcase-item hidden" data-category="cuollo">
+            <img
+              src="images/branding/29.webp"
+              alt="Showcase 28item"
+              loading="lazy"
+            />
           </div>
-          <div class="showcase-item" data-category="joeys">
-            <img src="images/branding/30.webp" alt="Showcase 29" />
+          <!--=======================================================-->
+          <div class="showcase-item hidden" data-category="joeys">
+            <img
+              src="images/branding/30.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
-          <div class="showcase-item" data-category="joeys">
-            <img src="images/branding/31.webp" alt="Showcase 30" />
+          <!--=======================================================-->
+          <div class="showcase-item hidden" data-category="joeys">
+            <img
+              src="images/branding/31.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
-          <div class="showcase-item" data-category="joeys">
-            <img src="images/branding/32.webp" alt="Showcase 31" />
+          <!--=======================================================-->
+          <div class="showcase-item hidden" data-category="joeys">
+            <img
+              src="images/branding/32.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
-          <div class="showcase-item" data-category="joeys">
-            <img src="images/branding/33.webp" alt="Showcase 32" />
+          <!--=======================================================-->
+          <div class="showcase-item hidden" data-category="joeys">
+            <img
+              src="images/branding/33.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
-          <div class="showcase-item" data-category="joeys">
-            <img src="images/branding/34.webp" alt="Showcase 33" />
+          <!--=======================================================-->
+          <div class="showcase-item hidden" data-category="joeys">
+            <img
+              src="images/branding/34.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
-          <div class="showcase-item" data-category="joeys">
-            <img src="images/branding/35.webp" alt="Showcase 34" />
+          <!--=======================================================-->
+          <div class="showcase-item hidden" data-category="joeys">
+            <img
+              src="images/branding/35.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
-          <div class="showcase-item" data-category="joeys">
-            <img src="images/branding/36.webp" alt="Showcase 35" />
+          <!--=======================================================-->
+          <div class="showcase-item hidden" data-category="joeys">
+            <img
+              src="images/branding/36.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
-          <div class="showcase-item" data-category="joeys">
-            <img src="images/branding/37.webp" alt="Showcase 36" />
+          <!--=======================================================-->
+          <div class="showcase-item hidden" data-category="joeys">
+            <img
+              src="images/branding/37.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
-          <div class="showcase-item" data-category="joeys">
-            <img src="images/branding/38.webp" alt="Showcase 38" />
+          <!--=======================================================-->
+          <div class="showcase-item hidden" data-category="joeys">
+            <img
+              src="images/branding/38.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
-          <div class="showcase-item" data-category="joeys">
-            <img src="images/branding/39.webp" alt="Showcase 39" />
+          <!--=======================================================-->
+          <div class="showcase-item hidden" data-category="joeys">
+            <img
+              src="images/branding/39.webp"
+              alt="Showcase item"
+              loading="lazy"
+            />
           </div>
+          <!--=======================================================-->
         </div>
         <!--=======================================================-->
         <button id="load-more-showcase" class="load-more-showcase">
           Load More
         </button>
+        <!--=======================================================-->
       </div>
       <!--=======================================================-->
       <div id="showcase-modal" class="showcase-modal">
         <div class="showcase-modal-content">
           <img id="showcase-modal-image" src=" " alt="Showcase Modal Image" />
+
           <button
             id="showcase-prev-btn"
             class="showcase-nav-btn showcase-prev-btn"
           >
-            &lt;
+            <img src="assets/prev.png" alt="Previous" />
           </button>
+
           <button
             id="showcase-next-btn"
             class="showcase-nav-btn showcase-next-btn"
           >
-            &gt;
+            <img src="assets/next.png" alt="Next" />
           </button>
+
           <button id="showcase-close-btn" class="showcase-close-btn">
-            &times;
+            <img src="assets/close.png" alt="Close" />
           </button>
         </div>
       </div>
     </main>
     <!--=======================================================-->
-
-    <!--Back to top btn-->
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    <!--Back to top btn end-->
 
     <!--Footer-->
     <footer class="footer">
@@ -270,41 +463,54 @@
     </footer>
     <!--Footer end-->
 
+    <!--BACK TO TOP BUTTON-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <img
+        src="assets/arrow_up.png"
+        alt="Go to top"
+        style="width: 20px; height: 20px"
+      />
+    </button>
+    <!--=======================================================-->
+
     <script>
-      // Back to top button functionality
-      var backToTopButton = document.getElementById("myBtn");
+      // BACK TO TOP BUTTON FUNCTIONALITY
+      (function backToTopButton() {
+        const backToTopButton = document.getElementById("myBtn");
 
-      window.onscroll = function () {
-        scrollFunction();
-      };
-
-      function scrollFunction() {
-        if (
-          document.body.scrollTop > 20 ||
-          document.documentElement.scrollTop > 20
-        ) {
-          backToTopButton.style.display = "block";
-        } else {
-          backToTopButton.style.display = "none";
+        // CHECK IF THE BUTTON EXISTS
+        if (!backToTopButton) {
+          console.warn("Back to top button not found.");
+          return;
         }
-      }
 
-      backToTopButton.addEventListener("click", function () {
-        if ("scrollBehavior" in document.documentElement.style) {
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-          });
-        } else {
-          // Fallback for browsers that don't support smooth scrolling
-          const currentPosition =
-            document.documentElement.scrollTop || document.body.scrollTop;
-          if (currentPosition > 0) {
-            window.requestAnimationFrame(topFunction);
+        // HIDE THE BUTTON INITIALLY
+        backToTopButton.style.display = "none";
+
+        window.addEventListener("scroll", function () {
+          if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+          ) {
+            backToTopButton.style.display = "block";
+          } else {
+            backToTopButton.style.display = "none";
           }
-        }
-      });
-      //===========================================================//
+        });
+
+        backToTopButton.addEventListener("click", function () {
+          if ("scrollBehavior" in document.documentElement.style) {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          } else {
+            // FALLBACK FOR BROWSERS THAT DON'T SUPPORT SMOOTH SCROLLING
+            document.body.scrollTop = 0; // FOR SAFARI
+            document.documentElement.scrollTop = 0; // FOR CHROME, FIREFOX, IE AND OPERA
+          }
+        });
+      })();
     </script>
+
+    <script src="js/scripts.js" defer></script>
+    <script src="js/showcase.js" defer></script>
   </body>
 </html>
