@@ -1222,15 +1222,6 @@ iframe {
   position: relative;
   overflow: hidden;
   margin-top: auto;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
-}
-/*=======================================================*/
-
-.footer.reveal {
-  opacity: 1;
-  visibility: visible;
 }
 /*=======================================================*/
 .footer-content {
@@ -1254,7 +1245,12 @@ iframe {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: black;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.02) 50%,
+    transparent 100%
+  );
   transform: rotate(45deg);
   z-index: 1;
 }
