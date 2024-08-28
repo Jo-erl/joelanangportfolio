@@ -1214,8 +1214,8 @@ iframe {
   background-color: var(--red);
 }
 /*=======================================================*/
-/*FOOTER*/
-.footer {
+ /*FOOTER*/
+ .footer {
   background-color: black;
   color: var(--white);
   padding: 32px 0;
@@ -1223,7 +1223,7 @@ iframe {
   overflow: hidden;
   margin-top: auto;
 }
-/*=======================================================*/
+
 .footer-content {
   max-width: 1200px;
   margin: 0 auto;
@@ -1231,13 +1231,15 @@ iframe {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
+  position: relative;
+  z-index: 2;
 }
-/*=======================================================*/
+
 .footer.reveal .footer-content {
   opacity: 1;
   transform: translateY(0);
 }
-/*=======================================================*/
+
 .footer::before {
   content: "";
   position: absolute;
@@ -1246,20 +1248,15 @@ iframe {
   width: 200%;
   height: 200%;
   background: linear-gradient(
-    to bottom right,
-    rgba(255, 255, 255, 0.05) 0%,
-    rgba(255, 255, 255, 0.02) 50%,
-    transparent 100%
+      to bottom right,
+      rgba(255, 255, 255, 0.05) 0%,
+      rgba(255, 255, 255, 0.02) 50%,
+      transparent 100%
   );
   transform: rotate(45deg);
   z-index: 1;
 }
-/*=======================================================*/
-.footer-content {
-  position: relative;
-  z-index: 2;
-}
-/*=======================================================*/
+
 .logo a {
   font-size: 32px;
   font-weight: bold;
@@ -1267,16 +1264,26 @@ iframe {
   text-decoration: none;
   margin-bottom: 16px;
   display: inline-block;
-  cursor: none;
+  cursor: default;
 }
-/*=======================================================*/
+
 .logo span {
   color: var(--red);
 }
-/*=======================================================*/
+
 .copyright {
   font-size: 15px;
   color: var(--lightgray1);
+}
+
+@media (max-width: 768px) {
+  .logo a {
+      font-size: 24px;
+  }
+
+  .copyright {
+      font-size: 13px;
+  }
 }
 /*=======================================================*/
 /*BACK TO TOP BTN*/

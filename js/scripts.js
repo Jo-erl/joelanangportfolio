@@ -100,25 +100,45 @@ document.addEventListener("DOMContentLoaded", () => {
   // FOOTER FUNCTIONALITY
   (function footerFunctionality() {
     const footer = document.querySelector("footer");
+    const footerContent = footer.querySelector(".footer-content");
 
     function handleScroll() {
-      const scrollPosition = window.pageYOffset;
-      const windowHeight = window.innerHeight;
-      const documentHeight = document.body.scrollHeight;
+        const scrollPosition = window.pageYOffset;
+        const windowHeight = window.innerHeight;
+        const documentHeight = document.documentElement.scrollHeight;
+        const footerHeight = footer.offsetHeight;
 
-      if (scrollPosition + windowHeight >= documentHeight) {
-        footer.classList.add("reveal");
-      } else {
-        footer.classList.remove("reveal");
-      }
+        // Check if the footer is in the viewport
+        if (scrollPosition + windowHeight > documentHeight - footerHeight) {
+            footer.classList.add("reveal");
+        } else {
+            footer.classList.remove("reveal");
+        }
 
-      const parallaxOffset = scrollPosition * 0.3;
-      footer.style.backgroundPositionY = `${parallaxOffset}px`;
+        // Parallax effect
+        const parallaxOffset = Math.max(0, scrollPosition * 0.3);
+        footer.style.backgroundPositionY = `${parallaxOffset}px`;
     }
 
+    // Intersection Observer for better performance
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                footer.classList.add("reveal");
+            } else {
+                footer.classList.remove("reveal");
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    observer.observe(footer);
+
     window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleScroll);
     handleScroll();
-  })();
+})();
 
   // HEADER TEXT ANIMATION
   (function headerTextAnimation() {
