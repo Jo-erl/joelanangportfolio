@@ -63,6 +63,29 @@ html {
   box-sizing: border-box;
 }
 /*=======================================================*/
+/*SCROLLBAR*/
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--red);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--darkgray1);
+}
+/*=======================================================*/
 body {
   font-weight: 400;
   font-size: 16px;
@@ -1214,8 +1237,8 @@ iframe {
   background-color: var(--red);
 }
 /*=======================================================*/
- /*FOOTER*/
- .footer {
+/*FOOTER*/
+.footer {
   background-color: black;
   color: var(--white);
   padding: 32px 0;
@@ -1248,10 +1271,10 @@ iframe {
   width: 200%;
   height: 200%;
   background: linear-gradient(
-      to bottom right,
-      rgba(255, 255, 255, 0.05) 0%,
-      rgba(255, 255, 255, 0.02) 50%,
-      transparent 100%
+    to bottom right,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.02) 50%,
+    transparent 100%
   );
   transform: rotate(45deg);
   z-index: 1;
@@ -1278,11 +1301,11 @@ iframe {
 
 @media (max-width: 768px) {
   .logo a {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .copyright {
-      font-size: 13px;
+    font-size: 13px;
   }
 }
 /*=======================================================*/
