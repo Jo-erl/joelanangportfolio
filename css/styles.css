@@ -1818,3 +1818,49 @@ iframe {
 /*=======================================================*/
 /*=======================================================*/
 /*=======================================================*/
+/*WEBDEV NEW*/
+.gif-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .gif-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+
+  .gif-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .gif-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .gif-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+
+  @media (max-width: 768px) {
+    .gif-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+/*=======================================================*/
+/*=======================================================*/
+/*=======================================================*/
