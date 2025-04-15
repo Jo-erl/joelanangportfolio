@@ -24,6 +24,7 @@
   --white: #ffffff;
   --darkgray1: #161616;
   --darkgray2: #252525;
+  --darkgray3: #0e0e0e;
   --lightgray1: #808080;
   --lightgray2: #dbdbdb;
   --lightgray3: #f8f8f8;
@@ -180,7 +181,7 @@ a.texties:hover h4 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--darkgray1);
+  background-color: var(--darkgray3);
   z-index: 9999;
   display: flex;
   justify-content: center;
