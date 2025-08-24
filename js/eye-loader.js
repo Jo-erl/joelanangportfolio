@@ -1,13 +1,19 @@
 // HOME PAGE LOADER
-// This function is called when the page is loaded
+// Record the start time right away
+const startTime = performance.now();
+
 window.addEventListener("load", () => {
-  // Use performance.now() for more accurate timing if needed
   const loader = document.getElementById("pageLoader");
 
-  // Force a reflow to ensure the loader is visible before hiding it
+  // Force a reflow to ensure loader is visible
   void loader.offsetWidth;
 
+  // Calculate how much time has already passed
+  const elapsed = performance.now() - startTime;
+  const remaining = Math.max(0, 2000 - elapsed); // ensure 2s total
+
+  // Hide loader after remaining time
   setTimeout(() => {
     loader.style.display = "none";
-  }, 1000);
+  }, remaining);
 });
