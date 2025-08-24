@@ -141,70 +141,59 @@ document.addEventListener("DOMContentLoaded", () => {
 })();
 
   // HEADER TEXT ANIMATION
-  (function headerTextAnimation() {
-    let lastScrollTop = 0;
-    const header = document.querySelector(".header-text");
-    const headerContainer = document.querySelector(".parallax-header");
-    const headerHeight = headerContainer.offsetHeight;
-    const shootThreshold = 50;
+(function headerTextAnimation() {
+  let lastScrollTop = 0;
+  const header = document.querySelector(".header-text");
+  const headerContainer = document.querySelector(".parallax-header");
+  const headerHeight = headerContainer.offsetHeight;
+  const shootThreshold = 50;
 
-    headerContainer.style.transition = "none";
-    headerContainer.style.transform = "translateY(0)";
-    headerContainer.offsetHeight;
+  // Function to animate header reveal
+  function revealHeader() {
+    header.classList.remove("shooting-up");
+    header.classList.add("sliding-down");
+    header.style.transform = `translate(-50%, -50%)`;
+    header.style.opacity = "1";
+  }
 
-    setTimeout(() => {
-      headerContainer.style.transition = "";
-    }, 0);
+  // Function to hide header (shoot up)
+  function hideHeader() {
+    header.classList.remove("sliding-down");
+    header.classList.add("shooting-up");
+    header.style.transform = `translate(-50%, -150%)`;
+    header.style.opacity = "0";
+  }
 
-    window.addEventListener("scroll", function () {
-      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  // SCROLL EVENT HANDLER
+  window.addEventListener("scroll", function () {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-      if (scrollTop > lastScrollTop) {
-        if (scrollTop > shootThreshold && scrollTop <= headerHeight) {
-          header.classList.remove("sliding-down");
-          header.classList.add("shooting-up");
-          header.style.transform = `translate(-50%, -150%)`;
-          header.style.opacity = "0";
-        }
-      } else {
-        if (scrollTop <= headerHeight) {
-          header.classList.remove("shooting-up");
-          header.classList.add("sliding-down");
-          header.style.transform = `translate(-50%, -50%)`;
-          header.style.opacity = "1";
-        }
+    if (scrollTop > lastScrollTop) {
+      // scrolling down
+      if (scrollTop > shootThreshold && scrollTop <= headerHeight) {
+        hideHeader();
       }
-
-      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-    });
-  })();
-
-  // SET HEADER HEIGHT AND SCROLL TO MAIN SECTION
-  (function setHeaderAndScroll() {
-    const header = document.querySelector(".parallax-header");
-    const headerContent = document.querySelector(".header-text");
-
-    function setHeaderHeight() {
-      const vh = Math.max(
-        document.documentElement.clientHeight || 0,
-        window.innerHeight || 0
-      );
-      setElementHeight(header, vh);
-
-      const contentHeight =
-        headerContent.offsetHeight +
-        document.getElementById("scrollDownHere").offsetHeight +
-        40;
-      if (contentHeight > vh) {
-        setElementHeight(header, contentHeight);
+    } else {
+      // scrolling up
+      if (scrollTop <= headerHeight) {
+        revealHeader();
       }
     }
 
-    setHeaderHeight();
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  });
 
-    window.addEventListener("load", setHeaderHeight);
-    window.addEventListener("resize", setHeaderHeight);
-  })();
+  // REVEAL IMMEDIATELY AFTER LOADER
+  window.addEventListener("load", () => {
+    const loader = document.getElementById("pageLoader");
+
+    // wait until loader is hidden
+    setTimeout(() => {
+      revealHeader();
+    }, 2000); // match loader duration
+  });
+})();
+
 
   // PORTFOLIO ITEM REVEAL ANIMATION
   (function portfolioReveal() {
@@ -341,3 +330,4 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("load", reveal);
   })();
 });
+
