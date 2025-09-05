@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
   function toggleClassOnScroll(element, className, threshold = 0) {
     const rect = element.getBoundingClientRect();
     if (rect.bottom <= window.innerHeight + threshold) {
@@ -224,7 +224,7 @@ document.addEventListener("DOMContentLoaded", () => {
       setTimeout(function () {
         loader.style.display = 'none';
         startRevealAnimation();
-      }, 2000); 
+      }, 2000);
     }
   });
 
@@ -278,26 +278,6 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener('scroll', startAnimation);
     startAnimation();
   })();
-
-  // Loader
-  window.addEventListener('load', function () {
-    const loader = document.getElementById('pageLoader', 'pagesLoader');
-    loader.style.display = 'flex';
-
-    setTimeout(function () {
-      loader.style.display = 'none';
-      startRevealAnimation();
-    }, 3000);
-  });
-
-  function startRevealAnimation() {
-    const revealTexts = document.querySelectorAll('.reveal-text');
-    revealTexts.forEach((text, index) => {
-      setTimeout(() => {
-        text.classList.add('revealed');
-      }, index * 500);
-    });
-  }
 
   // Mouse Scroll Down Btn
   document
@@ -372,4 +352,3 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener('load', reveal);
   })();
 });
-
