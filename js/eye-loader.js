@@ -11,6 +11,9 @@
     if (loader) {
       loader.style.display = 'none';
       loaderHidden = true;
+      
+      // Start reveal animation after loader hides
+      startRevealAnimation();
     }
   };
 
@@ -32,3 +35,13 @@
     setTimeout(hideLoader, LOADER_DURATION);
   }
 })();
+
+// Reveal animation function
+function startRevealAnimation() {
+  const revealTexts = document.querySelectorAll('.reveal-text');
+  revealTexts.forEach((text, index) => {
+    setTimeout(() => {
+      text.classList.add('revealed');
+    }, index * 500);
+  });
+}
