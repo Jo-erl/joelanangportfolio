@@ -1,19 +1,34 @@
-// HOME PAGE LOADER
-// Record the start time right away
-const startTime = performance.now();
+// Home Page Loader 
+(() => {
+  const LOADER_DURATION = 2000; // 2 seconds
+  const startTime = performance.now();
+  let loaderHidden = false;
 
-window.addEventListener("load", () => {
-  const loader = document.getElementById("pageLoader");
+  const hideLoader = () => {
+    if (loaderHidden) return;
 
-  // Force a reflow to ensure loader is visible
-  void loader.offsetWidth;
+    const loader = document.getElementById('pageLoader');
+    if (loader) {
+      loader.style.display = 'none';
+      loaderHidden = true;
+    }
+  };
 
-  // Calculate how much time has already passed
-  const elapsed = performance.now() - startTime;
-  const remaining = Math.max(0, 2000 - elapsed); // ensure 2s total
+  const scheduleLoaderHide = () => {
+    const elapsed = performance.now() - startTime;
+    const remaining = Math.max(0, LOADER_DURATION - elapsed);
 
-  // Hide loader after remaining time
-  setTimeout(() => {
-    loader.style.display = "none";
-  }, remaining);
-});
+    setTimeout(hideLoader, remaining);
+  };
+
+  // Handle Case Where Dom Is Already Loaded
+  if (document.readyState === 'complete') {
+    scheduleLoaderHide();
+  } else {
+    // Wait For Full Page Load, Then Schedule Hide Based On Timing
+    window.addEventListener('load', scheduleLoaderHide, { once: true });
+
+    // Fallback: Always Hide After Exactly 2 Seconds, Regardless Of Load Status
+    setTimeout(hideLoader, LOADER_DURATION);
+  }
+})();

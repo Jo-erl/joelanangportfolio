@@ -1,5 +1,4 @@
-//==================================================================================//
-//SHOWCASE
+//Showcase
 document.addEventListener("DOMContentLoaded", function () {
   const showcase = document.getElementById("showcase");
   const loadMoreBtn = document.getElementById("load-more-showcase");
@@ -14,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const imagesPerLoad = 6;
   let currentCategory = "all";
 
-  // FUNCTION TO LOAD IMAGES
+  // Function To Load Images
   function loadImages() {
     const items = Array.from(document.querySelectorAll(".showcase-item"));
     const filteredItems = items.filter(
@@ -38,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // FUNCTION TO FILTER IMAGES BY CATEGORY
+  // Function To Filter Images By Category
   function filterImages(category) {
     currentCategory = category;
     currentIndex = 0;
@@ -48,14 +47,14 @@ document.addEventListener("DOMContentLoaded", function () {
     loadImages();
   }
 
-  // INITIALIZE IMAGE LOADING WITH BLUR EFFECT
+  // Initialize Image Loading With Blur Effect
   const images = document.querySelectorAll(".showcase-item img");
 
   images.forEach((img) => {
-    img.classList.add("blurred"); // Start with the blur class
+    img.classList.add("blurred"); // Start With The Blur Class
 
     img.addEventListener("load", function () {
-      img.classList.remove("blurred"); // Remove blur when loaded
+      img.classList.remove("blurred"); // Remove Blur When Loaded
       img.classList.add("loaded");
     });
 
@@ -65,12 +64,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  loadImages(); // Load initial images
+  loadImages(); // Load Initial Images
 
-  // HANDLE "LOAD MORE" BUTTON CLICK
+  // Handle "Load More" Button Click
   loadMoreBtn.addEventListener("click", loadImages);
 
-  // SHOWCASE MODAL INTERACTIONS
+  // Showcase Modal Interactions
   showcase.addEventListener("click", (e) => {
     if (e.target.tagName === "IMG") {
       showcaseModalImage.src = e.target.src;
@@ -84,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // MODAL CLOSE BUTTON
+  // Modal Close Button
   closeBtn.addEventListener("click", () => {
     showcaseModal.style.opacity = "0";
     showcaseModalImage.style.transform = "translateY(20px)";
@@ -93,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 300);
   });
 
-  // MODAL NAVIGATION BUTTONS
+  // Modal Navigation Buttons
   prevBtn.addEventListener("click", () => {
     const currentSrc = showcaseModalImage.src;
     const currentIndex = Array.from(images).findIndex(
@@ -112,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
     showcaseModalImage.src = images[nextIndex].src;
   });
 
-  // FILTER BUTTONS
+  // Filter Buttons
   filterButtons.forEach((button) => {
     button.addEventListener("click", () => {
       filterButtons.forEach((btn) => btn.classList.remove("active"));

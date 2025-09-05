@@ -1,5 +1,4 @@
-//==================================================================================//
-//EXHIBITION//
+//Exhibition//
 
 const exhibition = document.getElementById("exhibition");
 const loadMoreBtn = document.getElementById("load-more-exhibit");
@@ -64,7 +63,7 @@ function changeImage(direction) {
 prevBtn.addEventListener("click", () => changeImage(-1));
 nextBtn.addEventListener("click", () => changeImage(1));
 
-// BLUR ITEMS TILL THEY ARE LOADED
+// Blur Items Till They Are Loaded
 function handleImageLoad(img) {
   img.classList.add("loaded");
 }
@@ -77,10 +76,10 @@ document.addEventListener("DOMContentLoaded", function () {
     if (img.complete) handleImageLoad(img);
   });
 
-  // MOVE ALL EXHIBIT ITEMS TO HIDDEN EXHIBITS INITIALLY
+  // Move All Exhibit Items To Hidden Exhibits Initially
   const allItems = Array.from(document.querySelectorAll(".exhibit-item"));
   allItems.forEach((item) => hiddenExhibits.appendChild(item));
 
-  // INITIAL LOAD OF IMAGES
+  // Initial Load Of Images
   loadImages();
 });
