@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   function toggleClassOnScroll(element, className, threshold = 0) {
     const rect = element.getBoundingClientRect();
     if (rect.bottom <= window.innerHeight + threshold) {
@@ -212,30 +212,6 @@ document.addEventListener('DOMContentLoaded', () => {
       setTimeout(revealHeader, LOADER_DURATION);
     }
   })();
-
-  // Unified Loader - Fixed To Use Consistent 2-Second Timing
-  window.addEventListener('load', function () {
-    const loader = document.getElementById('pageLoader');
-
-    if (loader) {
-      loader.style.display = 'flex';
-
-      // Hide Loader After Exactly 2 Seconds
-      setTimeout(function () {
-        loader.style.display = 'none';
-        startRevealAnimation();
-      }, 2000);
-    }
-  });
-
-  function startRevealAnimation() {
-    const revealTexts = document.querySelectorAll('.reveal-text');
-    revealTexts.forEach((text, index) => {
-      setTimeout(() => {
-        text.classList.add('revealed');
-      }, index * 500);
-    });
-  }
 
   // Portfolio Item Reveal Animation
   (function portfolioReveal() {
